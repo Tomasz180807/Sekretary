@@ -1,0 +1,38 @@
+{
+  "_hinweis": "PLATZHALTER — bitte durch den echten Wochenplan ersetzen. Die Struktur ist in tagesplan/README.md beschrieben.",
+  "platzhalter": true,
+  "zeitzone": "Europe/Berlin",
+  "briefingZeit": "15:00",
+  "vorlaufMinuten": 90,
+  "diskretePush": true,
+  "tage": {
+    "mo": [
+      { "von": "08:00", "bis": "13:15", "titel": "Schule", "ort": "Gymnasium" },
+      { "von": "15:30", "bis": "16:30", "titel": "Hausaufgaben" },
+      { "von": "18:00", "bis": "19:30", "titel": "Sport", "ort": "Sporthalle" }
+    ],
+    "di": [
+      { "von": "08:00", "bis": "13:15", "titel": "Schule", "ort": "Gymnasium" },
+      { "von": "15:30", "bis": "17:00", "titel": "Hausaufgaben" }
+    ],
+    "mi": [
+      { "von": "08:00", "bis": "15:00", "titel": "Schule", "ort": "Gymnasium" },
+      { "von": "16:00", "bis": "17:00", "titel": "Hausaufgaben" }
+    ],
+    "do": [
+      { "von": "08:00", "bis": "13:15", "titel": "Schule", "ort": "Gymnasium" },
+      { "von": "15:30", "bis": "16:30", "titel": "Hausaufgaben" },
+      { "von": "18:00", "bis": "19:30", "titel": "Sport", "ort": "Sporthalle" }
+    ],
+    "fr": [
+      { "von": "08:00", "bis": "12:20", "titel": "Schule", "ort": "Gymnasium" },
+      { "von": "14:30", "bis": "15:30", "titel": "Hausaufgaben" }
+    ],
+    "sa": [],
+    "so": [
+      { "von": "17:00", "bis": "18:00", "titel": "Woche vorbereiten", "hinweis": "Schulsachen für Montag packen" }
+    ]
+  },
+  "termine": [],
+  "freieTage": []
+}
