@@ -9,6 +9,9 @@
  */
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { writeFileSync, mkdtempSync } from 'node:fs';
+import { join } from 'node:path';
+import { tmpdir } from 'node:os';
 
 import {
   zuMinuten,
@@ -16,6 +19,8 @@ import {
   alsDauer,
   inZone,
   tagVerschoben,
+  bestimmeWoche,
+  briefingMinuten,
   eintraegeFuerTag,
   naechsterEintrag,
   laufenderEintrag,
@@ -215,7 +220,102 @@ test('ein als Platzhalter markierter Plan löst keine Meldung aus', () => {
 test('der mitgelieferte Wochenplan ist gültig', () => {
   const echt = ladePlan(STANDARD_PLAN);
   assert.equal(echt.zeitzone, 'Europe/Berlin');
-  assert.ok(echt.tage);
+  assert.ok(echt.wochen ?? echt.tage, 'weder "wochen" noch "tage" vorhanden');
+});
+
+/* ------------------------- A/B-Wochen und Briefing ------------------------ */
+
+const abPlan = {
+  zeitzone: 'Europe/Berlin',
+  briefingNach: 'Schule',
+  briefingZeit: '10:15',
+  vorlaufMinuten: 20,
+  wochenwechsel: { ankerDatum: '2026-08-17', ankerWoche: 'A' },
+  wochen: {
+    A: {
+      mo: [{ von: '08:00', bis: '15:15', titel: 'Schule' }, { von: '17:00', bis: '19:45', titel: 'Training' }],
+      di: [], mi: [], do: [], fr: [], sa: [], so: [],
+    },
+    B: {
+      mo: [{ von: '08:00', bis: '13:10', titel: 'Schule' }, { von: '13:50', bis: '14:20', titel: 'Trading' }],
+      di: [], mi: [], do: [], fr: [], sa: [], so: [],
+    },
+  },
+};
+
+test('bestimmeWoche wechselt montags, nicht mitten in der Woche', () => {
+  const woche = (iso) => bestimmeWoche(abPlan, inZone(new Date(`${iso}T10:00:00Z`), 'Europe/Berlin'));
+  assert.equal(woche('2026-08-17'), 'A'); // Ankermontag
+  assert.equal(woche('2026-08-21'), 'A'); // Freitag derselben Woche
+  assert.equal(woche('2026-08-23'), 'A'); // Sonntag derselben Woche
+  assert.equal(woche('2026-08-24'), 'B'); // Montag darauf
+  assert.equal(woche('2026-08-31'), 'A'); // und wieder zurück
+});
+
+test('bestimmeWoche rechnet auch vor dem Anker richtig', () => {
+  const woche = (iso) => bestimmeWoche(abPlan, inZone(new Date(`${iso}T10:00:00Z`), 'Europe/Berlin'));
+  assert.equal(woche('2026-08-10'), 'B');
+  assert.equal(woche('2026-08-03'), 'A');
+});
+
+test('die Wochenvariante bestimmt die Einträge des Tages', () => {
+  const a = eintraegeFuerTag(abPlan, inZone(new Date('2026-08-17T10:00:00Z'), 'Europe/Berlin'));
+  const b = eintraegeFuerTag(abPlan, inZone(new Date('2026-08-24T10:00:00Z'), 'Europe/Berlin'));
+  assert.equal(a[0].bisMin, 15 * 60 + 15);
+  assert.equal(b[0].bisMin, 13 * 60 + 10);
+  assert.equal(a[1].titel, 'Training');
+  assert.equal(b[1].titel, 'Trading');
+});
+
+test('ohne "wochen" gilt weiterhin der einfache Rhythmus aus "tage"', () => {
+  assert.equal(bestimmeWoche(plan, inZone(new Date('2026-08-17T10:00:00Z'), 'Europe/Berlin')), null);
+  assert.equal(eintraegeFuerTag(plan, inZone(new Date('2026-08-17T10:00:00Z'), 'Europe/Berlin'))[0].titel, 'Schule');
+});
+
+test('briefingNach richtet sich nach dem Ende der Schule', () => {
+  const zeitA = inZone(new Date('2026-08-17T10:00:00Z'), 'Europe/Berlin');
+  const zeitB = inZone(new Date('2026-08-24T10:00:00Z'), 'Europe/Berlin');
+  assert.equal(briefingMinuten(abPlan, eintraegeFuerTag(abPlan, zeitA)), 15 * 60 + 15);
+  assert.equal(briefingMinuten(abPlan, eintraegeFuerTag(abPlan, zeitB)), 13 * 60 + 10);
+});
+
+test('ohne passenden Block gilt die feste briefingZeit', () => {
+  const sonntag = inZone(new Date('2026-08-23T10:00:00Z'), 'Europe/Berlin');
+  assert.equal(briefingMinuten(abPlan, eintraegeFuerTag(abPlan, sonntag)), 10 * 60 + 15);
+});
+
+test('das Briefing folgt dem unterschiedlichen Schulende', () => {
+  // Woche A: Schule bis 15:15 → Briefing im Fenster 15:15–16:15
+  assert.equal(agentEntscheidung(abPlan, new Date('2026-08-17T14:05:00Z')).modus, 'briefing'); // 16:05
+  // Woche B: Schule bis 13:10 → um 16:05 ist das Fenster längst vorbei
+  assert.notEqual(agentEntscheidung(abPlan, new Date('2026-08-24T14:05:00Z')).modus, 'briefing');
+  assert.equal(agentEntscheidung(abPlan, new Date('2026-08-24T12:05:00Z')).modus, 'briefing'); // 14:05
+});
+
+test('ladePlan besteht bei "wochen" auf einem Anker', () => {
+  const ordner = mkdtempSync(join(tmpdir(), 'ab-'));
+  const pfad = join(ordner, 'ohne-anker.json');
+  writeFileSync(pfad, JSON.stringify({ zeitzone: 'Europe/Berlin', wochen: { A: { mo: [] } } }));
+  assert.throws(() => ladePlan(pfad), /ankerDatum/);
+
+  const falsch = join(ordner, 'falsche-woche.json');
+  writeFileSync(falsch, JSON.stringify({
+    zeitzone: 'Europe/Berlin',
+    wochen: { A: { mo: [] } },
+    wochenwechsel: { ankerDatum: '2026-08-17', ankerWoche: 'C' },
+  }));
+  assert.throws(() => ladePlan(falsch), /unbekannte Woche "C"/);
+});
+
+test('ladePlan prüft Einträge auch innerhalb von "wochen"', () => {
+  const ordner = mkdtempSync(join(tmpdir(), 'ab2-'));
+  const pfad = join(ordner, 'kaputt.json');
+  writeFileSync(pfad, JSON.stringify({
+    zeitzone: 'Europe/Berlin',
+    wochen: { A: { mo: [{ von: '08:00' }] } },
+    wochenwechsel: { ankerDatum: '2026-08-17' },
+  }));
+  assert.throws(() => ladePlan(pfad), /titel/);
 });
 
 test('ladePlan meldet fehlerhafte Pläne verständlich', async () => {

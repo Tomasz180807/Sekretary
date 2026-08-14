@@ -80,6 +80,52 @@ Agent meldet sich. Danach einmal `npm test` und `npm run heute` zur Kontrolle.
 Nicht unterstützt: Pläne, bei denen die Wochentage die *Spalten* einer Tabelle
 sind und die Zeiten die Zeilen. Die brauchen Handarbeit.
 
+### „Wochenplan kompakt" übernehmen
+
+Diese Datei ist ein Sonderfall: Ihr `<body>` ist praktisch leer, der Plan lebt
+in JavaScript-Objekten und wird erst im Browser gerendert. `importieren.mjs`
+findet dort nichts. Dafür gibt es `uebernehmen.mjs` – es wertet den Datenteil
+des Skripts aus und bekommt damit **exakt** die Zeilen, die auch die Seite
+anzeigt:
+
+```bash
+node uebernehmen.mjs wochenplan_kompakt.html --schreiben \
+  --anker 2026-08-17 --ankerwoche A
+```
+
+Ausgeführt wird nur der Datenteil (bis `let currentWeek`), nicht der DOM-Teil.
+
+### Zwei Wochen im Wechsel (A/B)
+
+Wechseln sich zwei Wochen ab, stehen sie unter `wochen` statt unter `tage`:
+
+```jsonc
+{
+  "wochen": { "A": { "mo": [ … ] }, "B": { "mo": [ … ] } },
+  "wochenwechsel": { "ankerDatum": "2026-08-17", "ankerWoche": "A" }
+}
+```
+
+Der Anker sagt, welche Variante in der Woche dieses Datums gilt; gezählt wird
+in ganzen Kalenderwochen ab dem **Montag** der Ankerwoche. Ein Wechsel findet
+damit immer sonntags auf montags statt, nie mitten in der Woche.
+
+**Stimmt der Anker nicht, ist der Plan systematisch um eine Woche verschoben.**
+Prüfen mit `npm run heute` und `node tagesplan.mjs heute --jetzt <ISO>`.
+
+### Briefing nach dem Schulende statt zur festen Uhrzeit
+
+Endet die Schule an verschiedenen Tagen verschieden, wäre eine feste
+`briefingZeit` an den meisten Tagen falsch. Mit `briefingNach` richtet sich das
+Briefing nach dem Ende des genannten Blocks:
+
+```jsonc
+{ "briefingNach": "Schule", "briefingZeit": "10:15" }
+```
+
+`briefingZeit` gilt dann nur noch als Rückfallwert an Tagen ohne diesen Block
+(Wochenende).
+
 ### Der genaue Weg: von Hand
 
 `wochenplan.json` bearbeiten und anschließend **`"platzhalter": true` entfernen**.
@@ -228,6 +274,6 @@ werden. Zwei Tests sichern das ab (`CEST` und `CET`).
 npm test
 ```
 
-Schwerpunkt der 55 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
+Schwerpunkt der 64 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
 Sortierung von Wochenrhythmus und Einzelterminen, das Vorlauffenster, der
 Platzhalter-Schutz und die diskrete Push-Kurzfassung.

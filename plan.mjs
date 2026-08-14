@@ -155,10 +155,35 @@ export function ladePlan(pfad = STANDARD_PLAN) {
   }
   zuMinuten(plan.briefingZeit ?? '15:00');
 
-  for (const [tag, eintraege] of Object.entries(plan.tage ?? {})) {
-    if (!TAG_NAMEN[tag]) throw new Error(`Unbekannter Wochentag "${tag}" – erlaubt sind mo, di, mi, do, fr, sa, so.`);
-    if (!Array.isArray(eintraege)) throw new Error(`Der Wochentag "${tag}" muss eine Liste von Einträgen enthalten.`);
-    eintraege.forEach((eintrag) => pruefeEintrag(eintrag, `tage.${tag}`));
+  const pruefeWoche = (tage, wo) => {
+    for (const [tag, eintraege] of Object.entries(tage ?? {})) {
+      if (!TAG_NAMEN[tag]) throw new Error(`Unbekannter Wochentag "${tag}" in ${wo} – erlaubt sind mo, di, mi, do, fr, sa, so.`);
+      if (!Array.isArray(eintraege)) throw new Error(`${wo}.${tag} muss eine Liste von Einträgen enthalten.`);
+      eintraege.forEach((eintrag) => pruefeEintrag(eintrag, `${wo}.${tag}`));
+    }
+  };
+
+  pruefeWoche(plan.tage, 'tage');
+
+  if (plan.wochen != null) {
+    if (typeof plan.wochen !== 'object' || Array.isArray(plan.wochen)) {
+      throw new Error('"wochen" muss ein Objekt der Form { "A": { ... }, "B": { ... } } sein.');
+    }
+    const namen = Object.keys(plan.wochen);
+    if (namen.length === 0) throw new Error('"wochen" enthält keine einzige Wochenvariante.');
+    namen.forEach((name) => pruefeWoche(plan.wochen[name], `wochen.${name}`));
+
+    const wechsel = plan.wochenwechsel;
+    if (!wechsel?.ankerDatum) {
+      throw new Error('Bei "wochen" fehlt "wochenwechsel.ankerDatum" (JJJJ-MM-TT) – sonst ist unklar, welche Woche gerade gilt.');
+    }
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(String(wechsel.ankerDatum))
+      || Number.isNaN(new Date(`${wechsel.ankerDatum}T00:00:00Z`).getTime())) {
+      throw new Error(`"wochenwechsel.ankerDatum" ist kein gültiges Datum: "${wechsel.ankerDatum}".`);
+    }
+    if (wechsel.ankerWoche != null && !namen.includes(wechsel.ankerWoche)) {
+      throw new Error(`"wochenwechsel.ankerWoche" verweist auf die unbekannte Woche "${wechsel.ankerWoche}". Bekannt: ${namen.join(', ')}.`);
+    }
   }
   (plan.termine ?? []).forEach((eintrag, i) => {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(String(eintrag.datum ?? ''))) {
@@ -185,9 +210,40 @@ function pruefeEintrag(eintrag, wo) {
  * Einzelterminen und nach Startzeit sortiert. An freien Tagen (Ferien,
  * Feiertage) entfällt der Wochenrhythmus, Einzeltermine bleiben bestehen.
  */
+/**
+ * Welche Wochenvariante gilt an diesem Tag (A oder B)?
+ *
+ * Gezählt wird in ganzen Kalenderwochen ab dem Montag der Ankerwoche, damit
+ * ein Wechsel immer sonntags auf montags stattfindet und nicht mitten in der
+ * Woche. Ohne "wochen"/"wochenwechsel" im Plan gilt der einfache
+ * Wochenrhythmus aus "tage" – dann liefert die Funktion null.
+ */
+export function bestimmeWoche(plan, zeit) {
+  const wechsel = plan.wochenwechsel;
+  if (!plan.wochen || !wechsel?.ankerDatum) return null;
+
+  const namen = Object.keys(plan.wochen);
+  if (namen.length === 0) return null;
+
+  const aufMontag = (datum) => {
+    const kopie = new Date(datum);
+    kopie.setUTCDate(kopie.getUTCDate() - ((kopie.getUTCDay() + 6) % 7));
+    return kopie;
+  };
+
+  const anker = aufMontag(new Date(`${wechsel.ankerDatum}T00:00:00Z`));
+  const ziel = aufMontag(new Date(Date.UTC(zeit.jahr, zeit.monat - 1, zeit.tag)));
+  const wochen = Math.round((ziel - anker) / 604800000);
+
+  const start = Math.max(0, namen.indexOf(wechsel.ankerWoche ?? namen[0]));
+  return namen[(((start + wochen) % namen.length) + namen.length) % namen.length];
+}
+
 export function eintraegeFuerTag(plan, zeit) {
   const istFrei = (plan.freieTage ?? []).includes(zeit.iso);
-  const wiederkehrend = istFrei ? [] : (plan.tage?.[zeit.wochentag] ?? []);
+  const woche = bestimmeWoche(plan, zeit);
+  const quelle = woche ? plan.wochen[woche] : plan.tage;
+  const wiederkehrend = istFrei ? [] : (quelle?.[zeit.wochentag] ?? []);
   const einmalig = (plan.termine ?? []).filter((eintrag) => eintrag.datum === zeit.iso);
 
   return [...wiederkehrend, ...einmalig]
@@ -207,6 +263,24 @@ export function alsZeile(eintrag) {
   const ort = eintrag.ort ? ` (${eintrag.ort})` : '';
   const hinweis = eintrag.hinweis ? ` – ${eintrag.hinweis}` : '';
   return `${spanne}  ${eintrag.titel}${ort}${hinweis}`;
+}
+
+/**
+ * Wann kommt heute das Tagesbriefing?
+ *
+ * Ist "briefingNach" gesetzt (z. B. "Schule"), richtet sich das Briefing nach
+ * dem Ende dieses Blocks – dadurch stimmt es auch an Tagen, an denen die
+ * Schule früher oder später endet, ohne dass Zeiten gepflegt werden müssen.
+ * Fehlt der Block an einem Tag (Wochenende), gilt "briefingZeit".
+ */
+export function briefingMinuten(plan, eintraege) {
+  if (plan.briefingNach) {
+    const suche = String(plan.briefingNach).toLowerCase();
+    const treffer = [...eintraege].reverse()
+      .find((e) => String(e.titel).toLowerCase().includes(suche) && e.bisMin != null);
+    if (treffer) return treffer.bisMin;
+  }
+  return zuMinuten(plan.briefingZeit ?? '15:00');
 }
 
 /** Der gerade laufende Eintrag, falls es einen gibt. */
@@ -312,7 +386,7 @@ export function agentEntscheidung(plan, zeitpunkt = new Date()) {
   }
 
   const zeit = inZone(zeitpunkt, plan.zeitzone);
-  const briefingMin = zuMinuten(plan.briefingZeit ?? '15:00');
+  const briefingMin = briefingMinuten(plan, eintraegeFuerTag(plan, zeit));
   const istBriefingStunde = zeit.minutenSeitMitternacht >= briefingMin
     && zeit.minutenSeitMitternacht < briefingMin + 60;
 
