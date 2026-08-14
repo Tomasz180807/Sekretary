@@ -11,7 +11,8 @@
     "naechste": "node tagesplan.mjs naechste",
     "bot": "node --env-file-if-exists=.env bot.mjs",
     "import": "node importieren.mjs",
-    "test": "node --test test.mjs antworten.test.mjs importieren.test.mjs"
+    "test": "node --test test.mjs antworten.test.mjs importieren.test.mjs kalender.test.mjs",
+    "kalender": "node kalender.mjs"
   },
   "engines": {
     "node": ">=20"

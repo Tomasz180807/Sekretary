@@ -20,6 +20,7 @@ node tagesplan.mjs naechste    # nächste Aufgabe
 node tagesplan.mjs agent       # das, was die Routine aufruft
 npm run bot                    # Telegram-Bot (siehe unten)
 node importieren.mjs plan.html # bestehenden HTML-Plan einlesen
+node kalender.mjs              # .ics für den Handykalender
 ```
 
 Nützliche Optionen:
@@ -269,6 +270,56 @@ nichts, Telegram hält die Nachrichten vor.
   Passwörter oder Ähnliches gehören nicht in diesen Chat.
 - Bei kompromittiertem Token: `/revoke` bei @BotFather, neuen Token in `.env`.
 
+## Kalenderdatei (.ics) — Erinnerungen ohne laufenden Rechner
+
+```bash
+node kalender.mjs                 # schreibt wochenplan.ics
+node kalender.mjs --vorlauf 5     # Erinnerung 5 statt 10 Minuten vorher
+```
+
+Das Handy erinnert dann selbst — auch offline, auch wenn der Bot nicht läuft.
+
+Jeder Block wird als **wiederkehrender** Termin geschrieben, bei zwei Wochen
+mit `FREQ=WEEKLY;INTERVAL=2`, verankert auf dem ersten passenden Tag der
+jeweiligen Variante. Die Datei gilt damit dauerhaft und muss nicht
+nachgeneriert werden — nur wenn sich der Plan ändert.
+
+Die Zeitzonenregeln stehen mit in der Datei (`VTIMEZONE`), der Kalender rechnet
+Sommer- und Winterzeit also selbst. Bei der Umstellung verschiebt sich nichts.
+
+### Importieren
+
+**Lege dafür einen eigenen Kalender an**, z. B. „Wochenplan". Dann lässt sich
+alles auf einen Schlag löschen und neu importieren, wenn sich der Plan ändert —
+ohne deine übrigen Termine anzufassen.
+
+*Android / Google Kalender* — am Rechner, die App kann keine Dateien importieren:
+
+1. [calendar.google.com](https://calendar.google.com) öffnen
+2. Links bei „Weitere Kalender" → **+** → *Neuen Kalender erstellen* → „Wochenplan"
+3. Zahnrad → *Einstellungen* → **Importieren und Exportieren**
+4. `wochenplan.ics` wählen, als Zielkalender „Wochenplan" — *Importieren*
+5. Auf dem Handy in der Kalender-App den neuen Kalender einblenden
+
+*iPhone / iOS:*
+
+1. Datei aufs Handy bringen (E-Mail an dich selbst, AirDrop oder iCloud Drive)
+2. Antippen → iOS fragt, in welchen Kalender
+3. *Alle hinzufügen*
+
+### Wenn keine Erinnerung kommt
+
+Google Kalender überschreibt die mitgelieferte Erinnerung gerne mit der eigenen
+Standardeinstellung. Falls nichts kommt: in den Einstellungen des Kalenders
+„Wochenplan" die Standardbenachrichtigung auf **10 Minuten vorher** setzen.
+
+### Was auf dem Sperrbildschirm steht
+
+Die Kalenderbenachrichtigung zeigt den **Titel** des Blocks, je nach Gerät auch
+den Ort. Der `hinweis` landet in `DESCRIPTION` und erscheint dort in aller Regel
+nicht. Wer auch die Titel nicht auf dem Sperrbildschirm haben will, blendet
+Benachrichtigungsinhalte am Gerät aus (siehe nächster Abschnitt).
+
 ## Was auf dem Sperrbildschirm landet
 
 Push-Nachrichten zeigt das Handy standardmäßig an, **ohne** dass es entsperrt
@@ -311,6 +362,6 @@ werden. Zwei Tests sichern das ab (`CEST` und `CET`).
 npm test
 ```
 
-Schwerpunkt der 70 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
+Schwerpunkt der 84 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
 Sortierung von Wochenrhythmus und Einzelterminen, das Vorlauffenster, der
 Platzhalter-Schutz und die diskrete Push-Kurzfassung.
