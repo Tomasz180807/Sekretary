@@ -19,6 +19,7 @@ node tagesplan.mjs briefing    # Tagesbriefing
 node tagesplan.mjs naechste    # nächste Aufgabe
 node tagesplan.mjs agent       # das, was die Routine aufruft
 npm run bot                    # Telegram-Bot (siehe unten)
+node importieren.mjs plan.html # bestehenden HTML-Plan einlesen
 ```
 
 Nützliche Optionen:
@@ -43,6 +44,43 @@ Die Routine wertet den Exit-Code aus, damit sie nicht ohne Anlass benachrichtigt
 | `1` | Fehler, z. B. kaputtes JSON – Meldung auf stderr. |
 
 ## Den eigenen Plan eintragen
+
+### Der schnelle Weg: HTML importieren
+
+Liegt der Plan schon als HTML vor (etwa „Wochenplan kompakt"), liest ihn der
+Importer direkt ein – kein Abtippen:
+
+```bash
+node importieren.mjs "Wochenplan kompakt.html"              # nur anzeigen
+node importieren.mjs "Wochenplan kompakt.html" --schreiben  # übernehmen
+```
+
+Ohne `--schreiben` wird nichts verändert; der Importer zeigt nur, was er
+erkannt hat. Erst danach übernehmen.
+
+Er kommt mit Tabellen, Listen mit Überschriften und Einzeilern zurecht, ebenso
+mit Abkürzungen (`Mo.`), deutscher Punktschreibweise (`8.00 Uhr`), Orten in
+Klammern und HTML-Entities. **Nichts wird stillschweigend verschluckt:** Zeilen,
+die er nicht zuordnen kann, meldet er einzeln.
+
+```
+Erkannt: 5 Einträge
+
+Montag:
+  • 08:00–13:15  Schule (Gymnasium)
+  • 15:30–16:30  Hausaufgaben
+…
+1 Hinweis(e) – bitte prüfen:
+  ! Nicht zugeordnet: "Bitte Sportzeug nicht vergessen!"
+```
+
+Der Import setzt `platzhalter` **nicht** – ab dann sind es echte Daten und der
+Agent meldet sich. Danach einmal `npm test` und `npm run heute` zur Kontrolle.
+
+Nicht unterstützt: Pläne, bei denen die Wochentage die *Spalten* einer Tabelle
+sind und die Zeiten die Zeilen. Die brauchen Handarbeit.
+
+### Der genaue Weg: von Hand
 
 `wochenplan.json` bearbeiten und anschließend **`"platzhalter": true` entfernen**.
 Solange das Feld gesetzt ist, meldet der Agent nichts – so kommen keine
@@ -190,6 +228,6 @@ werden. Zwei Tests sichern das ab (`CEST` und `CET`).
 npm test
 ```
 
-Schwerpunkt der 40 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
+Schwerpunkt der 55 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
 Sortierung von Wochenrhythmus und Einzelterminen, das Vorlauffenster, der
 Platzhalter-Schutz und die diskrete Push-Kurzfassung.

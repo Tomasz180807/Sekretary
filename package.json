@@ -10,7 +10,8 @@
     "briefing": "node tagesplan.mjs briefing",
     "naechste": "node tagesplan.mjs naechste",
     "bot": "node --env-file-if-exists=.env bot.mjs",
-    "test": "node --test test.mjs antworten.test.mjs"
+    "import": "node importieren.mjs",
+    "test": "node --test test.mjs antworten.test.mjs importieren.test.mjs"
   },
   "engines": {
     "node": ">=20"
