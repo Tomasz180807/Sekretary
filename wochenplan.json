@@ -43,48 +43,48 @@
         },
         {
           "von": "17:00",
-          "bis": "19:45",
+          "bis": "20:00",
           "titel": "Training",
-          "hinweis": "Ca. 2,75 Std."
+          "hinweis": "3 Std."
         },
         {
-          "von": "19:45",
-          "bis": "20:15",
+          "von": "20:00",
+          "bis": "20:30",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:15",
-          "bis": "20:50",
+          "von": "20:30",
+          "bis": "21:05",
           "titel": "Schulstoff-Review",
           "hinweis": "Heutigen Stoff wiederholen + nächste Stunde je Fach vorbereiten"
         },
         {
-          "von": "20:50",
-          "bis": "21:30",
+          "von": "21:05",
+          "bis": "21:40",
           "titel": "Hausaufgaben",
           "hinweis": "Nach Fristen unten — sonst Alternativliste"
         },
         {
-          "von": "21:30",
-          "bis": "21:55",
+          "von": "21:40",
+          "bis": "22:05",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "21:55",
-          "bis": "22:20",
+          "von": "22:05",
+          "bis": "22:30",
           "titel": "Selbstlernpfad",
-          "hinweis": "Kurs der aktuellen Phase"
+          "hinweis": "Anthropic Academy — Claude 101 → Claude Code 101 → Claude Platform 101 (anthropic.skilljar.com)"
         },
         {
-          "von": "22:20",
-          "bis": "22:40",
+          "von": "22:30",
+          "bis": "22:45",
           "titel": "Reflexion",
           "hinweis": "Tracker eintragen, Plan für morgen"
         },
         {
-          "von": "22:40",
+          "von": "22:45",
           "bis": "23:00",
           "titel": "Wind-down",
           "hinweis": "Ruhe, kein Bildschirm"
@@ -123,48 +123,48 @@
         },
         {
           "von": "17:00",
-          "bis": "19:45",
+          "bis": "20:00",
           "titel": "Training",
-          "hinweis": "Ca. 2,75 Std."
+          "hinweis": "3 Std."
         },
         {
-          "von": "19:45",
-          "bis": "20:15",
+          "von": "20:00",
+          "bis": "20:30",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:15",
-          "bis": "20:50",
+          "von": "20:30",
+          "bis": "21:05",
           "titel": "Schulstoff-Review",
           "hinweis": "Heutigen Stoff wiederholen + nächste Stunde je Fach vorbereiten"
         },
         {
-          "von": "20:50",
-          "bis": "21:30",
+          "von": "21:05",
+          "bis": "21:40",
           "titel": "Hausaufgaben",
           "hinweis": "Nach Fristen unten — sonst Alternativliste"
         },
         {
-          "von": "21:30",
-          "bis": "21:55",
+          "von": "21:40",
+          "bis": "22:05",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "21:55",
-          "bis": "22:20",
+          "von": "22:05",
+          "bis": "22:30",
           "titel": "Selbstlernpfad",
-          "hinweis": "Kurs der aktuellen Phase"
+          "hinweis": "Marketing — Wharton — Introduction to Marketing (coursera.org/learn/wharton-marketing)"
         },
         {
-          "von": "22:20",
-          "bis": "22:40",
+          "von": "22:30",
+          "bis": "22:45",
           "titel": "Reflexion",
           "hinweis": "Tracker eintragen, Plan für morgen"
         },
         {
-          "von": "22:40",
+          "von": "22:45",
           "bis": "23:00",
           "titel": "Wind-down",
           "hinweis": "Ruhe, kein Bildschirm"
@@ -227,30 +227,30 @@
         },
         {
           "von": "21:20",
-          "bis": "21:40",
+          "bis": "21:45",
+          "titel": "Selbstlernpfad",
+          "hinweis": "Verkauf — HubSpot — Inbound Sales (coursera.org/learn/inbound-sales-1)"
+        },
+        {
+          "von": "21:45",
+          "bis": "22:05",
           "titel": "Französisch",
           "hinweis": "Français Express: 1 Lektion/Modul"
         },
         {
-          "von": "21:40",
-          "bis": "22:00",
+          "von": "22:05",
+          "bis": "22:25",
           "titel": "Gitarre/Keyboard",
           "hinweis": "Übungseinheit (Instrument wöchentlich abwechselnd)"
         },
         {
-          "von": "22:00",
-          "bis": "22:20",
-          "titel": "Eigene Projekte",
-          "hinweis": "Coding/AI-Projekte"
-        },
-        {
-          "von": "22:20",
-          "bis": "22:40",
+          "von": "22:25",
+          "bis": "22:45",
           "titel": "Reflexion",
           "hinweis": "Tracker eintragen, Plan für morgen"
         },
         {
-          "von": "22:40",
+          "von": "22:45",
           "bis": "23:00",
           "titel": "Wind-down",
           "hinweis": "Ruhe, kein Bildschirm"
@@ -283,21 +283,21 @@
         },
         {
           "von": "16:00",
-          "bis": "17:00",
-          "titel": "HTML/CSS",
-          "hinweis": "1 von 18 Lektionen (1 Std.)"
+          "bis": "19:00",
+          "titel": "Training",
+          "hinweis": "3 Std. — heute vorgezogen, damit die Freizeit ab 19:30 erhalten bleibt"
         },
         {
-          "von": "17:00",
+          "von": "19:00",
           "bis": "19:30",
-          "titel": "Training",
-          "hinweis": "Auf 2,5 Std. verkürzt, damit die Freizeit danach passt"
+          "titel": "Abendessen",
+          "hinweis": "Pause"
         },
         {
           "von": "19:30",
           "bis": "21:00",
           "titel": "Freizeit",
-          "hinweis": "Geschützt — Abendessen läuft zwanglos mit, sonst nichts eingeplant"
+          "hinweis": "Geschützt — nichts eingeplant"
         },
         {
           "von": "21:00",
@@ -320,14 +320,14 @@
         {
           "von": "22:20",
           "bis": "22:40",
-          "titel": "Reflexion",
-          "hinweis": "Tracker eintragen, Plan für morgen"
+          "titel": "Selbstlernpfad",
+          "hinweis": "KI-Grundlagen — Google AI Essentials (coursera.org/specializations/ai-essentials-google) — heute nur kurz"
         },
         {
           "von": "22:40",
           "bis": "23:00",
-          "titel": "Wind-down",
-          "hinweis": "Ruhe, kein Bildschirm"
+          "titel": "Reflexion + Wind-down",
+          "hinweis": "Tracker eintragen, dann Ruhe — HTML/CSS entfällt donnerstags zugunsten von 3 Std. Training + Freizeit"
         }
       ],
       "fr": [
@@ -363,48 +363,48 @@
         },
         {
           "von": "17:00",
-          "bis": "19:45",
+          "bis": "20:00",
           "titel": "Training",
-          "hinweis": "Ca. 2,75 Std."
+          "hinweis": "3 Std."
         },
         {
-          "von": "19:45",
-          "bis": "20:15",
+          "von": "20:00",
+          "bis": "20:30",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:15",
-          "bis": "20:50",
+          "von": "20:30",
+          "bis": "21:05",
           "titel": "Schulstoff-Review",
           "hinweis": "Heutigen Stoff wiederholen + nächste Stunde je Fach vorbereiten"
         },
         {
-          "von": "20:50",
-          "bis": "21:30",
+          "von": "21:05",
+          "bis": "21:40",
           "titel": "Hausaufgaben",
           "hinweis": "Nach Fristen unten — sonst Alternativliste"
         },
         {
-          "von": "21:30",
-          "bis": "21:55",
+          "von": "21:40",
+          "bis": "22:05",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "21:55",
-          "bis": "22:20",
+          "von": "22:05",
+          "bis": "22:30",
           "titel": "Selbstlernpfad",
-          "hinweis": "Kurs der aktuellen Phase"
+          "hinweis": "Verhandeln — Successful Negotiation, Univ. Michigan (coursera.org/learn/negotiation-skills)"
         },
         {
-          "von": "22:20",
-          "bis": "22:40",
+          "von": "22:30",
+          "bis": "22:45",
           "titel": "Reflexion",
           "hinweis": "Tracker eintragen, Plan für morgen"
         },
         {
-          "von": "22:40",
+          "von": "22:45",
           "bis": "23:00",
           "titel": "Wind-down",
           "hinweis": "Ruhe, kein Bildschirm"
@@ -449,15 +449,9 @@
         },
         {
           "von": "12:00",
-          "bis": "12:30",
-          "titel": "Französisch",
-          "hinweis": "Français Express: 1 Lektion/Modul"
-        },
-        {
-          "von": "12:30",
           "bis": "13:00",
-          "titel": "Gitarre/Keyboard",
-          "hinweis": "Übungseinheit"
+          "titel": "Selbstlernpfad",
+          "hinweis": "Python — Harvard CS50P (cs50.harvard.edu/python) — längster Slot der Woche"
         },
         {
           "von": "13:00",
@@ -467,6 +461,18 @@
         },
         {
           "von": "14:00",
+          "bis": "14:30",
+          "titel": "Französisch",
+          "hinweis": "Français Express: 1 Lektion/Modul"
+        },
+        {
+          "von": "14:30",
+          "bis": "15:00",
+          "titel": "Gitarre/Keyboard",
+          "hinweis": "Übungseinheit"
+        },
+        {
+          "von": "15:00",
           "bis": "15:30",
           "titel": "Freizeit",
           "hinweis": "Rest Day — bewusst frei"
@@ -485,12 +491,6 @@
         },
         {
           "von": "16:45",
-          "bis": "17:15",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Kurs der aktuellen Phase"
-        },
-        {
-          "von": "17:15",
           "bis": "23:00",
           "titel": "Freizeit",
           "hinweis": "Rest Day — kein Training, längster freier Block der Woche (Abendessen inbegriffen)"
@@ -535,24 +535,30 @@
         },
         {
           "von": "12:00",
-          "bis": "12:30",
+          "bis": "12:45",
+          "titel": "Selbstlernpfad",
+          "hinweis": "Unternehmertum + Business-KI — YC Startup School (startupschool.org) · AI for Everyone (coursera.org/learn/ai-for-everyone)"
+        },
+        {
+          "von": "12:45",
+          "bis": "13:15",
           "titel": "Französisch",
           "hinweis": "Français Express: 1 Lektion/Modul"
         },
         {
-          "von": "12:30",
-          "bis": "13:00",
-          "titel": "Gitarre/Keyboard",
-          "hinweis": "Übungseinheit"
-        },
-        {
-          "von": "13:00",
-          "bis": "14:00",
+          "von": "13:15",
+          "bis": "14:15",
           "titel": "Erste Mahlzeit",
           "hinweis": "Ende der Fastenzeit"
         },
         {
-          "von": "14:00",
+          "von": "14:15",
+          "bis": "15:00",
+          "titel": "Gitarre/Keyboard",
+          "hinweis": "Übungseinheit"
+        },
+        {
+          "von": "15:00",
           "bis": "15:30",
           "titel": "Freizeit",
           "hinweis": "Bewusst frei"
@@ -565,15 +571,15 @@
         },
         {
           "von": "16:00",
-          "bis": "17:00",
-          "titel": "Lesen + Selbstlernpfad",
-          "hinweis": "2 Bücher (20–30 Seiten) + Kurs der aktuellen Phase"
+          "bis": "16:45",
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
           "von": "17:00",
           "bis": "20:00",
           "titel": "Training",
-          "hinweis": "Ca. 3 Std."
+          "hinweis": "3 Std."
         },
         {
           "von": "20:00",
@@ -647,48 +653,48 @@
         },
         {
           "von": "17:00",
-          "bis": "19:45",
+          "bis": "20:00",
           "titel": "Training",
-          "hinweis": "Ca. 2,75 Std."
+          "hinweis": "3 Std."
         },
         {
-          "von": "19:45",
-          "bis": "20:15",
+          "von": "20:00",
+          "bis": "20:30",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:15",
-          "bis": "20:50",
+          "von": "20:30",
+          "bis": "21:00",
           "titel": "Schulstoff-Review",
           "hinweis": "Nur 3 Fächer heute — schnell erledigt"
         },
         {
-          "von": "20:50",
-          "bis": "21:15",
+          "von": "21:00",
+          "bis": "21:25",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "21:15",
-          "bis": "21:40",
+          "von": "21:25",
+          "bis": "21:55",
+          "titel": "Selbstlernpfad",
+          "hinweis": "Anthropic Academy — Claude 101 → Claude Code 101 → Claude Platform 101 (anthropic.skilljar.com)"
+        },
+        {
+          "von": "21:55",
+          "bis": "22:20",
           "titel": "Gitarre/Keyboard",
           "hinweis": "Übungseinheit"
         },
         {
-          "von": "21:40",
-          "bis": "22:10",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Kurs der aktuellen Phase"
-        },
-        {
-          "von": "22:10",
-          "bis": "22:35",
+          "von": "22:20",
+          "bis": "22:40",
           "titel": "Reflexion",
           "hinweis": "Tracker eintragen, Plan für morgen"
         },
         {
-          "von": "22:35",
+          "von": "22:40",
           "bis": "23:00",
           "titel": "Wind-down",
           "hinweis": "Ruhe, kein Bildschirm"
@@ -727,48 +733,48 @@
         },
         {
           "von": "17:00",
-          "bis": "19:45",
+          "bis": "20:00",
           "titel": "Training",
-          "hinweis": "Ca. 2,75 Std."
+          "hinweis": "3 Std."
         },
         {
-          "von": "19:45",
-          "bis": "20:15",
+          "von": "20:00",
+          "bis": "20:30",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:15",
-          "bis": "20:50",
+          "von": "20:30",
+          "bis": "21:05",
           "titel": "Schulstoff-Review",
           "hinweis": "Heutigen Stoff wiederholen + nächste Stunde je Fach vorbereiten"
         },
         {
-          "von": "20:50",
-          "bis": "21:30",
+          "von": "21:05",
+          "bis": "21:40",
           "titel": "Hausaufgaben",
           "hinweis": "Nach Fristen unten — sonst Alternativliste"
         },
         {
-          "von": "21:30",
-          "bis": "21:55",
+          "von": "21:40",
+          "bis": "22:05",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "21:55",
-          "bis": "22:20",
+          "von": "22:05",
+          "bis": "22:30",
           "titel": "Selbstlernpfad",
-          "hinweis": "Kurs der aktuellen Phase"
+          "hinweis": "Marketing — Wharton — Introduction to Marketing (coursera.org/learn/wharton-marketing)"
         },
         {
-          "von": "22:20",
-          "bis": "22:40",
+          "von": "22:30",
+          "bis": "22:45",
           "titel": "Reflexion",
           "hinweis": "Tracker eintragen, Plan für morgen"
         },
         {
-          "von": "22:40",
+          "von": "22:45",
           "bis": "23:00",
           "titel": "Wind-down",
           "hinweis": "Ruhe, kein Bildschirm"
@@ -831,30 +837,30 @@
         },
         {
           "von": "21:20",
-          "bis": "21:40",
+          "bis": "21:45",
+          "titel": "Selbstlernpfad",
+          "hinweis": "Verkauf — HubSpot — Inbound Sales (coursera.org/learn/inbound-sales-1)"
+        },
+        {
+          "von": "21:45",
+          "bis": "22:05",
           "titel": "Französisch",
           "hinweis": "Français Express: 1 Lektion/Modul"
         },
         {
-          "von": "21:40",
-          "bis": "22:00",
+          "von": "22:05",
+          "bis": "22:25",
           "titel": "Gitarre/Keyboard",
           "hinweis": "Übungseinheit (Instrument wöchentlich abwechselnd)"
         },
         {
-          "von": "22:00",
-          "bis": "22:20",
-          "titel": "Eigene Projekte",
-          "hinweis": "Coding/AI-Projekte"
-        },
-        {
-          "von": "22:20",
-          "bis": "22:40",
+          "von": "22:25",
+          "bis": "22:45",
           "titel": "Reflexion",
           "hinweis": "Tracker eintragen, Plan für morgen"
         },
         {
-          "von": "22:40",
+          "von": "22:45",
           "bis": "23:00",
           "titel": "Wind-down",
           "hinweis": "Ruhe, kein Bildschirm"
@@ -887,21 +893,21 @@
         },
         {
           "von": "16:00",
-          "bis": "17:00",
-          "titel": "HTML/CSS",
-          "hinweis": "1 von 18 Lektionen (1 Std.)"
+          "bis": "19:00",
+          "titel": "Training",
+          "hinweis": "3 Std. — heute vorgezogen, damit die Freizeit ab 19:30 erhalten bleibt"
         },
         {
-          "von": "17:00",
+          "von": "19:00",
           "bis": "19:30",
-          "titel": "Training",
-          "hinweis": "Auf 2,5 Std. verkürzt, damit die Freizeit danach passt"
+          "titel": "Abendessen",
+          "hinweis": "Pause"
         },
         {
           "von": "19:30",
           "bis": "21:00",
           "titel": "Freizeit",
-          "hinweis": "Geschützt — Abendessen läuft zwanglos mit, sonst nichts eingeplant"
+          "hinweis": "Geschützt — nichts eingeplant"
         },
         {
           "von": "21:00",
@@ -924,14 +930,14 @@
         {
           "von": "22:20",
           "bis": "22:40",
-          "titel": "Reflexion",
-          "hinweis": "Tracker eintragen, Plan für morgen"
+          "titel": "Selbstlernpfad",
+          "hinweis": "KI-Grundlagen — Google AI Essentials (coursera.org/specializations/ai-essentials-google) — heute nur kurz"
         },
         {
           "von": "22:40",
           "bis": "23:00",
-          "titel": "Wind-down",
-          "hinweis": "Ruhe, kein Bildschirm"
+          "titel": "Reflexion + Wind-down",
+          "hinweis": "Tracker eintragen, dann Ruhe — HTML/CSS entfällt donnerstags zugunsten von 3 Std. Training + Freizeit"
         }
       ],
       "fr": [
@@ -967,48 +973,48 @@
         },
         {
           "von": "17:00",
-          "bis": "19:45",
+          "bis": "20:00",
           "titel": "Training",
-          "hinweis": "Ca. 2,75 Std."
+          "hinweis": "3 Std."
         },
         {
-          "von": "19:45",
-          "bis": "20:15",
+          "von": "20:00",
+          "bis": "20:30",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:15",
-          "bis": "20:50",
+          "von": "20:30",
+          "bis": "21:05",
           "titel": "Schulstoff-Review",
           "hinweis": "Heutigen Stoff wiederholen + nächste Stunde je Fach vorbereiten"
         },
         {
-          "von": "20:50",
-          "bis": "21:30",
+          "von": "21:05",
+          "bis": "21:40",
           "titel": "Hausaufgaben",
           "hinweis": "Nach Fristen unten — sonst Alternativliste"
         },
         {
-          "von": "21:30",
-          "bis": "21:55",
+          "von": "21:40",
+          "bis": "22:05",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "21:55",
-          "bis": "22:20",
+          "von": "22:05",
+          "bis": "22:30",
           "titel": "Selbstlernpfad",
-          "hinweis": "Kurs der aktuellen Phase"
+          "hinweis": "Verhandeln — Successful Negotiation, Univ. Michigan (coursera.org/learn/negotiation-skills)"
         },
         {
-          "von": "22:20",
-          "bis": "22:40",
+          "von": "22:30",
+          "bis": "22:45",
           "titel": "Reflexion",
           "hinweis": "Tracker eintragen, Plan für morgen"
         },
         {
-          "von": "22:40",
+          "von": "22:45",
           "bis": "23:00",
           "titel": "Wind-down",
           "hinweis": "Ruhe, kein Bildschirm"
@@ -1053,15 +1059,9 @@
         },
         {
           "von": "12:00",
-          "bis": "12:30",
-          "titel": "Französisch",
-          "hinweis": "Français Express: 1 Lektion/Modul"
-        },
-        {
-          "von": "12:30",
           "bis": "13:00",
-          "titel": "Gitarre/Keyboard",
-          "hinweis": "Übungseinheit"
+          "titel": "Selbstlernpfad",
+          "hinweis": "Python — Harvard CS50P (cs50.harvard.edu/python) — längster Slot der Woche"
         },
         {
           "von": "13:00",
@@ -1071,6 +1071,18 @@
         },
         {
           "von": "14:00",
+          "bis": "14:30",
+          "titel": "Französisch",
+          "hinweis": "Français Express: 1 Lektion/Modul"
+        },
+        {
+          "von": "14:30",
+          "bis": "15:00",
+          "titel": "Gitarre/Keyboard",
+          "hinweis": "Übungseinheit"
+        },
+        {
+          "von": "15:00",
           "bis": "15:30",
           "titel": "Freizeit",
           "hinweis": "Rest Day — bewusst frei"
@@ -1089,12 +1101,6 @@
         },
         {
           "von": "16:45",
-          "bis": "17:15",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Kurs der aktuellen Phase"
-        },
-        {
-          "von": "17:15",
           "bis": "23:00",
           "titel": "Freizeit",
           "hinweis": "Rest Day — kein Training, längster freier Block der Woche (Abendessen inbegriffen)"
@@ -1139,24 +1145,30 @@
         },
         {
           "von": "12:00",
-          "bis": "12:30",
+          "bis": "12:45",
+          "titel": "Selbstlernpfad",
+          "hinweis": "Unternehmertum + Business-KI — YC Startup School (startupschool.org) · AI for Everyone (coursera.org/learn/ai-for-everyone)"
+        },
+        {
+          "von": "12:45",
+          "bis": "13:15",
           "titel": "Französisch",
           "hinweis": "Français Express: 1 Lektion/Modul"
         },
         {
-          "von": "12:30",
-          "bis": "13:00",
-          "titel": "Gitarre/Keyboard",
-          "hinweis": "Übungseinheit"
-        },
-        {
-          "von": "13:00",
-          "bis": "14:00",
+          "von": "13:15",
+          "bis": "14:15",
           "titel": "Erste Mahlzeit",
           "hinweis": "Ende der Fastenzeit"
         },
         {
-          "von": "14:00",
+          "von": "14:15",
+          "bis": "15:00",
+          "titel": "Gitarre/Keyboard",
+          "hinweis": "Übungseinheit"
+        },
+        {
+          "von": "15:00",
           "bis": "15:30",
           "titel": "Freizeit",
           "hinweis": "Bewusst frei"
@@ -1169,15 +1181,15 @@
         },
         {
           "von": "16:00",
-          "bis": "17:00",
-          "titel": "Lesen + Selbstlernpfad",
-          "hinweis": "2 Bücher (20–30 Seiten) + Kurs der aktuellen Phase"
+          "bis": "16:45",
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
           "von": "17:00",
           "bis": "20:00",
           "titel": "Training",
-          "hinweis": "Ca. 3 Std."
+          "hinweis": "3 Std."
         },
         {
           "von": "20:00",
