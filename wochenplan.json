@@ -2,11 +2,11 @@
   "zeitzone": "Europe/Berlin",
   "briefingNach": "Schule",
   "briefingZeit": "10:15",
-  "vorlaufMinuten": 20,
+  "vorlaufMinuten": 10,
   "diskretePush": true,
   "wochenwechsel": {
     "ankerDatum": "2026-08-17",
-    "ankerWoche": "A"
+    "ankerWoche": "B"
   },
   "wochen": {
     "A": {

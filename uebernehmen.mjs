@@ -108,7 +108,7 @@ if (process.argv[1]?.endsWith('uebernehmen.mjs')) {
     zeitzone: 'Europe/Berlin',
     briefingNach: 'Schule',
     briefingZeit: '10:15',
-    vorlaufMinuten: 20,
+    vorlaufMinuten: 10,
     diskretePush: true,
     wochenwechsel: {
       ankerDatum: ankerIndex >= 0 ? argumente[ankerIndex + 1] : '2026-08-17',

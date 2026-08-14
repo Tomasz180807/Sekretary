@@ -3,7 +3,7 @@
 Ein kleiner Sekretariats-Agent für den persönlichen Wochenplan:
 
 - **Tagesbriefing** – einmal am Nachmittag eine Zusammenfassung dessen, was heute noch ansteht.
-- **Erinnerung an die nächste Aufgabe** – stündlich, aber nur dann, wenn wirklich etwas ansteht.
+- **Erinnerung kurz vor jedem Block** – der Bot meldet sich 10 Minuten vorher von selbst.
 
 Ausgeführt wird der Agent von einer Routine, die werktags stündlich eine frische
 Sitzung startet, dieses Repository auscheckt und `node tagesplan.mjs agent`
@@ -212,6 +212,43 @@ weitere Zugänge. Dafür versteht er nur die oben genannten Muster.
 `wochenplan.json` wird bei **jeder** Anfrage frisch gelesen: Änderungen wirken
 ohne Neustart.
 
+### Erinnerung kurz vor jedem Block
+
+Läuft der Bot, meldet er sich **`vorlaufMinuten` vor jedem Block** von selbst –
+ohne dass du fragen musst:
+
+```
+In 10 min: Training (17:00–19:45)
+```
+
+Nachgesehen wird alle 30 Sekunden, also feiner als die Minutenauflösung des
+Plans. Jeder Block wird über einen Tagesschlüssel genau einmal gemeldet, auch
+wenn der Takt mehrfach in dasselbe Fenster fällt.
+
+Anders als die Antworten auf Fragen kommen diese Nachrichten **mit** Ton – sie
+sind der eigentliche Zweck. Vorlauf ändern über `vorlaufMinuten` in
+`wochenplan.json` (Vorgabe: 10).
+
+Auch Telegram-Vorschauen stehen auf dem Sperrbildschirm, deshalb gilt hier
+dieselbe Zurückhaltung wie bei der Push-Nachricht: Bei `diskretePush` bleibt
+der `hinweis` aus der Nachricht.
+
+### Arbeitsteilung: Routine und Bot
+
+Beides ergänzt sich, weil beides andere Grenzen hat:
+
+| | Routine (Cloud) | Bot (eigener Rechner) |
+| --- | --- | --- |
+| Braucht laufenden Prozess | nein | **ja** |
+| Feinste Auflösung | 1 Stunde | 30 Sekunden |
+| Tagesbriefing | ✓ | ✓ (`/briefing`) |
+| Erinnerung kurz vor dem Block | **nein** | ✓ |
+| Nachfragen | nein | ✓ |
+
+Die Routine feuert stündlich und kann „10 Minuten vorher" prinzipbedingt nicht
+treffen. Sie liefert deshalb das Tagesbriefing, das minutengenaue Erinnern
+übernimmt der Bot.
+
 ### Wo der Bot läuft
 
 Er braucht einen dauerhaft laufenden Prozess – eigener Rechner, Raspberry Pi,
@@ -274,6 +311,6 @@ werden. Zwei Tests sichern das ab (`CEST` und `CET`).
 npm test
 ```
 
-Schwerpunkt der 64 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
+Schwerpunkt der 70 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
 Sortierung von Wochenrhythmus und Einzelterminen, das Vorlauffenster, der
 Platzhalter-Schutz und die diskrete Push-Kurzfassung.

@@ -27,6 +27,7 @@ import {
   baueBriefing,
   baueErinnerung,
   agentEntscheidung,
+  faelligeErinnerungen,
   ladePlan,
   STANDARD_PLAN,
 } from './plan.mjs';
@@ -335,4 +336,59 @@ test('ladePlan meldet fehlerhafte Pläne verständlich', async () => {
   const falscheZone = join(ordner, 'zone.json');
   writeFileSync(falscheZone, '{ "zeitzone": "Mitteleuropa" }');
   assert.throws(() => ladePlan(falscheZone), /Unbekannte Zeitzone/);
+});
+
+/* --------------------- Minutengenaue Erinnerungen ------------------------- */
+
+const taktPlan = {
+  zeitzone: 'Europe/Berlin',
+  vorlaufMinuten: 10,
+  diskretePush: true,
+  tage: {
+    mo: [
+      { von: '17:00', bis: '19:45', titel: 'Training', hinweis: 'Ca. 2,75 Std.' },
+      { von: '19:45', bis: '20:15', titel: 'Abendessen' },
+    ],
+    di: [], mi: [], do: [], fr: [], sa: [], so: [],
+  },
+};
+
+test('Erinnerung wird genau im Vorlauffenster fällig', () => {
+  const um = (hhmm) => new Date(`2026-08-17T${hhmm}:00Z`); // +2 h Ortszeit
+  assert.equal(faelligeErinnerungen(taktPlan, um('14:49')).length, 0, '16:49 – noch zu früh');
+  assert.equal(faelligeErinnerungen(taktPlan, um('14:50')).length, 1, '16:50 – genau 10 min vorher');
+  assert.equal(faelligeErinnerungen(taktPlan, um('14:59')).length, 1, '16:59 – 1 min vorher');
+  assert.equal(faelligeErinnerungen(taktPlan, um('15:00')).length, 1, '17:00 – Start');
+  assert.equal(faelligeErinnerungen(taktPlan, um('15:01')).length, 0, '17:01 – vorbei');
+});
+
+test('der Erinnerungstext nennt Restzeit und Zeitspanne', () => {
+  const [e] = faelligeErinnerungen(taktPlan, new Date('2026-08-17T14:50:00Z'));
+  assert.equal(e.text, 'In 10 min: Training (17:00–19:45)');
+  const [jetzt] = faelligeErinnerungen(taktPlan, new Date('2026-08-17T15:00:00Z'));
+  assert.match(jetzt.text, /^Jetzt: Training/);
+});
+
+test('der Hinweis bleibt bei diskretePush aus der Nachricht', () => {
+  const [diskret] = faelligeErinnerungen(taktPlan, new Date('2026-08-17T14:50:00Z'));
+  assert.doesNotMatch(diskret.text, /2,75/);
+  const offen = { ...taktPlan, diskretePush: false };
+  assert.match(faelligeErinnerungen(offen, new Date('2026-08-17T14:50:00Z'))[0].text, /2,75/);
+});
+
+test('der Schlüssel ist über den Takt hinweg stabil, aber je Tag verschieden', () => {
+  const a = faelligeErinnerungen(taktPlan, new Date('2026-08-17T14:50:00Z'))[0].schluessel;
+  const b = faelligeErinnerungen(taktPlan, new Date('2026-08-17T14:50:30Z'))[0].schluessel;
+  assert.equal(a, b, 'derselbe Block darf im 30-s-Takt nicht zweimal zählen');
+  assert.match(a, /^2026-08-17\|17:00\|Training$/);
+});
+
+test('aufeinanderfolgende Blöcke werden einzeln fällig', () => {
+  const [e] = faelligeErinnerungen(taktPlan, new Date('2026-08-17T17:35:00Z')); // 19:35
+  assert.equal(e.titel ?? e.eintrag.titel, 'Abendessen');
+  assert.equal(e.inMinuten, 10);
+});
+
+test('an einem leeren Tag wird nichts fällig', () => {
+  assert.deepEqual(faelligeErinnerungen(taktPlan, new Date('2026-08-18T15:00:00Z')), []);
 });

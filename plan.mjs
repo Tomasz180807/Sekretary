@@ -369,6 +369,40 @@ export function baueErinnerung(plan, zeitpunkt = new Date()) {
 }
 
 /**
+ * Blöcke, für die jetzt eine Erinnerung fällig ist.
+ *
+ * Gedacht für einen dauerhaft laufenden Prozess (bot.mjs), der im Minutentakt
+ * nachsieht – nur so lässt sich „kurz vor dem Block" einhalten. Die stündlich
+ * feuernde Routine kann das prinzipbedingt nicht.
+ *
+ * Jeder Treffer bekommt einen stabilen Schlüssel, damit der Aufrufer eine
+ * bereits gesendete Erinnerung nicht beim nächsten Takt wiederholt.
+ */
+export function faelligeErinnerungen(plan, zeitpunkt = new Date(), vorlaufMinuten = null) {
+  const vorlauf = vorlaufMinuten ?? plan.vorlaufMinuten ?? 10;
+  const zeit = inZone(zeitpunkt, plan.zeitzone);
+  const jetzt = zeit.minutenSeitMitternacht;
+  const diskret = plan.diskretePush !== false;
+
+  return eintraegeFuerTag(plan, zeit)
+    .filter((e) => e.vonMin - jetzt >= 0 && e.vonMin - jetzt <= vorlauf)
+    .map((e) => {
+      const rest = e.vonMin - jetzt;
+      const wann = rest === 0 ? 'Jetzt' : `In ${alsDauer(rest)}`;
+      const spanne = e.bisMin != null ? `${alsUhrzeit(e.vonMin)}–${alsUhrzeit(e.bisMin)}` : alsUhrzeit(e.vonMin);
+      // Auch Telegram-Nachrichten erscheinen auf dem gesperrten Bildschirm –
+      // deshalb gilt hier dieselbe Zurückhaltung wie bei der Push-Nachricht.
+      const zusatz = !diskret && e.hinweis ? `\n${e.hinweis}` : '';
+      return {
+        schluessel: `${zeit.iso}|${e.von}|${e.titel}`,
+        inMinuten: rest,
+        eintrag: e,
+        text: `${wann}: ${e.titel} (${spanne})${zusatz}`,
+      };
+    });
+}
+
+/**
  * Entscheidet, was der Agent bei einem Lauf tun soll.
  * Innerhalb der Briefing-Stunde gewinnt das Tagesbriefing, sonst wird nur
  * bei einer anstehenden Aufgabe erinnert – ansonsten bleibt es still.

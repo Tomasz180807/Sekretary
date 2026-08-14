@@ -17,7 +17,7 @@
  *  - Ist die Liste leer, startet der Bot im Einrichtungsmodus und gibt
  *    ausschließlich die Chat-ID zurück – niemals Plandaten.
  */
-import { ladePlan, STANDARD_PLAN } from './plan.mjs';
+import { ladePlan, STANDARD_PLAN, faelligeErinnerungen } from './plan.mjs';
 import { baueAntwort } from './antworten.mjs';
 
 const TOKEN = process.env.TELEGRAM_BOT_TOKEN?.trim();
@@ -69,14 +69,59 @@ async function api(methode, nutzlast, zeitlimitMs = 65000) {
   }
 }
 
-async function sende(chatId, text) {
+async function sende(chatId, text, { still = true } = {}) {
   // Lange Antworten (etwa /woche) in mehrere Nachrichten aufteilen.
   for (let start = 0; start < text.length; start += MAX_LAENGE) {
     await api('sendMessage', {
       chat_id: chatId,
       text: text.slice(start, start + MAX_LAENGE),
-      disable_notification: true,
+      // Antworten auf eine Frage kommen lautlos – die Erinnerung soll
+      // dagegen bemerkt werden, sie ist der eigentliche Zweck.
+      disable_notification: still,
     });
+  }
+}
+
+/* ------------------------------ Erinnerungen ------------------------------ */
+
+const bereitsGesendet = new Set();
+let letzterTag = null;
+
+/**
+ * Im Minutentakt prüfen, ob ein Block bevorsteht.
+ * Nur so lässt sich „kurz vorher" einhalten – die stündliche Routine kann das
+ * prinzipbedingt nicht.
+ */
+async function pruefeErinnerungen() {
+  if (einrichtungsmodus || freigegeben.size === 0) return;
+
+  let plan;
+  try {
+    plan = ladePlan(PLAN_PFAD);
+  } catch (fehler) {
+    console.error(`Erinnerung übersprungen – Plan nicht lesbar: ${ohneToken(fehler.message)}`);
+    return;
+  }
+
+  const faellig = faelligeErinnerungen(plan, new Date());
+
+  // Gesendetes nur bis zum Tageswechsel merken, damit die Menge nicht wächst.
+  const heute = faellig[0]?.schluessel.split('|')[0] ?? null;
+  if (heute && heute !== letzterTag) {
+    letzterTag = heute;
+    bereitsGesendet.clear();
+  }
+
+  for (const erinnerung of faellig) {
+    if (bereitsGesendet.has(erinnerung.schluessel)) continue;
+    bereitsGesendet.add(erinnerung.schluessel);
+    for (const chatId of freigegeben) {
+      try {
+        await sende(chatId, erinnerung.text, { still: false });
+      } catch (fehler) {
+        console.error(`Erinnerung an ${chatId} fehlgeschlagen: ${ohneToken(fehler.message)}`);
+      }
+    }
   }
 }
 
@@ -121,6 +166,14 @@ async function hauptschleife() {
     ? 'ACHTUNG: keine Freigabeliste gesetzt – Einrichtungsmodus, es werden keine Plandaten herausgegeben.'
     : `Freigegebene Chats: ${[...freigegeben].join(', ')}`);
 
+  // Alle 30 s nachsehen: feiner als die Minutenauflösung des Plans, damit die
+  // Erinnerung zuverlässig im richtigen Vorlauffenster landet.
+  const takt = setInterval(() => {
+    pruefeErinnerungen().catch((fehler) => console.error(`Erinnerungstakt: ${ohneToken(fehler.message)}`));
+  }, 30000);
+  takt.unref?.();
+  await pruefeErinnerungen();
+
   let offset = 0;
   let fehlerInFolge = 0;
 
@@ -156,6 +209,7 @@ async function hauptschleife() {
       }
     }
   }
+  clearInterval(takt);
 }
 
 hauptschleife().catch((fehler) => {
