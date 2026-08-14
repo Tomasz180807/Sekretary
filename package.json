@@ -9,7 +9,8 @@
     "heute": "node tagesplan.mjs heute",
     "briefing": "node tagesplan.mjs briefing",
     "naechste": "node tagesplan.mjs naechste",
-    "test": "node --test test.mjs"
+    "bot": "node --env-file-if-exists=.env bot.mjs",
+    "test": "node --test test.mjs antworten.test.mjs"
   },
   "engines": {
     "node": ">=20"

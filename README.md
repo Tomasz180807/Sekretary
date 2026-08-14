@@ -18,6 +18,7 @@ node tagesplan.mjs heute       # kompletter Tagesplan
 node tagesplan.mjs briefing    # Tagesbriefing
 node tagesplan.mjs naechste    # nächste Aufgabe
 node tagesplan.mjs agent       # das, was die Routine aufruft
+npm run bot                    # Telegram-Bot (siehe unten)
 ```
 
 Nützliche Optionen:
@@ -28,7 +29,7 @@ Nützliche Optionen:
 | `--plan <Pfad>` | anderen Wochenplan verwenden |
 | `--kurz` | nur die Kurzfassung (< 200 Zeichen, für die Push-Nachricht) |
 
-Über npm: `npm start`, `npm run heute`, `npm run briefing`, `npm run naechste`, `npm test`.
+Über npm: `npm start`, `npm run heute`, `npm run briefing`, `npm run naechste`, `npm run bot`, `npm test`.
 
 ## Exit-Codes
 
@@ -84,6 +85,69 @@ Der Plan wird beim Laden geprüft: unbekannte Wochentage, fehlende Titel,
 ungültige Uhrzeiten, `bis` vor `von` und unbekannte Zeitzonen führen zu einer
 verständlichen Fehlermeldung statt zu stillen Fehlbenachrichtigungen.
 
+## Telegram-Bot
+
+Damit lässt sich der Plan jederzeit im Chat abfragen. Der Bot arbeitet per
+**Long Polling**: Er baut die Verbindung nach außen auf, es wird kein Port
+geöffnet und keine öffentliche Adresse gebraucht. Der Rechner, auf dem er
+läuft, bleibt von außen unerreichbar.
+
+### Einrichten
+
+1. In Telegram **@BotFather** anschreiben, `/newbot`, Namen vergeben, Token notieren.
+2. `.env.example` nach `.env` kopieren und den Token eintragen.
+3. Bot starten – noch ohne Freigabeliste:
+
+   ```bash
+   npm run bot
+   ```
+
+4. Dem Bot in Telegram irgendetwas schreiben. Er antwortet mit **deiner Chat-ID**
+   und gibt bewusst noch keine Plandaten heraus.
+5. Diese ID in `.env` bei `TELEGRAM_ALLOWED_CHAT_IDS` eintragen, Bot neu starten.
+
+Ab jetzt antwortet er nur noch dir.
+
+### Befehle
+
+| Befehl | Antwort |
+| --- | --- |
+| `/heute` | alles, was heute ansteht |
+| `/morgen` | alles, was morgen ansteht |
+| `/briefing` | was heute noch aussteht |
+| `/naechste` | die nächste Aufgabe |
+| `/woche` | die nächsten sieben Tage |
+| `/hilfe` | Übersicht |
+
+Formlos geht auch: „was steht heute an", „nächste", „und morgen?".
+
+Die Antworten kommen ausschließlich aus `wochenplan.json` – der Bot ruft kein
+Sprachmodell auf. Er ist damit vorhersagbar, schnell und funktioniert ohne
+weitere Zugänge. Dafür versteht er nur die oben genannten Muster.
+
+`wochenplan.json` wird bei **jeder** Anfrage frisch gelesen: Änderungen wirken
+ohne Neustart.
+
+### Wo der Bot läuft
+
+Er braucht einen dauerhaft laufenden Prozess – eigener Rechner, Raspberry Pi,
+kleiner Server. Läuft er nicht, kommt schlicht keine Antwort; verloren geht
+nichts, Telegram hält die Nachrichten vor.
+
+### Sicherheit
+
+- **Der Token ist der Generalschlüssel.** Wer ihn hat, steuert den Bot komplett.
+  Er gehört in `.env` (per `.gitignore` ausgeschlossen), nie ins Repository.
+  Der Bot filtert ihn zusätzlich aus allen Fehlermeldungen.
+- **Die Freigabeliste ist Pflicht.** Ein Bot-Token ist ein offener Endpunkt:
+  Jeder, der den Botnamen kennt, kann schreiben. Ohne `TELEGRAM_ALLOWED_CHAT_IDS`
+  bekäme ein Fremder auf „was steht heute an" den vollständigen Tagesplan.
+  Deshalb läuft der Bot ohne Liste im Einrichtungsmodus und gibt nichts heraus.
+- **Telegram sieht die Nachrichten.** Reguläre Chats sind zum Server hin
+  verschlüsselt, aber nicht Ende-zu-Ende. Für Termindaten ist das vertretbar –
+  Passwörter oder Ähnliches gehören nicht in diesen Chat.
+- Bei kompromittiertem Token: `/revoke` bei @BotFather, neuen Token in `.env`.
+
 ## Was auf dem Sperrbildschirm landet
 
 Push-Nachrichten zeigt das Handy standardmäßig an, **ohne** dass es entsperrt
@@ -126,6 +190,6 @@ werden. Zwei Tests sichern das ab (`CEST` und `CET`).
 npm test
 ```
 
-Schwerpunkt der 23 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
+Schwerpunkt der 40 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
 Sortierung von Wochenrhythmus und Einzelterminen, das Vorlauffenster, der
 Platzhalter-Schutz und die diskrete Push-Kurzfassung.

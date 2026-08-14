@@ -15,6 +15,7 @@ import {
   alsUhrzeit,
   alsDauer,
   inZone,
+  tagVerschoben,
   eintraegeFuerTag,
   naechsterEintrag,
   laufenderEintrag,
@@ -85,6 +86,25 @@ test('inZone erkennt den Datumswechsel über Mitternacht', () => {
   assert.equal(zeit.iso, '2026-08-18');
   assert.equal(zeit.wochentag, 'di');
   assert.equal(zeit.stunde, 0);
+});
+
+test('tagVerschoben rechnet über Monats- und Jahreswechsel', () => {
+  const august = inZone(new Date('2026-08-31T13:05:00Z'), 'Europe/Berlin');
+  assert.equal(tagVerschoben(august, 1).iso, '2026-09-01');
+  assert.equal(tagVerschoben(august, 1).wochentag, 'di');
+  assert.equal(tagVerschoben(august, 0).iso, '2026-08-31');
+  assert.equal(tagVerschoben(august, -1).iso, '2026-08-30');
+
+  const silvester = inZone(new Date('2026-12-31T13:05:00Z'), 'Europe/Berlin');
+  assert.equal(tagVerschoben(silvester, 1).iso, '2027-01-01');
+});
+
+test('tagVerschoben bleibt über die Zeitumstellung stabil', () => {
+  // Die Umstellung auf Winterzeit liegt 2026 in der Nacht auf den 25.10.
+  const davor = inZone(new Date('2026-10-24T12:00:00Z'), 'Europe/Berlin');
+  assert.equal(davor.iso, '2026-10-24');
+  assert.equal(tagVerschoben(davor, 1).iso, '2026-10-25');
+  assert.equal(tagVerschoben(davor, 2).iso, '2026-10-26');
 });
 
 test('eintraegeFuerTag sortiert nach Startzeit', () => {

@@ -99,6 +99,32 @@ export function inZone(zeitpunkt, zone) {
   };
 }
 
+/**
+ * Denselben Zeitpunkt um n Kalendertage verschieben.
+ * Reine Kalenderrechnung auf dem bereits lokal aufgelösten Datum – dadurch
+ * entstehen an Zeitumstellungstagen keine Sprünge. Die Uhrzeit wird auf
+ * Mitternacht gesetzt, weil die Funktion nur zum Nachschlagen ganzer Tage dient.
+ */
+export function tagVerschoben(zeit, tage) {
+  const datum = new Date(Date.UTC(zeit.jahr, zeit.monat - 1, zeit.tag));
+  datum.setUTCDate(datum.getUTCDate() + tage);
+
+  const jahr = datum.getUTCFullYear();
+  const monat = datum.getUTCMonth() + 1;
+  const tag = datum.getUTCDate();
+
+  return {
+    iso: `${jahr}-${String(monat).padStart(2, '0')}-${String(tag).padStart(2, '0')}`,
+    jahr,
+    monat,
+    tag,
+    stunde: 0,
+    minute: 0,
+    minutenSeitMitternacht: 0,
+    wochentag: TAG_SCHLUESSEL[datum.getUTCDay()],
+  };
+}
+
 /** Datum "2026-08-13" als "Donnerstag, 13.08." ausschreiben. */
 export function alsDatum(zeit) {
   return `${TAG_NAMEN[zeit.wochentag]}, ${String(zeit.tag).padStart(2, '0')}.${String(zeit.monat).padStart(2, '0')}.`;

@@ -3,3 +3,8 @@ node_modules/
 *.log
 .cache/
 .tmp/
+
+# Zugangsdaten gehören niemals ins Repository
+.env
+.env.*
+!.env.example
