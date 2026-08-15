@@ -39,7 +39,7 @@
           "von": "16:00",
           "bis": "17:00",
           "titel": "HTML/CSS",
-          "hinweis": "1 von 18 Lektionen (1 Std.)"
+          "hinweis": "1 von 18 Lektionen — volle Stunde"
         },
         {
           "von": "17:00",
@@ -55,39 +55,27 @@
         },
         {
           "von": "20:30",
-          "bis": "21:05",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Heutigen Stoff wiederholen + nächste Stunde je Fach vorbereiten"
+          "bis": "21:30",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
         },
         {
-          "von": "21:05",
-          "bis": "21:40",
+          "von": "21:30",
+          "bis": "22:05",
           "titel": "Hausaufgaben",
           "hinweis": "Nach Fristen unten — sonst Alternativliste"
         },
         {
-          "von": "21:40",
-          "bis": "22:05",
+          "von": "22:05",
+          "bis": "22:30",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "22:05",
-          "bis": "22:30",
+          "von": "22:30",
+          "bis": "23:00",
           "titel": "Selbstlernpfad",
           "hinweis": "Anthropic Academy — Claude 101 → Claude Code 101 → Claude Platform 101 (anthropic.skilljar.com)"
-        },
-        {
-          "von": "22:30",
-          "bis": "22:45",
-          "titel": "Reflexion",
-          "hinweis": "Tracker eintragen, Plan für morgen"
-        },
-        {
-          "von": "22:45",
-          "bis": "23:00",
-          "titel": "Wind-down",
-          "hinweis": "Ruhe, kein Bildschirm"
         }
       ],
       "di": [
@@ -119,7 +107,7 @@
           "von": "16:00",
           "bis": "17:00",
           "titel": "HTML/CSS",
-          "hinweis": "1 von 18 Lektionen (1 Std.)"
+          "hinweis": "1 von 18 Lektionen — volle Stunde"
         },
         {
           "von": "17:00",
@@ -135,39 +123,27 @@
         },
         {
           "von": "20:30",
-          "bis": "21:05",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Heutigen Stoff wiederholen + nächste Stunde je Fach vorbereiten"
+          "bis": "21:30",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
         },
         {
-          "von": "21:05",
-          "bis": "21:40",
+          "von": "21:30",
+          "bis": "22:05",
           "titel": "Hausaufgaben",
           "hinweis": "Nach Fristen unten — sonst Alternativliste"
         },
         {
-          "von": "21:40",
-          "bis": "22:05",
+          "von": "22:05",
+          "bis": "22:30",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "22:05",
-          "bis": "22:30",
+          "von": "22:30",
+          "bis": "23:00",
           "titel": "Selbstlernpfad",
           "hinweis": "Marketing — Wharton — Introduction to Marketing (coursera.org/learn/wharton-marketing)"
-        },
-        {
-          "von": "22:30",
-          "bis": "22:45",
-          "titel": "Reflexion",
-          "hinweis": "Tracker eintragen, Plan für morgen"
-        },
-        {
-          "von": "22:45",
-          "bis": "23:00",
-          "titel": "Wind-down",
-          "hinweis": "Ruhe, kein Bildschirm"
         }
       ],
       "mi": [
@@ -209,51 +185,45 @@
         },
         {
           "von": "19:00",
-          "bis": "20:15",
+          "bis": "20:00",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+        },
+        {
+          "von": "20:00",
+          "bis": "21:00",
           "titel": "Hausaufgaben",
           "hinweis": "Längster HA-Block der Woche — hier liegen die meisten Fristen"
         },
         {
-          "von": "20:15",
-          "bis": "20:55",
-          "titel": "Schulstoff-Review",
-          "hinweis": "5 Fächer heute — in voller Länge machbar"
-        },
-        {
-          "von": "20:55",
-          "bis": "21:20",
+          "von": "21:00",
+          "bis": "21:25",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "21:20",
-          "bis": "21:45",
+          "von": "21:25",
+          "bis": "21:55",
           "titel": "Selbstlernpfad",
           "hinweis": "Verkauf — HubSpot — Inbound Sales (coursera.org/learn/inbound-sales-1)"
         },
         {
-          "von": "21:45",
-          "bis": "22:05",
-          "titel": "Französisch",
-          "hinweis": "Français Express: 1 Lektion/Modul"
+          "von": "21:55",
+          "bis": "22:20",
+          "titel": "Eigene Projekte",
+          "hinweis": "Coding/AI-Projekte — laufend, Pausen ausdrücklich erlaubt"
         },
         {
-          "von": "22:05",
-          "bis": "22:25",
+          "von": "22:20",
+          "bis": "22:40",
           "titel": "Gitarre/Keyboard",
           "hinweis": "Übungseinheit (Instrument wöchentlich abwechselnd)"
         },
         {
-          "von": "22:25",
-          "bis": "22:45",
-          "titel": "Reflexion",
-          "hinweis": "Tracker eintragen, Plan für morgen"
-        },
-        {
-          "von": "22:45",
+          "von": "22:40",
           "bis": "23:00",
-          "titel": "Wind-down",
-          "hinweis": "Ruhe, kein Bildschirm"
+          "titel": "Französisch",
+          "hinweis": "Français Express: 1 Lektion/Modul"
         }
       ],
       "do": [
@@ -285,7 +255,7 @@
           "von": "16:00",
           "bis": "19:00",
           "titel": "Training",
-          "hinweis": "3 Std. — heute vorgezogen, damit die Freizeit ab 19:30 erhalten bleibt"
+          "hinweis": "3 Std. — vorgezogen, damit die Freizeit ab 19:30 erhalten bleibt"
         },
         {
           "von": "19:00",
@@ -301,33 +271,21 @@
         },
         {
           "von": "21:00",
-          "bis": "21:35",
+          "bis": "22:00",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+        },
+        {
+          "von": "22:00",
+          "bis": "22:35",
           "titel": "Hausaufgaben",
           "hinweis": "Nur das morgen Fällige — Rest auf Fr/Sa schieben"
         },
         {
-          "von": "21:35",
-          "bis": "22:00",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Heute in Kurzform"
-        },
-        {
-          "von": "22:00",
-          "bis": "22:20",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
-        },
-        {
-          "von": "22:20",
-          "bis": "22:40",
-          "titel": "Selbstlernpfad",
-          "hinweis": "KI-Grundlagen — Google AI Essentials (coursera.org/specializations/ai-essentials-google) — heute nur kurz"
-        },
-        {
-          "von": "22:40",
+          "von": "22:35",
           "bis": "23:00",
-          "titel": "Reflexion + Wind-down",
-          "hinweis": "Tracker eintragen, dann Ruhe — HTML/CSS entfällt donnerstags zugunsten von 3 Std. Training + Freizeit"
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — donnerstags entfallen HTML/CSS und Selbstlernpfad"
         }
       ],
       "fr": [
@@ -359,7 +317,7 @@
           "von": "16:00",
           "bis": "17:00",
           "titel": "HTML/CSS",
-          "hinweis": "1 von 18 Lektionen (1 Std.)"
+          "hinweis": "1 von 18 Lektionen — volle Stunde"
         },
         {
           "von": "17:00",
@@ -375,39 +333,27 @@
         },
         {
           "von": "20:30",
-          "bis": "21:05",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Heutigen Stoff wiederholen + nächste Stunde je Fach vorbereiten"
+          "bis": "21:30",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
         },
         {
-          "von": "21:05",
-          "bis": "21:40",
+          "von": "21:30",
+          "bis": "22:05",
           "titel": "Hausaufgaben",
           "hinweis": "Nach Fristen unten — sonst Alternativliste"
         },
         {
-          "von": "21:40",
-          "bis": "22:05",
+          "von": "22:05",
+          "bis": "22:30",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "22:05",
-          "bis": "22:30",
+          "von": "22:30",
+          "bis": "23:00",
           "titel": "Selbstlernpfad",
           "hinweis": "Verhandeln — Successful Negotiation, Univ. Michigan (coursera.org/learn/negotiation-skills)"
-        },
-        {
-          "von": "22:30",
-          "bis": "22:45",
-          "titel": "Reflexion",
-          "hinweis": "Tracker eintragen, Plan für morgen"
-        },
-        {
-          "von": "22:45",
-          "bis": "23:00",
-          "titel": "Wind-down",
-          "hinweis": "Ruhe, kein Bildschirm"
         }
       ],
       "sa": [
@@ -432,47 +378,47 @@
         {
           "von": "09:15",
           "bis": "10:15",
-          "titel": "Eigene Projekte",
-          "hinweis": "Coding/AI-Projekte"
-        },
-        {
-          "von": "10:15",
-          "bis": "11:15",
           "titel": "Hausaufgaben",
           "hinweis": "Auffangblock: alles, was unter der Woche liegen blieb"
         },
         {
-          "von": "11:15",
-          "bis": "12:00",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Wochenrückblick alle Fächer + Vorbereitung kommende Woche"
+          "von": "10:15",
+          "bis": "11:00",
+          "titel": "Wochenrückblick",
+          "hinweis": "Alle Fächer der Woche sichern — kein Folgetag-Prep nötig (morgen keine Schule)"
         },
         {
-          "von": "12:00",
-          "bis": "13:00",
+          "von": "11:00",
+          "bis": "12:00",
           "titel": "Selbstlernpfad",
           "hinweis": "Python — Harvard CS50P (cs50.harvard.edu/python) — längster Slot der Woche"
         },
         {
-          "von": "13:00",
-          "bis": "14:00",
+          "von": "12:00",
+          "bis": "13:00",
           "titel": "Erste Mahlzeit",
           "hinweis": "Ende der Fastenzeit"
         },
         {
-          "von": "14:00",
-          "bis": "14:30",
-          "titel": "Französisch",
-          "hinweis": "Français Express: 1 Lektion/Modul"
+          "von": "13:00",
+          "bis": "13:45",
+          "titel": "Eigene Projekte",
+          "hinweis": "Coding/AI-Projekte — laufend, Pausen ausdrücklich erlaubt"
         },
         {
-          "von": "14:30",
-          "bis": "15:00",
+          "von": "13:45",
+          "bis": "14:15",
           "titel": "Gitarre/Keyboard",
           "hinweis": "Übungseinheit"
         },
         {
-          "von": "15:00",
+          "von": "14:15",
+          "bis": "14:45",
+          "titel": "Französisch",
+          "hinweis": "Français Express: 1 Lektion/Modul"
+        },
+        {
+          "von": "14:45",
           "bis": "15:30",
           "titel": "Freizeit",
           "hinweis": "Rest Day — bewusst frei"
@@ -518,47 +464,47 @@
         {
           "von": "09:15",
           "bis": "10:15",
-          "titel": "Eigene Projekte",
-          "hinweis": "Coding/AI-Projekte"
-        },
-        {
-          "von": "10:15",
-          "bis": "11:15",
           "titel": "Hausaufgaben",
           "hinweis": "Alles fertigstellen, was Montag fällig ist"
         },
         {
-          "von": "11:15",
-          "bis": "12:00",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Vorbereitung auf die kommende Woche"
+          "von": "10:15",
+          "bis": "11:15",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Montag vorbereiten: Spanisch, Physik, Mathe (+ Musik in Woche A)"
         },
         {
-          "von": "12:00",
-          "bis": "12:45",
+          "von": "11:15",
+          "bis": "12:00",
           "titel": "Selbstlernpfad",
           "hinweis": "Unternehmertum + Business-KI — YC Startup School (startupschool.org) · AI for Everyone (coursera.org/learn/ai-for-everyone)"
         },
         {
-          "von": "12:45",
-          "bis": "13:15",
-          "titel": "Französisch",
-          "hinweis": "Français Express: 1 Lektion/Modul"
-        },
-        {
-          "von": "13:15",
-          "bis": "14:15",
+          "von": "12:00",
+          "bis": "13:00",
           "titel": "Erste Mahlzeit",
           "hinweis": "Ende der Fastenzeit"
         },
         {
-          "von": "14:15",
-          "bis": "15:00",
+          "von": "13:00",
+          "bis": "13:45",
+          "titel": "Eigene Projekte",
+          "hinweis": "Coding/AI-Projekte — laufend, Pausen ausdrücklich erlaubt"
+        },
+        {
+          "von": "13:45",
+          "bis": "14:15",
           "titel": "Gitarre/Keyboard",
           "hinweis": "Übungseinheit"
         },
         {
-          "von": "15:00",
+          "von": "14:15",
+          "bis": "14:45",
+          "titel": "Französisch",
+          "hinweis": "Français Express: 1 Lektion/Modul"
+        },
+        {
+          "von": "14:45",
           "bis": "15:30",
           "titel": "Freizeit",
           "hinweis": "Bewusst frei"
@@ -589,12 +535,6 @@
         },
         {
           "von": "20:30",
-          "bis": "21:00",
-          "titel": "Reflexion",
-          "hinweis": "Wochenabschluss, Plan für die neue Woche"
-        },
-        {
-          "von": "21:00",
           "bis": "23:00",
           "titel": "Freizeit",
           "hinweis": "Bewusst frei"
@@ -635,21 +575,15 @@
         },
         {
           "von": "15:20",
-          "bis": "16:00",
+          "bis": "16:20",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+        },
+        {
+          "von": "16:20",
+          "bis": "16:50",
           "titel": "Hausaufgaben",
           "hinweis": "Mathe für morgen — plus vorarbeiten, solange Zeit ist"
-        },
-        {
-          "von": "16:00",
-          "bis": "16:40",
-          "titel": "Eigene Projekte",
-          "hinweis": "Coding/AI-Projekte — heute mit echtem Zeitfenster"
-        },
-        {
-          "von": "16:40",
-          "bis": "17:00",
-          "titel": "Französisch",
-          "hinweis": "Français Express — passt heute rein"
         },
         {
           "von": "17:00",
@@ -666,8 +600,8 @@
         {
           "von": "20:30",
           "bis": "21:00",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Nur 3 Fächer heute — schnell erledigt"
+          "titel": "Selbstlernpfad",
+          "hinweis": "Anthropic Academy — Claude 101 → Claude Code 101 → Claude Platform 101 (anthropic.skilljar.com)"
         },
         {
           "von": "21:00",
@@ -678,26 +612,20 @@
         {
           "von": "21:25",
           "bis": "21:55",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Anthropic Academy — Claude 101 → Claude Code 101 → Claude Platform 101 (anthropic.skilljar.com)"
+          "titel": "Eigene Projekte",
+          "hinweis": "Coding/AI-Projekte — laufend, Pausen ausdrücklich erlaubt"
         },
         {
           "von": "21:55",
-          "bis": "22:20",
+          "bis": "22:25",
           "titel": "Gitarre/Keyboard",
           "hinweis": "Übungseinheit"
         },
         {
-          "von": "22:20",
-          "bis": "22:40",
-          "titel": "Reflexion",
-          "hinweis": "Tracker eintragen, Plan für morgen"
-        },
-        {
-          "von": "22:40",
+          "von": "22:25",
           "bis": "23:00",
-          "titel": "Wind-down",
-          "hinweis": "Ruhe, kein Bildschirm"
+          "titel": "Französisch",
+          "hinweis": "Français Express: 1 Lektion/Modul"
         }
       ],
       "di": [
@@ -729,7 +657,7 @@
           "von": "16:00",
           "bis": "17:00",
           "titel": "HTML/CSS",
-          "hinweis": "1 von 18 Lektionen (1 Std.)"
+          "hinweis": "1 von 18 Lektionen — volle Stunde"
         },
         {
           "von": "17:00",
@@ -745,39 +673,27 @@
         },
         {
           "von": "20:30",
-          "bis": "21:05",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Heutigen Stoff wiederholen + nächste Stunde je Fach vorbereiten"
+          "bis": "21:30",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
         },
         {
-          "von": "21:05",
-          "bis": "21:40",
+          "von": "21:30",
+          "bis": "22:05",
           "titel": "Hausaufgaben",
           "hinweis": "Nach Fristen unten — sonst Alternativliste"
         },
         {
-          "von": "21:40",
-          "bis": "22:05",
+          "von": "22:05",
+          "bis": "22:30",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "22:05",
-          "bis": "22:30",
+          "von": "22:30",
+          "bis": "23:00",
           "titel": "Selbstlernpfad",
           "hinweis": "Marketing — Wharton — Introduction to Marketing (coursera.org/learn/wharton-marketing)"
-        },
-        {
-          "von": "22:30",
-          "bis": "22:45",
-          "titel": "Reflexion",
-          "hinweis": "Tracker eintragen, Plan für morgen"
-        },
-        {
-          "von": "22:45",
-          "bis": "23:00",
-          "titel": "Wind-down",
-          "hinweis": "Ruhe, kein Bildschirm"
         }
       ],
       "mi": [
@@ -819,51 +735,45 @@
         },
         {
           "von": "19:00",
-          "bis": "20:15",
+          "bis": "20:00",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+        },
+        {
+          "von": "20:00",
+          "bis": "21:00",
           "titel": "Hausaufgaben",
           "hinweis": "Längster HA-Block der Woche — hier liegen die meisten Fristen"
         },
         {
-          "von": "20:15",
-          "bis": "20:55",
-          "titel": "Schulstoff-Review",
-          "hinweis": "5 Fächer heute — in voller Länge machbar"
-        },
-        {
-          "von": "20:55",
-          "bis": "21:20",
+          "von": "21:00",
+          "bis": "21:25",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "21:20",
-          "bis": "21:45",
+          "von": "21:25",
+          "bis": "21:55",
           "titel": "Selbstlernpfad",
           "hinweis": "Verkauf — HubSpot — Inbound Sales (coursera.org/learn/inbound-sales-1)"
         },
         {
-          "von": "21:45",
-          "bis": "22:05",
-          "titel": "Französisch",
-          "hinweis": "Français Express: 1 Lektion/Modul"
+          "von": "21:55",
+          "bis": "22:20",
+          "titel": "Eigene Projekte",
+          "hinweis": "Coding/AI-Projekte — laufend, Pausen ausdrücklich erlaubt"
         },
         {
-          "von": "22:05",
-          "bis": "22:25",
+          "von": "22:20",
+          "bis": "22:40",
           "titel": "Gitarre/Keyboard",
           "hinweis": "Übungseinheit (Instrument wöchentlich abwechselnd)"
         },
         {
-          "von": "22:25",
-          "bis": "22:45",
-          "titel": "Reflexion",
-          "hinweis": "Tracker eintragen, Plan für morgen"
-        },
-        {
-          "von": "22:45",
+          "von": "22:40",
           "bis": "23:00",
-          "titel": "Wind-down",
-          "hinweis": "Ruhe, kein Bildschirm"
+          "titel": "Französisch",
+          "hinweis": "Français Express: 1 Lektion/Modul"
         }
       ],
       "do": [
@@ -895,7 +805,7 @@
           "von": "16:00",
           "bis": "19:00",
           "titel": "Training",
-          "hinweis": "3 Std. — heute vorgezogen, damit die Freizeit ab 19:30 erhalten bleibt"
+          "hinweis": "3 Std. — vorgezogen, damit die Freizeit ab 19:30 erhalten bleibt"
         },
         {
           "von": "19:00",
@@ -911,33 +821,21 @@
         },
         {
           "von": "21:00",
-          "bis": "21:35",
+          "bis": "22:00",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+        },
+        {
+          "von": "22:00",
+          "bis": "22:35",
           "titel": "Hausaufgaben",
           "hinweis": "Nur das morgen Fällige — Rest auf Fr/Sa schieben"
         },
         {
-          "von": "21:35",
-          "bis": "22:00",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Heute in Kurzform"
-        },
-        {
-          "von": "22:00",
-          "bis": "22:20",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
-        },
-        {
-          "von": "22:20",
-          "bis": "22:40",
-          "titel": "Selbstlernpfad",
-          "hinweis": "KI-Grundlagen — Google AI Essentials (coursera.org/specializations/ai-essentials-google) — heute nur kurz"
-        },
-        {
-          "von": "22:40",
+          "von": "22:35",
           "bis": "23:00",
-          "titel": "Reflexion + Wind-down",
-          "hinweis": "Tracker eintragen, dann Ruhe — HTML/CSS entfällt donnerstags zugunsten von 3 Std. Training + Freizeit"
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — donnerstags entfallen HTML/CSS und Selbstlernpfad"
         }
       ],
       "fr": [
@@ -969,7 +867,7 @@
           "von": "16:00",
           "bis": "17:00",
           "titel": "HTML/CSS",
-          "hinweis": "1 von 18 Lektionen (1 Std.)"
+          "hinweis": "1 von 18 Lektionen — volle Stunde"
         },
         {
           "von": "17:00",
@@ -985,39 +883,27 @@
         },
         {
           "von": "20:30",
-          "bis": "21:05",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Heutigen Stoff wiederholen + nächste Stunde je Fach vorbereiten"
+          "bis": "21:30",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
         },
         {
-          "von": "21:05",
-          "bis": "21:40",
+          "von": "21:30",
+          "bis": "22:05",
           "titel": "Hausaufgaben",
           "hinweis": "Nach Fristen unten — sonst Alternativliste"
         },
         {
-          "von": "21:40",
-          "bis": "22:05",
+          "von": "22:05",
+          "bis": "22:30",
           "titel": "Lesen",
           "hinweis": "2 Bücher: 20–30 Seiten insgesamt"
         },
         {
-          "von": "22:05",
-          "bis": "22:30",
+          "von": "22:30",
+          "bis": "23:00",
           "titel": "Selbstlernpfad",
           "hinweis": "Verhandeln — Successful Negotiation, Univ. Michigan (coursera.org/learn/negotiation-skills)"
-        },
-        {
-          "von": "22:30",
-          "bis": "22:45",
-          "titel": "Reflexion",
-          "hinweis": "Tracker eintragen, Plan für morgen"
-        },
-        {
-          "von": "22:45",
-          "bis": "23:00",
-          "titel": "Wind-down",
-          "hinweis": "Ruhe, kein Bildschirm"
         }
       ],
       "sa": [
@@ -1042,47 +928,47 @@
         {
           "von": "09:15",
           "bis": "10:15",
-          "titel": "Eigene Projekte",
-          "hinweis": "Coding/AI-Projekte"
-        },
-        {
-          "von": "10:15",
-          "bis": "11:15",
           "titel": "Hausaufgaben",
           "hinweis": "Auffangblock: alles, was unter der Woche liegen blieb"
         },
         {
-          "von": "11:15",
-          "bis": "12:00",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Wochenrückblick alle Fächer + Vorbereitung kommende Woche"
+          "von": "10:15",
+          "bis": "11:00",
+          "titel": "Wochenrückblick",
+          "hinweis": "Alle Fächer der Woche sichern — kein Folgetag-Prep nötig (morgen keine Schule)"
         },
         {
-          "von": "12:00",
-          "bis": "13:00",
+          "von": "11:00",
+          "bis": "12:00",
           "titel": "Selbstlernpfad",
           "hinweis": "Python — Harvard CS50P (cs50.harvard.edu/python) — längster Slot der Woche"
         },
         {
-          "von": "13:00",
-          "bis": "14:00",
+          "von": "12:00",
+          "bis": "13:00",
           "titel": "Erste Mahlzeit",
           "hinweis": "Ende der Fastenzeit"
         },
         {
-          "von": "14:00",
-          "bis": "14:30",
-          "titel": "Französisch",
-          "hinweis": "Français Express: 1 Lektion/Modul"
+          "von": "13:00",
+          "bis": "13:45",
+          "titel": "Eigene Projekte",
+          "hinweis": "Coding/AI-Projekte — laufend, Pausen ausdrücklich erlaubt"
         },
         {
-          "von": "14:30",
-          "bis": "15:00",
+          "von": "13:45",
+          "bis": "14:15",
           "titel": "Gitarre/Keyboard",
           "hinweis": "Übungseinheit"
         },
         {
-          "von": "15:00",
+          "von": "14:15",
+          "bis": "14:45",
+          "titel": "Französisch",
+          "hinweis": "Français Express: 1 Lektion/Modul"
+        },
+        {
+          "von": "14:45",
           "bis": "15:30",
           "titel": "Freizeit",
           "hinweis": "Rest Day — bewusst frei"
@@ -1128,47 +1014,47 @@
         {
           "von": "09:15",
           "bis": "10:15",
-          "titel": "Eigene Projekte",
-          "hinweis": "Coding/AI-Projekte"
-        },
-        {
-          "von": "10:15",
-          "bis": "11:15",
           "titel": "Hausaufgaben",
           "hinweis": "Alles fertigstellen, was Montag fällig ist"
         },
         {
-          "von": "11:15",
-          "bis": "12:00",
-          "titel": "Schulstoff-Review",
-          "hinweis": "Vorbereitung auf die kommende Woche"
+          "von": "10:15",
+          "bis": "11:15",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Montag vorbereiten: Spanisch, Physik, Mathe (+ Musik in Woche A)"
         },
         {
-          "von": "12:00",
-          "bis": "12:45",
+          "von": "11:15",
+          "bis": "12:00",
           "titel": "Selbstlernpfad",
           "hinweis": "Unternehmertum + Business-KI — YC Startup School (startupschool.org) · AI for Everyone (coursera.org/learn/ai-for-everyone)"
         },
         {
-          "von": "12:45",
-          "bis": "13:15",
-          "titel": "Französisch",
-          "hinweis": "Français Express: 1 Lektion/Modul"
-        },
-        {
-          "von": "13:15",
-          "bis": "14:15",
+          "von": "12:00",
+          "bis": "13:00",
           "titel": "Erste Mahlzeit",
           "hinweis": "Ende der Fastenzeit"
         },
         {
-          "von": "14:15",
-          "bis": "15:00",
+          "von": "13:00",
+          "bis": "13:45",
+          "titel": "Eigene Projekte",
+          "hinweis": "Coding/AI-Projekte — laufend, Pausen ausdrücklich erlaubt"
+        },
+        {
+          "von": "13:45",
+          "bis": "14:15",
           "titel": "Gitarre/Keyboard",
           "hinweis": "Übungseinheit"
         },
         {
-          "von": "15:00",
+          "von": "14:15",
+          "bis": "14:45",
+          "titel": "Französisch",
+          "hinweis": "Français Express: 1 Lektion/Modul"
+        },
+        {
+          "von": "14:45",
           "bis": "15:30",
           "titel": "Freizeit",
           "hinweis": "Bewusst frei"
@@ -1199,12 +1085,6 @@
         },
         {
           "von": "20:30",
-          "bis": "21:00",
-          "titel": "Reflexion",
-          "hinweis": "Wochenabschluss, Plan für die neue Woche"
-        },
-        {
-          "von": "21:00",
           "bis": "23:00",
           "titel": "Freizeit",
           "hinweis": "Bewusst frei"
