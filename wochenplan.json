@@ -21,7 +21,7 @@
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben — Freistunde (falls vorhanden) für Hausaufgaben nutzen"
+          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
         },
         {
           "von": "15:15",
@@ -31,57 +31,63 @@
         },
         {
           "von": "15:25",
-          "bis": "15:55",
+          "bis": "16:00",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "Richtige Mahlzeit, in Ruhe — kein Zeitdruck"
         },
         {
-          "von": "15:55",
-          "bis": "16:15",
+          "von": "16:00",
+          "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach exakt 1 Std. Wartezeit bis Trainingsbeginn"
+          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
-          "von": "16:15",
-          "bis": "16:45",
-          "titel": "Trading",
-          "hinweis": "In der Wartezeit — Mo–Fr, 30 Min."
+          "von": "16:20",
+          "bis": "17:20",
+          "titel": "Selbstlernpfad",
+          "hinweis": "CS50P — Python — Harvard CS50P (cs50.harvard.edu/python) · ~40 Std. — Programmier-Fundament fürs Informatikstudium, größter und wichtigster Brocken — direkt nach der Schule, Kopf noch frisch"
         },
         {
-          "von": "16:45",
-          "bis": "17:15",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines durchgehend englisch, eines gern Mathe/Informatik/Wissenschaft — zweiter Teil der Wartezeit"
-        },
-        {
-          "von": "17:15",
-          "bis": "20:15",
+          "von": "17:20",
+          "bis": "20:20",
           "titel": "Training",
-          "hinweis": "3 Std. — Start exakt 1 Std. nach dem Reispudding"
+          "hinweis": "3 Std."
         },
         {
-          "von": "20:15",
-          "bis": "20:40",
+          "von": "20:20",
+          "bis": "20:50",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:40",
+          "von": "20:50",
           "bis": "21:40",
-          "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — Harvard CS50P (cs50.harvard.edu/python) · ~40 Std. — Programmier-Fundament fürs Informatikstudium, größter und wichtigster Brocken"
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
         },
         {
           "von": "21:40",
-          "bis": "22:40",
-          "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+          "bis": "22:05",
+          "titel": "Hausaufgaben",
+          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
         },
         {
-          "von": "22:40",
+          "von": "22:05",
+          "bis": "22:35",
+          "titel": "Trading",
+          "hinweis": "Abends — US-Markt ist offen"
+        },
+        {
+          "von": "22:35",
+          "bis": "22:55",
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
+        },
+        {
+          "von": "22:55",
           "bis": "23:00",
-          "titel": "Hausaufgaben",
-          "hinweis": "Kurz — größere Aufgaben in die Freistunde (Di/Fr, 2. Stunde) legen; HTML/CSS entfällt an Trainingstagen"
+          "titel": "Ausklang",
+          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
         }
       ],
       "di": [
@@ -95,7 +101,7 @@
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben — Freistunde (falls vorhanden) für Hausaufgaben nutzen"
+          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
         },
         {
           "von": "15:15",
@@ -105,57 +111,63 @@
         },
         {
           "von": "15:25",
-          "bis": "15:55",
+          "bis": "16:00",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "Richtige Mahlzeit, in Ruhe — kein Zeitdruck"
         },
         {
-          "von": "15:55",
-          "bis": "16:15",
+          "von": "16:00",
+          "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach exakt 1 Std. Wartezeit bis Trainingsbeginn"
+          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
-          "von": "16:15",
-          "bis": "16:45",
-          "titel": "Trading",
-          "hinweis": "In der Wartezeit — Mo–Fr, 30 Min."
+          "von": "16:20",
+          "bis": "17:20",
+          "titel": "Selbstlernpfad",
+          "hinweis": "Claude Academy — Anthropic Academy (anthropic.skilljar.com): Claude 101 → Claude Code 101 → Claude Platform 101 · ~8 Std. — direkt nach der Schule, Kopf noch frisch"
         },
         {
-          "von": "16:45",
-          "bis": "17:15",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines durchgehend englisch, eines gern Mathe/Informatik/Wissenschaft — zweiter Teil der Wartezeit"
-        },
-        {
-          "von": "17:15",
-          "bis": "20:15",
+          "von": "17:20",
+          "bis": "20:20",
           "titel": "Training",
-          "hinweis": "3 Std. — Start exakt 1 Std. nach dem Reispudding"
+          "hinweis": "3 Std."
         },
         {
-          "von": "20:15",
-          "bis": "20:40",
+          "von": "20:20",
+          "bis": "20:50",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:40",
+          "von": "20:50",
           "bis": "21:40",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — Anthropic Academy (anthropic.skilljar.com): Claude 101 → Claude Code 101 → Claude Platform 101 · ~8 Std."
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
         },
         {
           "von": "21:40",
-          "bis": "22:40",
-          "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+          "bis": "22:05",
+          "titel": "Hausaufgaben",
+          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
         },
         {
-          "von": "22:40",
+          "von": "22:05",
+          "bis": "22:35",
+          "titel": "Trading",
+          "hinweis": "Abends — US-Markt ist offen"
+        },
+        {
+          "von": "22:35",
+          "bis": "22:55",
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
+        },
+        {
+          "von": "22:55",
           "bis": "23:00",
-          "titel": "Hausaufgaben",
-          "hinweis": "Kurz — größere Aufgaben in die Freistunde (Di/Fr, 2. Stunde) legen; HTML/CSS entfällt an Trainingstagen"
+          "titel": "Ausklang",
+          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
         }
       ],
       "mi": [
@@ -185,51 +197,51 @@
         },
         {
           "von": "17:40",
-          "bis": "18:10",
-          "titel": "Trading",
-          "hinweis": "In voller Länge"
-        },
-        {
-          "von": "18:10",
-          "bis": "19:10",
+          "bis": "18:40",
           "titel": "Selbstlernpfad",
-          "hinweis": "Google AI Essentials — coursera.org/specializations/ai-essentials-google · ~10 Std. — KI-Grundkompetenz, danach Prompting Essentials"
+          "hinweis": "Google AI Essentials — coursera.org/specializations/ai-essentials-google · ~10 Std. — KI-Grundkompetenz, danach Prompting Essentials — direkt nach der Schule"
         },
         {
-          "von": "19:10",
-          "bis": "20:10",
+          "von": "18:40",
+          "bis": "19:30",
           "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
         },
         {
-          "von": "20:10",
-          "bis": "21:10",
+          "von": "19:30",
+          "bis": "20:20",
           "titel": "Hausaufgaben",
-          "hinweis": "Längster HA-Block der Woche — hier liegen die meisten Fristen"
+          "hinweis": "Größter HA-Block der Woche — hier liegen die meisten Fristen"
         },
         {
-          "von": "21:10",
-          "bis": "21:30",
+          "von": "20:20",
+          "bis": "20:50",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "21:30",
-          "bis": "21:50",
+          "von": "20:50",
+          "bis": "21:20",
+          "titel": "Trading",
+          "hinweis": "Abends"
+        },
+        {
+          "von": "21:20",
+          "bis": "21:45",
           "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines durchgehend englisch, eines gern Mathe/Informatik/Wissenschaft"
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
         },
         {
-          "von": "21:50",
-          "bis": "22:50",
+          "von": "21:45",
+          "bis": "22:30",
           "titel": "HTML/CSS",
-          "hinweis": "1 von 18 Lektionen — volle Stunde"
+          "hinweis": "1 Lektion (45 Min. — ggf. auf zwei Abende verteilen)"
         },
         {
-          "von": "22:50",
+          "von": "22:30",
           "bis": "23:00",
-          "titel": "Gitarre/Keyboard",
-          "hinweis": "Kurze Übungseinheit"
+          "titel": "Puffer / Side Quest",
+          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
         }
       ],
       "do": [
@@ -253,57 +265,57 @@
         },
         {
           "von": "15:25",
-          "bis": "15:55",
+          "bis": "16:00",
           "titel": "Mittagessen",
           "hinweis": "Richtige Mahlzeit, in Ruhe"
         },
         {
-          "von": "15:55",
-          "bis": "16:15",
+          "von": "16:00",
+          "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach exakt 1 Std. Wartezeit bis Trainingsbeginn"
+          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
-          "von": "16:15",
-          "bis": "16:45",
-          "titel": "Trading",
-          "hinweis": "In der Wartezeit — Mo–Fr, 30 Min."
+          "von": "16:20",
+          "bis": "17:20",
+          "titel": "Selbstlernpfad",
+          "hinweis": "Claude Academy — Anthropic Academy — zweiter Block der Woche (anthropic.skilljar.com) — direkt nach der Schule"
         },
         {
-          "von": "16:45",
-          "bis": "17:15",
-          "titel": "Freizeit",
-          "hinweis": "Geschützt — zweiter Teil der Wartezeit gehört dir"
-        },
-        {
-          "von": "17:15",
-          "bis": "20:15",
+          "von": "17:20",
+          "bis": "20:20",
           "titel": "Training",
           "hinweis": "3 Std."
         },
         {
-          "von": "20:15",
-          "bis": "20:40",
+          "von": "20:20",
+          "bis": "20:50",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:40",
+          "von": "20:50",
           "bis": "21:40",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — Anthropic Academy — zweiter Block der Woche (anthropic.skilljar.com)"
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
         },
         {
           "von": "21:40",
-          "bis": "22:40",
-          "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+          "bis": "22:05",
+          "titel": "Hausaufgaben",
+          "hinweis": "Nur das morgen Fällige"
         },
         {
-          "von": "22:40",
+          "von": "22:05",
+          "bis": "22:35",
+          "titel": "Trading",
+          "hinweis": "Abends"
+        },
+        {
+          "von": "22:35",
           "bis": "23:00",
-          "titel": "Hausaufgaben",
-          "hinweis": "Nur das morgen Fällige — Lesen entfällt donnerstags"
+          "titel": "Freizeit",
+          "hinweis": "Geschützt — donnerstags gehört der Ausklang dir, Lesen ist optional"
         }
       ],
       "fr": [
@@ -317,7 +329,7 @@
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben — Freistunde (falls vorhanden) für Hausaufgaben nutzen"
+          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
         },
         {
           "von": "15:15",
@@ -327,57 +339,63 @@
         },
         {
           "von": "15:25",
-          "bis": "15:55",
+          "bis": "16:00",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "Richtige Mahlzeit, in Ruhe — kein Zeitdruck"
         },
         {
-          "von": "15:55",
-          "bis": "16:15",
+          "von": "16:00",
+          "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach exakt 1 Std. Wartezeit bis Trainingsbeginn"
+          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
-          "von": "16:15",
-          "bis": "16:45",
-          "titel": "Trading",
-          "hinweis": "In der Wartezeit — Mo–Fr, 30 Min."
+          "von": "16:20",
+          "bis": "17:20",
+          "titel": "Selbstlernpfad",
+          "hinweis": "CS50P — Python — Zweiter Python-Block der Woche — Kontinuität schlägt Intensität — direkt nach der Schule, Kopf noch frisch"
         },
         {
-          "von": "16:45",
-          "bis": "17:15",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines durchgehend englisch, eines gern Mathe/Informatik/Wissenschaft — zweiter Teil der Wartezeit"
-        },
-        {
-          "von": "17:15",
-          "bis": "20:15",
+          "von": "17:20",
+          "bis": "20:20",
           "titel": "Training",
-          "hinweis": "3 Std. — Start exakt 1 Std. nach dem Reispudding"
+          "hinweis": "3 Std."
         },
         {
-          "von": "20:15",
-          "bis": "20:40",
+          "von": "20:20",
+          "bis": "20:50",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:40",
+          "von": "20:50",
           "bis": "21:40",
-          "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — Zweiter Python-Block der Woche — Kontinuität schlägt Intensität"
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
         },
         {
           "von": "21:40",
-          "bis": "22:40",
-          "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+          "bis": "22:05",
+          "titel": "Hausaufgaben",
+          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
         },
         {
-          "von": "22:40",
+          "von": "22:05",
+          "bis": "22:35",
+          "titel": "Trading",
+          "hinweis": "Abends — US-Markt ist offen"
+        },
+        {
+          "von": "22:35",
+          "bis": "22:55",
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
+        },
+        {
+          "von": "22:55",
           "bis": "23:00",
-          "titel": "Hausaufgaben",
-          "hinweis": "Kurz — größere Aufgaben in die Freistunde (Di/Fr, 2. Stunde) legen; HTML/CSS entfällt an Trainingstagen"
+          "titel": "Ausklang",
+          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
         }
       ],
       "sa": [
@@ -554,8 +572,8 @@
         {
           "von": "20:30",
           "bis": "23:00",
-          "titel": "Freizeit",
-          "hinweis": "Bewusst frei"
+          "titel": "Freizeit / Puffer",
+          "hinweis": "Bewusst frei — hier landet, was unter der Woche liegen blieb, oder gar nichts"
         }
       ]
     },
@@ -589,61 +607,67 @@
           "von": "14:00",
           "bis": "15:00",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — Harvard CS50P (cs50.harvard.edu/python) · ~40 Std. — Programmier-Fundament fürs Informatikstudium, größter und wichtigster Brocken"
+          "hinweis": "CS50P — Python — Harvard CS50P (cs50.harvard.edu/python) · ~40 Std. — Programmier-Fundament fürs Informatikstudium, größter und wichtigster Brocken — direkt nach der Schule"
         },
         {
           "von": "15:00",
-          "bis": "16:00",
+          "bis": "15:50",
           "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
         },
         {
-          "von": "16:00",
+          "von": "15:50",
           "bis": "16:20",
-          "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach exakt 1 Std. Wartezeit bis Trainingsbeginn"
+          "titel": "Puffer",
+          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
         },
         {
           "von": "16:20",
-          "bis": "16:50",
-          "titel": "Trading",
-          "hinweis": "In der Wartezeit"
+          "bis": "16:40",
+          "titel": "Reispudding",
+          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
-          "von": "16:50",
-          "bis": "17:20",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines durchgehend englisch, eines gern Mathe/Informatik/Wissenschaft — zweiter Teil der Wartezeit"
+          "von": "16:40",
+          "bis": "17:40",
+          "titel": "HTML/CSS",
+          "hinweis": "1 von 18 Lektionen — die Wartestunde genutzt"
         },
         {
-          "von": "17:20",
-          "bis": "20:20",
+          "von": "17:40",
+          "bis": "20:40",
           "titel": "Training",
           "hinweis": "3 Std."
         },
         {
-          "von": "20:20",
-          "bis": "20:45",
+          "von": "20:40",
+          "bis": "21:10",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:45",
-          "bis": "21:15",
+          "von": "21:10",
+          "bis": "21:35",
           "titel": "Hausaufgaben",
           "hinweis": "Mathe für morgen"
         },
         {
-          "von": "21:15",
-          "bis": "22:15",
-          "titel": "HTML/CSS",
-          "hinweis": "1 von 18 Lektionen — volle Stunde"
+          "von": "21:35",
+          "bis": "22:05",
+          "titel": "Trading",
+          "hinweis": "Abends"
         },
         {
-          "von": "22:15",
+          "von": "22:05",
+          "bis": "22:30",
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
+        },
+        {
+          "von": "22:30",
           "bis": "23:00",
-          "titel": "Projekte / Side Quests",
-          "hinweis": "Eigene Projekte, Gitarre oder Französisch — je nach Energie"
+          "titel": "Puffer / Side Quest",
+          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
         }
       ],
       "di": [
@@ -657,7 +681,7 @@
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben — Freistunde (falls vorhanden) für Hausaufgaben nutzen"
+          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
         },
         {
           "von": "15:15",
@@ -667,57 +691,63 @@
         },
         {
           "von": "15:25",
-          "bis": "15:55",
+          "bis": "16:00",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "Richtige Mahlzeit, in Ruhe — kein Zeitdruck"
         },
         {
-          "von": "15:55",
-          "bis": "16:15",
+          "von": "16:00",
+          "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach exakt 1 Std. Wartezeit bis Trainingsbeginn"
+          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
-          "von": "16:15",
-          "bis": "16:45",
-          "titel": "Trading",
-          "hinweis": "In der Wartezeit — Mo–Fr, 30 Min."
+          "von": "16:20",
+          "bis": "17:20",
+          "titel": "Selbstlernpfad",
+          "hinweis": "Claude Academy — Anthropic Academy (anthropic.skilljar.com): Claude 101 → Claude Code 101 → Claude Platform 101 · ~8 Std. — direkt nach der Schule, Kopf noch frisch"
         },
         {
-          "von": "16:45",
-          "bis": "17:15",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines durchgehend englisch, eines gern Mathe/Informatik/Wissenschaft — zweiter Teil der Wartezeit"
-        },
-        {
-          "von": "17:15",
-          "bis": "20:15",
+          "von": "17:20",
+          "bis": "20:20",
           "titel": "Training",
-          "hinweis": "3 Std. — Start exakt 1 Std. nach dem Reispudding"
+          "hinweis": "3 Std."
         },
         {
-          "von": "20:15",
-          "bis": "20:40",
+          "von": "20:20",
+          "bis": "20:50",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:40",
+          "von": "20:50",
           "bis": "21:40",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — Anthropic Academy (anthropic.skilljar.com): Claude 101 → Claude Code 101 → Claude Platform 101 · ~8 Std."
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
         },
         {
           "von": "21:40",
-          "bis": "22:40",
-          "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+          "bis": "22:05",
+          "titel": "Hausaufgaben",
+          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
         },
         {
-          "von": "22:40",
+          "von": "22:05",
+          "bis": "22:35",
+          "titel": "Trading",
+          "hinweis": "Abends — US-Markt ist offen"
+        },
+        {
+          "von": "22:35",
+          "bis": "22:55",
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
+        },
+        {
+          "von": "22:55",
           "bis": "23:00",
-          "titel": "Hausaufgaben",
-          "hinweis": "Kurz — größere Aufgaben in die Freistunde (Di/Fr, 2. Stunde) legen; HTML/CSS entfällt an Trainingstagen"
+          "titel": "Ausklang",
+          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
         }
       ],
       "mi": [
@@ -747,51 +777,51 @@
         },
         {
           "von": "17:40",
-          "bis": "18:10",
-          "titel": "Trading",
-          "hinweis": "In voller Länge"
-        },
-        {
-          "von": "18:10",
-          "bis": "19:10",
+          "bis": "18:40",
           "titel": "Selbstlernpfad",
-          "hinweis": "Google AI Essentials — coursera.org/specializations/ai-essentials-google · ~10 Std. — KI-Grundkompetenz, danach Prompting Essentials"
+          "hinweis": "Google AI Essentials — coursera.org/specializations/ai-essentials-google · ~10 Std. — KI-Grundkompetenz, danach Prompting Essentials — direkt nach der Schule"
         },
         {
-          "von": "19:10",
-          "bis": "20:10",
+          "von": "18:40",
+          "bis": "19:30",
           "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
         },
         {
-          "von": "20:10",
-          "bis": "21:10",
+          "von": "19:30",
+          "bis": "20:20",
           "titel": "Hausaufgaben",
-          "hinweis": "Längster HA-Block der Woche — hier liegen die meisten Fristen"
+          "hinweis": "Größter HA-Block der Woche — hier liegen die meisten Fristen"
         },
         {
-          "von": "21:10",
-          "bis": "21:30",
+          "von": "20:20",
+          "bis": "20:50",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "21:30",
-          "bis": "21:50",
+          "von": "20:50",
+          "bis": "21:20",
+          "titel": "Trading",
+          "hinweis": "Abends"
+        },
+        {
+          "von": "21:20",
+          "bis": "21:45",
           "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines durchgehend englisch, eines gern Mathe/Informatik/Wissenschaft"
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
         },
         {
-          "von": "21:50",
-          "bis": "22:50",
+          "von": "21:45",
+          "bis": "22:30",
           "titel": "HTML/CSS",
-          "hinweis": "1 von 18 Lektionen — volle Stunde"
+          "hinweis": "1 Lektion (45 Min. — ggf. auf zwei Abende verteilen)"
         },
         {
-          "von": "22:50",
+          "von": "22:30",
           "bis": "23:00",
-          "titel": "Gitarre/Keyboard",
-          "hinweis": "Kurze Übungseinheit"
+          "titel": "Puffer / Side Quest",
+          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
         }
       ],
       "do": [
@@ -815,57 +845,57 @@
         },
         {
           "von": "15:25",
-          "bis": "15:55",
+          "bis": "16:00",
           "titel": "Mittagessen",
           "hinweis": "Richtige Mahlzeit, in Ruhe"
         },
         {
-          "von": "15:55",
-          "bis": "16:15",
+          "von": "16:00",
+          "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach exakt 1 Std. Wartezeit bis Trainingsbeginn"
+          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
-          "von": "16:15",
-          "bis": "16:45",
-          "titel": "Trading",
-          "hinweis": "In der Wartezeit — Mo–Fr, 30 Min."
+          "von": "16:20",
+          "bis": "17:20",
+          "titel": "Selbstlernpfad",
+          "hinweis": "Claude Academy — Anthropic Academy — zweiter Block der Woche (anthropic.skilljar.com) — direkt nach der Schule"
         },
         {
-          "von": "16:45",
-          "bis": "17:15",
-          "titel": "Freizeit",
-          "hinweis": "Geschützt — zweiter Teil der Wartezeit gehört dir"
-        },
-        {
-          "von": "17:15",
-          "bis": "20:15",
+          "von": "17:20",
+          "bis": "20:20",
           "titel": "Training",
           "hinweis": "3 Std."
         },
         {
-          "von": "20:15",
-          "bis": "20:40",
+          "von": "20:20",
+          "bis": "20:50",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:40",
+          "von": "20:50",
           "bis": "21:40",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — Anthropic Academy — zweiter Block der Woche (anthropic.skilljar.com)"
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
         },
         {
           "von": "21:40",
-          "bis": "22:40",
-          "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+          "bis": "22:05",
+          "titel": "Hausaufgaben",
+          "hinweis": "Nur das morgen Fällige"
         },
         {
-          "von": "22:40",
+          "von": "22:05",
+          "bis": "22:35",
+          "titel": "Trading",
+          "hinweis": "Abends"
+        },
+        {
+          "von": "22:35",
           "bis": "23:00",
-          "titel": "Hausaufgaben",
-          "hinweis": "Nur das morgen Fällige — Lesen entfällt donnerstags"
+          "titel": "Freizeit",
+          "hinweis": "Geschützt — donnerstags gehört der Ausklang dir, Lesen ist optional"
         }
       ],
       "fr": [
@@ -879,7 +909,7 @@
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben — Freistunde (falls vorhanden) für Hausaufgaben nutzen"
+          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
         },
         {
           "von": "15:15",
@@ -889,57 +919,63 @@
         },
         {
           "von": "15:25",
-          "bis": "15:55",
+          "bis": "16:00",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "Richtige Mahlzeit, in Ruhe — kein Zeitdruck"
         },
         {
-          "von": "15:55",
-          "bis": "16:15",
+          "von": "16:00",
+          "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach exakt 1 Std. Wartezeit bis Trainingsbeginn"
+          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
-          "von": "16:15",
-          "bis": "16:45",
-          "titel": "Trading",
-          "hinweis": "In der Wartezeit — Mo–Fr, 30 Min."
+          "von": "16:20",
+          "bis": "17:20",
+          "titel": "Selbstlernpfad",
+          "hinweis": "CS50P — Python — Zweiter Python-Block der Woche — Kontinuität schlägt Intensität — direkt nach der Schule, Kopf noch frisch"
         },
         {
-          "von": "16:45",
-          "bis": "17:15",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines durchgehend englisch, eines gern Mathe/Informatik/Wissenschaft — zweiter Teil der Wartezeit"
-        },
-        {
-          "von": "17:15",
-          "bis": "20:15",
+          "von": "17:20",
+          "bis": "20:20",
           "titel": "Training",
-          "hinweis": "3 Std. — Start exakt 1 Std. nach dem Reispudding"
+          "hinweis": "3 Std."
         },
         {
-          "von": "20:15",
-          "bis": "20:40",
+          "von": "20:20",
+          "bis": "20:50",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "20:40",
+          "von": "20:50",
           "bis": "21:40",
-          "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — Zweiter Python-Block der Woche — Kontinuität schlägt Intensität"
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
         },
         {
           "von": "21:40",
-          "bis": "22:40",
-          "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute kurz sichern, dann gezielt die Fächer von morgen vorbereiten (siehe Stundenplan des Folgetags)"
+          "bis": "22:05",
+          "titel": "Hausaufgaben",
+          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
         },
         {
-          "von": "22:40",
+          "von": "22:05",
+          "bis": "22:35",
+          "titel": "Trading",
+          "hinweis": "Abends — US-Markt ist offen"
+        },
+        {
+          "von": "22:35",
+          "bis": "22:55",
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
+        },
+        {
+          "von": "22:55",
           "bis": "23:00",
-          "titel": "Hausaufgaben",
-          "hinweis": "Kurz — größere Aufgaben in die Freistunde (Di/Fr, 2. Stunde) legen; HTML/CSS entfällt an Trainingstagen"
+          "titel": "Ausklang",
+          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
         }
       ],
       "sa": [
@@ -1116,8 +1152,8 @@
         {
           "von": "20:30",
           "bis": "23:00",
-          "titel": "Freizeit",
-          "hinweis": "Bewusst frei"
+          "titel": "Freizeit / Puffer",
+          "hinweis": "Bewusst frei — hier landet, was unter der Woche liegen blieb, oder gar nichts"
         }
       ]
     }
