@@ -36,8 +36,20 @@ export function zerlegeZeitspanne(spanne) {
   return { von: norm(teile[0]), bis: teile[1] ? norm(teile[1]) : null };
 }
 
-/** Datenteil des eingebetteten Skripts auswerten. */
-export function leseDaten(html) {
+/** Quelltext einer Funktionsdeklaration aus einer Datei holen. */
+export function holeFunktion(quelle, name) {
+  return new RegExp(`function\\s+${name}\\s*\\([\\s\\S]*?\\n\\}`).exec(quelle)?.[0] ?? null;
+}
+
+/**
+ * Die HTML-Datei in ihre auswertbaren Teile zerlegen.
+ *
+ * Beim Bearbeiten rutscht gelegentlich ein Stück Code hinter </html>. Dort
+ * führt es kein Browser mehr aus – die Seite stürzt dann an der Stelle ab,
+ * die es gebraucht hätte. Für den Plan gehört es trotzdem dazu, also wird es
+ * hier eingesammelt und gemeldet.
+ */
+export function zerlegeSkript(html) {
   const skript = /<script>([\s\S]*?)<\/script>/.exec(html)?.[1];
   if (!skript) throw new Error('Kein <script>-Block gefunden.');
 
@@ -47,18 +59,61 @@ export function leseDaten(html) {
   const rowsFor = /function rowsFor\([\s\S]*?\n\}/.exec(skript)?.[0];
   if (!rowsFor) throw new Error('Funktion rowsFor nicht gefunden.');
 
-  // Nur der Datenteil wird ausgeführt – die Funktionen darin fassen kein
-  // document an. Der DOM-Teil ab "let currentWeek" bleibt außen vor.
-  const werkzeug = new Function(
-    `${skript.slice(0, grenze)}\n${rowsFor}\nreturn { timetable, days, tags, P, rowsFor };`,
-  )();
+  const ende = html.lastIndexOf('</html>');
+  const streu = ende >= 0 ? html.slice(ende + '</html>'.length).trim() : '';
 
-  const wochen = {};
-  for (const name of Object.keys(werkzeug.timetable)) {
-    wochen[name] = {};
-    for (const tag of TAGE) wochen[name][tag] = werkzeug.rowsFor(name, tag);
+  return { daten: skript.slice(0, grenze), rowsFor, streu };
+}
+
+/**
+ * Datenteil des eingebetteten Skripts auswerten.
+ *
+ * "ersatzQuelle" ist der Inhalt einer älteren Fassung: Fehlt in der neuen
+ * Datei eine Hilfsfunktion, wird sie von dort übernommen. Übernommen wird
+ * nur der Quelltext – die Funktion greift also auf die Daten der NEUEN
+ * Datei zu, nicht auf die der alten.
+ */
+export function leseDaten(html, { ersatzQuelle = '' } = {}) {
+  const { daten, rowsFor, streu } = zerlegeSkript(html);
+  const reparaturen = [];
+  if (streu) {
+    reparaturen.push(`${streu.length} Zeichen Code standen hinter </html> – im Browser wirkungslos, hier eingelesen.`);
   }
-  return { wochen, timetable: werkzeug.timetable, stunden: werkzeug.P, tags: werkzeug.tags };
+
+  let ergaenzt = '';
+  let werkzeug;
+  let wochen;
+
+  // Fehlt eine Hilfsfunktion, aus der Ersatzquelle nachziehen und erneut
+  // versuchen. Der Aufruf von rowsFor gehört mit in den Versuch: Eine
+  // fehlende Funktion fällt erst beim Auswerten auf, nicht beim Definieren.
+  for (let runde = 0; ; runde += 1) {
+    try {
+      werkzeug = new Function(
+        `${daten}\n${streu}\n${ergaenzt}\n${rowsFor}\nreturn { timetable, days, tags, P, rowsFor };`,
+      )();
+
+      wochen = {};
+      for (const name of Object.keys(werkzeug.timetable)) {
+        wochen[name] = {};
+        for (const tag of TAGE) wochen[name][tag] = werkzeug.rowsFor(name, tag);
+      }
+      break;
+    } catch (fehler) {
+      const fehlt = /(\w+) is not defined/.exec(fehler.message)?.[1];
+      const quelltext = fehlt && ersatzQuelle ? holeFunktion(ersatzQuelle, fehlt) : null;
+      if (!quelltext || runde >= 5) {
+        throw new Error(fehlt
+          ? `"${fehlt}" wird im Plan benutzt, ist aber nirgends definiert. `
+            + 'In der HTML-Datei ergänzen – oder mit --ersatz <ältere-Datei> von dort übernehmen.'
+          : `Datenteil ließ sich nicht auswerten: ${fehler.message}`);
+      }
+      ergaenzt += `\n${quelltext}`;
+      reparaturen.push(`"${fehlt}" fehlte und wurde aus der Ersatzdatei übernommen.`);
+    }
+  }
+
+  return { wochen, timetable: werkzeug.timetable, stunden: werkzeug.P, tags: werkzeug.tags, reparaturen };
 }
 
 /** Rohzeilen ({t,b,c}) in Planeinträge übersetzen. */
@@ -101,8 +156,26 @@ if (process.argv[1]?.endsWith('uebernehmen.mjs')) {
     process.exit(1);
   }
 
-  const roh = leseDaten(readFileSync(quelle, 'utf8'));
+  const ersatzIndex = argumente.indexOf('--ersatz');
+  const ersatzQuelle = ersatzIndex >= 0 ? readFileSync(argumente[ersatzIndex + 1], 'utf8') : '';
+
+  let roh;
+  try {
+    roh = leseDaten(readFileSync(quelle, 'utf8'), { ersatzQuelle });
+  } catch (fehler) {
+    // Verständliche Meldung statt Stacktrace – der Fehler liegt in aller
+    // Regel in der Quelldatei, nicht hier.
+    console.error(`Konnte "${quelle}" nicht auswerten:\n  ${fehler.message}`);
+    process.exit(1);
+  }
+
   const { wochen, warnungen } = baueWochen(roh);
+
+  if (roh.reparaturen.length) {
+    console.log(`${roh.reparaturen.length} Reparatur(en) an der Quelldatei – bitte dort beheben:`);
+    roh.reparaturen.forEach((r) => console.log(`  ! ${r}`));
+    console.log('');
+  }
 
   const plan = {
     zeitzone: 'Europe/Berlin',

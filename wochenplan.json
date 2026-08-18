@@ -39,13 +39,13 @@
           "von": "16:00",
           "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
+          "hinweis": "Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
           "von": "16:20",
           "bis": "17:20",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — Harvard CS50P (cs50.harvard.edu/python) · ~40 Std. — Programmier-Fundament fürs Informatikstudium, größter und wichtigster Brocken — direkt nach der Schule, Kopf noch frisch"
+          "hinweis": "CS50P — Python — cs50.harvard.edu/python · ~40 Std., größter Brocken — direkt nach der Schule, Kopf noch frisch"
         },
         {
           "von": "17:20",
@@ -63,7 +63,7 @@
           "von": "20:50",
           "bis": "21:40",
           "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
         },
         {
           "von": "21:40",
@@ -79,15 +79,9 @@
         },
         {
           "von": "22:35",
-          "bis": "22:55",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
-        },
-        {
-          "von": "22:55",
           "bis": "23:00",
-          "titel": "Ausklang",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
+          "titel": "Lesen + Ausklang",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
         }
       ],
       "di": [
@@ -119,13 +113,13 @@
           "von": "16:00",
           "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
+          "hinweis": "Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
           "von": "16:20",
           "bis": "17:20",
           "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — Anthropic Academy (anthropic.skilljar.com): Claude 101 → Claude Code 101 → Claude Platform 101 · ~8 Std. — direkt nach der Schule, Kopf noch frisch"
+          "hinweis": "Claude Academy — anthropic.skilljar.com · ~8 Std. — direkt nach der Schule, Kopf noch frisch"
         },
         {
           "von": "17:20",
@@ -143,7 +137,7 @@
           "von": "20:50",
           "bis": "21:40",
           "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
         },
         {
           "von": "21:40",
@@ -159,15 +153,9 @@
         },
         {
           "von": "22:35",
-          "bis": "22:55",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
-        },
-        {
-          "von": "22:55",
           "bis": "23:00",
-          "titel": "Ausklang",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
+          "titel": "Lesen + Ausklang",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
         }
       ],
       "mi": [
@@ -199,7 +187,7 @@
           "von": "17:40",
           "bis": "18:40",
           "titel": "Selbstlernpfad",
-          "hinweis": "Google AI Essentials — coursera.org/specializations/ai-essentials-google · ~10 Std. — KI-Grundkompetenz, danach Prompting Essentials — direkt nach der Schule"
+          "hinweis": "Google AI Essentials — coursera.org/specializations/ai-essentials-google · ~10 Std. — direkt nach der Schule"
         },
         {
           "von": "18:40",
@@ -235,13 +223,13 @@
           "von": "21:45",
           "bis": "22:30",
           "titel": "HTML/CSS",
-          "hinweis": "1 Lektion (45 Min. — ggf. auf zwei Abende verteilen)"
+          "hinweis": "1 Lektion (45 Min.)"
         },
         {
           "von": "22:30",
           "bis": "23:00",
-          "titel": "Puffer / Side Quest",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
+          "titel": "Puffer",
+          "hinweis": "Unverplant — Überhang aufholen oder Schluss machen"
         }
       ],
       "do": [
@@ -255,7 +243,7 @@
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben"
+          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
         },
         {
           "von": "15:15",
@@ -267,19 +255,19 @@
           "von": "15:25",
           "bis": "16:00",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "Richtige Mahlzeit, in Ruhe — kein Zeitdruck"
         },
         {
           "von": "16:00",
           "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
+          "hinweis": "Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
           "von": "16:20",
           "bis": "17:20",
           "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — Anthropic Academy — zweiter Block der Woche (anthropic.skilljar.com) — direkt nach der Schule"
+          "hinweis": "Claude Academy — anthropic.skilljar.com · zweiter Block der Woche — direkt nach der Schule, Kopf noch frisch"
         },
         {
           "von": "17:20",
@@ -297,25 +285,25 @@
           "von": "20:50",
           "bis": "21:40",
           "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
         },
         {
           "von": "21:40",
           "bis": "22:05",
           "titel": "Hausaufgaben",
-          "hinweis": "Nur das morgen Fällige"
+          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
         },
         {
           "von": "22:05",
           "bis": "22:35",
           "titel": "Trading",
-          "hinweis": "Abends"
+          "hinweis": "Abends — US-Markt ist offen"
         },
         {
           "von": "22:35",
           "bis": "23:00",
           "titel": "Freizeit",
-          "hinweis": "Geschützt — donnerstags gehört der Ausklang dir, Lesen ist optional"
+          "hinweis": "Geschützt — donnerstags gehört der Ausklang dir"
         }
       ],
       "fr": [
@@ -347,13 +335,13 @@
           "von": "16:00",
           "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
+          "hinweis": "Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
           "von": "16:20",
           "bis": "17:20",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — Zweiter Python-Block der Woche — Kontinuität schlägt Intensität — direkt nach der Schule, Kopf noch frisch"
+          "hinweis": "CS50P — Python — cs50.harvard.edu/python · zweiter Block der Woche — direkt nach der Schule, Kopf noch frisch"
         },
         {
           "von": "17:20",
@@ -371,7 +359,7 @@
           "von": "20:50",
           "bis": "21:40",
           "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
         },
         {
           "von": "21:40",
@@ -387,15 +375,9 @@
         },
         {
           "von": "22:35",
-          "bis": "22:55",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
-        },
-        {
-          "von": "22:55",
           "bis": "23:00",
-          "titel": "Ausklang",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
+          "titel": "Lesen + Ausklang",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
         }
       ],
       "sa": [
@@ -439,7 +421,7 @@
           "von": "13:30",
           "bis": "14:30",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — Dritter Block, ohne Zeitdruck · nach Abschluss rückt CS50 AI with Python nach"
+          "hinweis": "CS50P — Python — cs50.harvard.edu/python · dritter Block der Woche"
         },
         {
           "von": "14:30",
@@ -489,7 +471,7 @@
           "von": "08:00",
           "bis": "09:00",
           "titel": "Selbstlernpfad",
-          "hinweis": "Mathematik + Informatik-Grundlagen — Beweisführung, Lineare Algebra, Analysis, Algorithmen — Vorlauf für das LUH-Curriculum"
+          "hinweis": "Mathematik + Informatik — Beweise, Lineare Algebra, Algorithmen — LUH-Vorlauf"
         },
         {
           "von": "09:00",
@@ -525,7 +507,7 @@
           "von": "13:15",
           "bis": "14:00",
           "titel": "Eigene Projekte",
-          "hinweis": "Coding/AI-Projekte — laufend, Pausen erlaubt"
+          "hinweis": "Coding/AI-Projekte — Pausen erlaubt"
         },
         {
           "von": "14:00",
@@ -573,7 +555,7 @@
           "von": "20:30",
           "bis": "23:00",
           "titel": "Freizeit / Puffer",
-          "hinweis": "Bewusst frei — hier landet, was unter der Woche liegen blieb, oder gar nichts"
+          "hinweis": "Bewusst frei"
         }
       ]
     },
@@ -589,85 +571,67 @@
           "von": "08:00",
           "bis": "13:10",
           "titel": "Schule",
-          "hinweis": "Nur 3 Stunden — Schluss um 13:10"
+          "hinweis": "Nur 3 Stunden — Schluss um 13:10. Der freie Nachmittag ist Puffer: Hausaufgaben vorziehen oder Überhang der Woche aufholen"
         },
         {
-          "von": "13:10",
-          "bis": "13:20",
+          "von": "15:15",
+          "bis": "15:25",
           "titel": "Heimweg",
-          "hinweis": "10 Min. nach Hause"
+          "hinweis": "10 Min. nach Hause (heute schon ab 13:10)"
         },
         {
-          "von": "13:20",
-          "bis": "14:00",
+          "von": "15:25",
+          "bis": "16:00",
           "titel": "Mittagessen",
-          "hinweis": "Erste Mahlzeit, Ende der Fastenzeit — heute in Ruhe"
+          "hinweis": "Richtige Mahlzeit, in Ruhe — kein Zeitdruck"
         },
         {
-          "von": "14:00",
-          "bis": "15:00",
-          "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — Harvard CS50P (cs50.harvard.edu/python) · ~40 Std. — Programmier-Fundament fürs Informatikstudium, größter und wichtigster Brocken — direkt nach der Schule"
-        },
-        {
-          "von": "15:00",
-          "bis": "15:50",
-          "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
-        },
-        {
-          "von": "15:50",
+          "von": "16:00",
           "bis": "16:20",
-          "titel": "Puffer",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
+          "titel": "Reispudding",
+          "hinweis": "Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
           "von": "16:20",
-          "bis": "16:40",
-          "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
+          "bis": "17:20",
+          "titel": "Selbstlernpfad",
+          "hinweis": "CS50P — Python — cs50.harvard.edu/python · ~40 Std., größter Brocken — direkt nach der Schule, Kopf noch frisch"
         },
         {
-          "von": "16:40",
-          "bis": "17:40",
-          "titel": "HTML/CSS",
-          "hinweis": "1 von 18 Lektionen — die Wartestunde genutzt"
-        },
-        {
-          "von": "17:40",
-          "bis": "20:40",
+          "von": "17:20",
+          "bis": "20:20",
           "titel": "Training",
           "hinweis": "3 Std."
         },
         {
-          "von": "20:40",
-          "bis": "21:10",
+          "von": "20:20",
+          "bis": "20:50",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "21:10",
-          "bis": "21:35",
-          "titel": "Hausaufgaben",
-          "hinweis": "Mathe für morgen"
+          "von": "20:50",
+          "bis": "21:40",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
         },
         {
-          "von": "21:35",
+          "von": "21:40",
           "bis": "22:05",
-          "titel": "Trading",
-          "hinweis": "Abends"
+          "titel": "Hausaufgaben",
+          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
         },
         {
           "von": "22:05",
-          "bis": "22:30",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
+          "bis": "22:35",
+          "titel": "Trading",
+          "hinweis": "Abends — US-Markt ist offen"
         },
         {
-          "von": "22:30",
+          "von": "22:35",
           "bis": "23:00",
-          "titel": "Puffer / Side Quest",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
+          "titel": "Lesen + Ausklang",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
         }
       ],
       "di": [
@@ -699,13 +663,13 @@
           "von": "16:00",
           "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
+          "hinweis": "Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
           "von": "16:20",
           "bis": "17:20",
           "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — Anthropic Academy (anthropic.skilljar.com): Claude 101 → Claude Code 101 → Claude Platform 101 · ~8 Std. — direkt nach der Schule, Kopf noch frisch"
+          "hinweis": "Claude Academy — anthropic.skilljar.com · ~8 Std. — direkt nach der Schule, Kopf noch frisch"
         },
         {
           "von": "17:20",
@@ -723,7 +687,7 @@
           "von": "20:50",
           "bis": "21:40",
           "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
         },
         {
           "von": "21:40",
@@ -739,15 +703,9 @@
         },
         {
           "von": "22:35",
-          "bis": "22:55",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
-        },
-        {
-          "von": "22:55",
           "bis": "23:00",
-          "titel": "Ausklang",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
+          "titel": "Lesen + Ausklang",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
         }
       ],
       "mi": [
@@ -779,7 +737,7 @@
           "von": "17:40",
           "bis": "18:40",
           "titel": "Selbstlernpfad",
-          "hinweis": "Google AI Essentials — coursera.org/specializations/ai-essentials-google · ~10 Std. — KI-Grundkompetenz, danach Prompting Essentials — direkt nach der Schule"
+          "hinweis": "Google AI Essentials — coursera.org/specializations/ai-essentials-google · ~10 Std. — direkt nach der Schule"
         },
         {
           "von": "18:40",
@@ -815,13 +773,13 @@
           "von": "21:45",
           "bis": "22:30",
           "titel": "HTML/CSS",
-          "hinweis": "1 Lektion (45 Min. — ggf. auf zwei Abende verteilen)"
+          "hinweis": "1 Lektion (45 Min.)"
         },
         {
           "von": "22:30",
           "bis": "23:00",
-          "titel": "Puffer / Side Quest",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
+          "titel": "Puffer",
+          "hinweis": "Unverplant — Überhang aufholen oder Schluss machen"
         }
       ],
       "do": [
@@ -835,7 +793,7 @@
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben"
+          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
         },
         {
           "von": "15:15",
@@ -847,19 +805,19 @@
           "von": "15:25",
           "bis": "16:00",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "Richtige Mahlzeit, in Ruhe — kein Zeitdruck"
         },
         {
           "von": "16:00",
           "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
+          "hinweis": "Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
           "von": "16:20",
           "bis": "17:20",
           "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — Anthropic Academy — zweiter Block der Woche (anthropic.skilljar.com) — direkt nach der Schule"
+          "hinweis": "Claude Academy — anthropic.skilljar.com · zweiter Block der Woche — direkt nach der Schule, Kopf noch frisch"
         },
         {
           "von": "17:20",
@@ -877,25 +835,25 @@
           "von": "20:50",
           "bis": "21:40",
           "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
         },
         {
           "von": "21:40",
           "bis": "22:05",
           "titel": "Hausaufgaben",
-          "hinweis": "Nur das morgen Fällige"
+          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
         },
         {
           "von": "22:05",
           "bis": "22:35",
           "titel": "Trading",
-          "hinweis": "Abends"
+          "hinweis": "Abends — US-Markt ist offen"
         },
         {
           "von": "22:35",
           "bis": "23:00",
           "titel": "Freizeit",
-          "hinweis": "Geschützt — donnerstags gehört der Ausklang dir, Lesen ist optional"
+          "hinweis": "Geschützt — donnerstags gehört der Ausklang dir"
         }
       ],
       "fr": [
@@ -927,13 +885,13 @@
           "von": "16:00",
           "bis": "16:20",
           "titel": "Reispudding",
-          "hinweis": "Reispudding als Pre-Workout — danach 1 Std. bis Trainingsbeginn"
+          "hinweis": "Pre-Workout — danach 1 Std. bis Trainingsbeginn"
         },
         {
           "von": "16:20",
           "bis": "17:20",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — Zweiter Python-Block der Woche — Kontinuität schlägt Intensität — direkt nach der Schule, Kopf noch frisch"
+          "hinweis": "CS50P — Python — cs50.harvard.edu/python · zweiter Block der Woche — direkt nach der Schule, Kopf noch frisch"
         },
         {
           "von": "17:20",
@@ -951,7 +909,7 @@
           "von": "20:50",
           "bis": "21:40",
           "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten — 50 Min. reichen, wenn du gezielt arbeitest"
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
         },
         {
           "von": "21:40",
@@ -967,15 +925,9 @@
         },
         {
           "von": "22:35",
-          "bis": "22:55",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
-        },
-        {
-          "von": "22:55",
           "bis": "23:00",
-          "titel": "Ausklang",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder einfach früher Schluss machen — bewusst nicht verplant"
+          "titel": "Lesen + Ausklang",
+          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch, eines gern Mathe/Informatik/Wissenschaft"
         }
       ],
       "sa": [
@@ -1019,7 +971,7 @@
           "von": "13:30",
           "bis": "14:30",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — Dritter Block, ohne Zeitdruck · nach Abschluss rückt CS50 AI with Python nach"
+          "hinweis": "CS50P — Python — cs50.harvard.edu/python · dritter Block der Woche"
         },
         {
           "von": "14:30",
@@ -1069,7 +1021,7 @@
           "von": "08:00",
           "bis": "09:00",
           "titel": "Selbstlernpfad",
-          "hinweis": "Mathematik + Informatik-Grundlagen — Beweisführung, Lineare Algebra, Analysis, Algorithmen — Vorlauf für das LUH-Curriculum"
+          "hinweis": "Mathematik + Informatik — Beweise, Lineare Algebra, Algorithmen — LUH-Vorlauf"
         },
         {
           "von": "09:00",
@@ -1105,7 +1057,7 @@
           "von": "13:15",
           "bis": "14:00",
           "titel": "Eigene Projekte",
-          "hinweis": "Coding/AI-Projekte — laufend, Pausen erlaubt"
+          "hinweis": "Coding/AI-Projekte — Pausen erlaubt"
         },
         {
           "von": "14:00",
@@ -1153,7 +1105,7 @@
           "von": "20:30",
           "bis": "23:00",
           "titel": "Freizeit / Puffer",
-          "hinweis": "Bewusst frei — hier landet, was unter der Woche liegen blieb, oder gar nichts"
+          "hinweis": "Bewusst frei"
         }
       ]
     }

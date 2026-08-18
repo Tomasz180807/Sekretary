@@ -362,6 +362,6 @@ werden. Zwei Tests sichern das ab (`CEST` und `CET`).
 npm test
 ```
 
-Schwerpunkt der 84 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
+Schwerpunkt der 95 Tests: Zeitzonenumrechnung, Datumswechsel über Mitternacht,
 Sortierung von Wochenrhythmus und Einzelterminen, das Vorlauffenster, der
 Platzhalter-Schutz und die diskrete Push-Kurzfassung.
