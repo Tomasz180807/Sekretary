@@ -11,3 +11,6 @@ node_modules/
 
 # erzeugt aus wochenplan.json
 wochenplan.ics
+
+# Testaufnahme, bei Bedarf neu erzeugt
+vorschau.png
