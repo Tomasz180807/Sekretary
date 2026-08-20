@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Wochenplan — kompakt</title>
+<style>
+  :root{
+    --burgundy:#7A1F2B; --gold:#A98753; --cream:#F7F5EF;
+    --line:#DCD3BE; --ink:#2A2420; --sub:#6B6259;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; padding:28px 16px 64px; background:var(--cream);
+       font-family:Georgia,'Iowan Old Style',serif; color:var(--ink);}
+  h1{font-size:22px; letter-spacing:.04em; text-transform:uppercase;
+     color:var(--burgundy); text-align:center; margin:0 0 4px; font-weight:700;}
+  .sub{text-align:center; color:var(--sub); font-size:13px; margin:0 0 14px;
+       font-family:Helvetica,Arial,sans-serif; font-style:italic;}
+  .weekswitch{max-width:820px; margin:0 auto 16px; display:flex; justify-content:center; gap:8px;}
+  .wk-btn{padding:8px 22px; cursor:pointer; border:1px solid var(--burgundy);
+          background:#fff; color:var(--burgundy); font-family:Helvetica,Arial,sans-serif;
+          font-weight:700; font-size:13px; border-radius:20px; letter-spacing:.04em;}
+  .wk-btn.active{background:var(--burgundy); color:#fff;}
+  .assumption{max-width:820px; margin:0 auto 22px; background:#FBF3E7; border:1px solid var(--line);
+    border-radius:6px; padding:12px 16px; font-family:Helvetica,Arial,sans-serif;
+    font-size:12px; color:var(--sub); line-height:1.55;}
+  .assumption b{color:var(--burgundy);}
+  .week{max-width:820px; margin:0 auto; display:flex; gap:5px;
+        border-bottom:2px solid var(--burgundy); padding-bottom:6px;}
+  .day-btn{flex:1; padding:9px 3px; text-align:center; cursor:pointer;
+    background:transparent; border:1px solid var(--line); border-radius:6px 6px 0 0;
+    font-family:Helvetica,Arial,sans-serif; font-weight:700; font-size:13px;
+    color:var(--burgundy); letter-spacing:.03em;}
+  .day-btn.active{background:var(--burgundy); color:#fff; border-color:var(--burgundy);}
+  .day-btn:not(.active):hover{background:#eee5d8;}
+  .day-btn .tag{display:block; font-size:9px; font-weight:400; margin-top:2px;
+                opacity:.85; font-style:italic; line-height:1.3;}
+  .panel{max-width:820px; margin:0 auto; background:#fff; border:1px solid var(--line);
+         border-top:none; border-radius:0 0 8px 8px; overflow:hidden;}
+  .panel[hidden]{display:none;}
+  .lessons{padding:10px 14px; background:#EDF2ED; border-bottom:1px solid var(--line);
+           font-family:Helvetica,Arial,sans-serif; font-size:12px; color:#3A4A3C; line-height:1.6;}
+  .lessons b{color:#24422A;}
+  table{width:100%; border-collapse:collapse; font-family:Helvetica,Arial,sans-serif; font-size:13.5px;}
+  thead td{background:var(--burgundy); color:#fff; font-weight:700; padding:8px 12px;
+           font-size:11px; text-transform:uppercase; letter-spacing:.05em;}
+  tbody tr:nth-child(odd){background:#F9F7F2;}
+  tbody tr.school{background:#E7EDE8;}
+  tbody tr.gym{background:#F1E6D8;}
+  tbody tr.free{background:#E4EEF7;}
+  tbody tr.hw{background:#FBEFEF;}
+  tbody tr.prep{background:#EFF6EF;}
+  tbody tr.fa{background:#EDE9F6;}
+  tbody tr.fa td:first-child{border-left:3px solid #5B4B8A;}
+  tbody tr.buffer{background:#F2F4F2;}
+  tbody tr.buffer td{color:#6B7269; font-style:italic;}
+  tbody tr.exam{background:#F6E9E9;}
+  tbody tr.exam td:first-child{border-left:3px solid #8E2C2C;}
+  tbody tr.meal{background:#FDF6E8;}
+  tbody tr.meal td:first-child{border-left:3px solid #C98A2B;}
+  tbody tr.sidequest{background:#FAFAFA;}
+  tbody tr.sidequest td{color:#8A8279; font-style:italic;}
+  tbody tr.finite td:first-child{border-left:3px solid #1565C0;}
+  tbody tr.finite td.block::after{content:" ⏳"; font-size:11px;}
+  tbody tr.prep td:first-child{border-left:3px solid #4C7A34;}
+  tbody tr.trading td:first-child{border-left:3px solid #2E7D32;}
+  tbody tr.code td:first-child{border-left:3px solid #1565C0;}
+  tbody tr.ai-task td:first-child{border-left:3px solid var(--gold);}
+  td{padding:8px 12px; vertical-align:top; border-bottom:1px solid #EEE7D9;}
+  td.time{white-space:nowrap; font-weight:700; color:var(--burgundy); width:100px;}
+  td.block{white-space:nowrap; width:160px; font-weight:600;}
+  .alt{padding:11px 14px; background:#F4F1FA; border-top:1px solid var(--line);
+       font-family:Helvetica,Arial,sans-serif; font-size:12px; color:#4A4358; line-height:1.6;}
+  .alt b{color:#4B2E83;}
+  .legend{max-width:820px; margin:14px auto 0; display:flex; gap:14px; flex-wrap:wrap;
+          font-family:Helvetica,Arial,sans-serif; font-size:11px; color:var(--sub);}
+  .legend span{display:flex; align-items:center; gap:5px;}
+  .swatch{width:10px; height:10px; border-radius:2px; display:inline-block;}
+</style>
+</head>
+<body>
+
+<h1>Wochenplan · kompakt</h1>
+<p class="sub">Woche wählen, dann Tag antippen</p>
+
+<div class="weekswitch">
+  <button class="wk-btn active" data-wk="A">Woche A</button>
+  <button class="wk-btn" data-wk="B">Woche B</button>
+</div>
+
+<div class="assumption">
+  <b>Stunden:</b> 1️⃣ 8:00–9:30 · 2️⃣ 9:50–11:20 · 3️⃣ 11:40–13:10 · 4️⃣ 13:45–15:15 · 5️⃣ 15:20–16:50.
+  <b>Trainingssplit:</b> Mo Push · Di Pull · Fr Brust & Rücken · Sa Schultern & Beine. <b>Rest Days: Mi, Do, So.</b> Training sonst <b>3 Std.</b>, ab 17:00 — außer donnerstags, wo es auf 16:00–19:00 vorgezogen wird, damit die geschützte Freizeit ab 19:30 erhalten bleibt (dafür entfällt HTML/CSS an dem Tag). <b>Selbstlernpfad: 1 volle Stunde — jeden Tag, auch Do</b> — an Trainingstagen bewusst <b>vor</b> dem Training (16:00–17:00), weil der Kopf da frischer ist als um 22:30. Belegt mit den studienrelevanten Kursen: CS50P, Claude Academy, AI Essentials. <b>Puffer-Regel:</b> Der Plan ist eine Landkarte, kein Vertrag. Jeder Tag endet mit einem unverplanten Block — wenn etwas ausfällt, ist das eingeplant, nicht gescheitert. Zwei bis drei Blöcke pro Woche zu verlieren ist normal; entscheidend ist, dass Stufe 1 über die Woche gesehen steht, nicht an jedem einzelnen Tag.<br><b>Prioritätenstufen:</b> <b>1 · Unantastbar</b> — Selbstlernpfad (1 Std.), Vorbereitung Folgetag (1 Std.), Training (3 Std.), Hausaufgaben. Diese vier werden nie gekürzt; alles andere weicht ihnen. <b>2 · Täglich, aber kürzbar</b> — Trading (30 Min.), Lesen (20–30 Seiten). <b>3 · Endliche Aufgaben ⏳</b> — HTML/CSS: wird fertig und gibt den Slot frei, darf aber hinter Stufe 1 zurücktreten. <b>4 · Laufend, pausierbar</b> — eigene Projekte. <b>5 · Side Quests</b> — Französisch, Gitarre/Keyboard: ohne schlechtes Gewissen streichbar.</div>
+
+<div class="assumption" style="background:#F5EFF7;border-color:#CBB8D6">
+  <b>🎯 Zielbild und was daraus für den Plan folgt</b><br>
+  <b>Horizont 1 — bis April 2027 (≈ 7,5 Monate):</b> Abitur. Das ist das <i>einzige</i> Tor zur LUH und der nächste harte Termin.
+  Schulfächer, Vorbereitung Folgetag und Hausaufgaben haben deshalb weiter oberste Priorität — daran ändert das Fernziel nichts.<br>
+  <b>Horizont 2 — 2027–2030: Bachelor Informatik an der LUH.</b> Hier entscheidet sich die Elite-Bewerbung,
+  nicht heute: Notenschnitt, Hiwi-/Forschungsstellen, Bachelorarbeit, Empfehlungsschreiben von Professoren.<br>
+  <b>Horizont 3 — ab ca. 2030: Master-Bewerbung MIT / Oxford / Cambridge.</b> Gewichtet werden dort v. a.
+  Bachelor-GPA, Forschungserfahrung, Empfehlungsschreiben, mathematische Tiefe und ein Sprachnachweis (TOEFL/IELTS).<br>
+  <b>Was heute wirklich einzahlt:</b> mathematische Reife (Beweise, nicht Rechenschema), Programmier-Fundament,
+  akademisches Englisch, Arbeitsdisziplin. Deshalb hat <b>Mathematik-Vertiefung jetzt 2 feste Slots pro Woche</b>
+  und Informatik/Programmieren 2 weitere — sie zahlen auf Abitur <i>und</i> Horizont 2/3 gleichzeitig ein.<br>
+  <b>Ehrlicher Zielkonflikt:</b> Die Webdesign-Firma und die Elite-Bewerbung konkurrieren um dieselben Stunden.
+  Für MIT/Oxbridge zählt ein Unternehmen deutlich weniger als Forschungserfahrung und Noten; für deine finanzielle
+  Unabhängigkeit zählt es sehr viel. Der Plan hält beides am Leben, aber der Business-Teil ist bewusst auf
+  <b>1 Kurs-Slot (Mi) + Trading + eigene Projekte</b> begrenzt — mehr wäre auf Kosten von Horizont 1 gegangen.<br>
+  <b>HTML/CSS</b> ist ein Firmen-Werkzeug, kein akademischer Baustein — genau deshalb steht es als endliche Aufgabe
+  weit oben: schnell durchziehen, Slot freimachen, danach rückt Mathe/Informatik nach.
+</div>
+
+<div class="assumption" style="background:#EDF3FB;border-color:#B9CFE6">
+  <b>⏳ Endliche Aufgaben</b><br>
+  <b>HTML/CSS:</b> 18 Lektionen, ca. 4 Slots/Woche → <b>nach ca. 4–5 Wochen durch</b>. Danach rückt CS50P nach.<br>
+  <b>Selbstlernpfad:</b> CS50P ~40 Std. (Mo/Fr/Sa) · Claude Academy ~8 Std. (Di/Do) · Google AI Essentials ~10 Std. (Mi).<br>
+  <b>Zurückgestellt bis diese drei durch sind:</b> Wharton Marketing, HubSpot Sales, Michigan Negotiation, YC Startup School.
+</div>
+
+<div class="assumption" style="background:#F0EDF8;border-color:#B7ACD6">
+  <b>📝 Facharbeit — Abgabe 28.09.2026 (noch ca. 5,7 Wochen)</b><br>
+  Feste Blöcke: <b>Mi 19:55–21:10 · Do 17:30–19:15 · So 16:30–17:45</b> = ca. 4 Std./Woche → rund 23 Std. bis zur Abgabe.
+  <b>Das ist knapp.</b> Wenn Gliederung und Literatur noch nicht stehen, nimm bis zur Abgabe zusätzlich den
+  Freitag-Übungsblock und den Woche-B-Montagnachmittag dazu — Physik-Olympiade und HTML/CSS können 5 Wochen warten, die Frist nicht.
+</div>
+
+<div class="assumption" style="background:#FBF0F0;border-color:#D9B5B5">
+  <b>📄 Abiklausur-Plan — 2 vollständige Klausuren pro Woche</b><br>
+  <b>Samstag:</b> je 1. Hälfte beider Klausuren · <b>Sonntag:</b> je 2. Hälfte + Korrektur.
+  <b>Woche A:</b> Mathematik + Physik · <b>Woche B:</b> Englisch + Chemie.<br>
+  Da A und B wöchentlich wechseln, ergibt das pro Monat <b>genau 2 Klausuren je Prüfungsfach</b> (Mathe, Physik, Englisch, Chemie).<br>
+  <b>Jahrgangs-Rotation — nach jedem Durchlauf ein Jahr weiterrücken:</b>
+  Monat 1: Abitur Nds. <b>2022</b> · Monat 2: <b>2021</b> · Monat 3: <b>2020</b> · Monat 4: <b>2019</b> · Monat 5: <b>2018</b>.
+  Im Tagesplan steht jeweils das aktuell eingetragene Jahr — beim Monatswechsel im Code (Konstante <code>KLAUSUR</code>) anpassen.<br>
+  <i>Ehrlich: 5 Std. Samstag + 5 Std. Sonntag sind 10 Std. Klausurarbeit pro Wochenende. Das ist viel. Wenn es nach drei Wochen
+  nicht trägt, reduziere auf 1 Klausur pro Woche (= 1 pro Fach und Monat) statt die Qualität der Korrektur zu opfern.</i>
+</div>
+
+<div class="week" id="week"></div>
+<div class="panel" id="panel"></div>
+
+<div class="legend">
+  <span><i class="swatch" style="background:#E7EDE8"></i> Schule</span>
+  <span><i class="swatch" style="background:#F1E6D8"></i> Training</span>
+  <span><i class="swatch" style="background:#E4EEF7"></i> Freizeit</span>
+  <span><i class="swatch" style="background:#FBEFEF"></i> Hausaufgaben</span>
+  <span><i class="swatch" style="background:#4C7A34"></i> Vorbereitung Folgetag</span>
+  <span>⏳ endliche Aufgabe</span>
+  <span><i class="swatch" style="background:#8E2C2C"></i> Abiklausur</span>
+  <span><i class="swatch" style="background:#5B4B8A"></i> Facharbeit</span>
+  <span><i class="swatch" style="background:#FDF6E8;border:1px solid #C98A2B"></i> Mahlzeit</span>
+  <span><i class="swatch" style="background:#DDD"></i> Side Quest (streichbar)</span>
+  <span><i class="swatch" style="background:#2E7D32"></i> Trading</span>
+  <span><i class="swatch" style="background:#1565C0"></i> HTML/CSS</span>
+  <span><i class="swatch" style="background:var(--gold)"></i> KI/Projekte</span>
+</div>
+
+<script>
+const P = ["8:00–9:30","9:50–11:20","11:40–13:10","13:45–15:15","15:20–16:50"];
+
+const timetable = {
+  A:{
+    mo:["Spanisch","Physik","Mathe","Musik"],
+    di:["Mathe","— frei —","Englisch","Geschichte"],
+    mi:["Chemie","Deutsch","PoWi","Physik","Sport"],
+    do:["Chemie","Englisch","Geschichte","Spanisch"],
+    fr:["Musik","— frei —","Mathe","Seminarfach"],
+  },
+  B:{
+    mo:["Spanisch","Physik","Mathe"],
+    di:["Mathe","— frei —","Englisch","Geschichte"],
+    mi:["Chemie","Deutsch","PoWi","Physik","Sport"],
+    do:["Physik","Englisch","Deutsch","PoWi"],
+    fr:["Musik","— frei —","Englisch","Seminarfach"],
+  }
+};
+
+// Hausaufgaben-Fristen (aus dem Stundenplan errechnet: wann ist die nächste Stunde des Fachs)
+const homework = {
+  A:{
+    mo:{urgent:"Mathe (morgen Di, 1. Stunde)", later:"Physik → Mi · Spanisch → Do · Musik → Fr", note:"Mathe hat heute die kürzeste Frist — zuerst erledigen."},
+    di:{urgent:"Physik (morgen Mi, 4. Stunde)", later:"Englisch + Geschichte → Do · Mathe → Fr", note:"Physik wurde Montag aufgegeben und ist morgen fällig."},
+    mi:{urgent:"Chemie (morgen Do, 1. Stunde)", later:"Englisch + Geschichte + Spanisch → morgen Do · Deutsch + PoWi → erst nächste Woche Mi", note:"Schwerster Hausaufgaben-Abend der Woche A — dafür Rest Day, also Zeit da."},
+    do:{urgent:"Musik + Mathe (morgen Fr)", later:"Chemie → Mi (Woche B) · Englisch + Geschichte → Di (Woche B) · Spanisch → Mo (Woche B)", note:"Chemie war gestern & heute — hier fällt oft nichts an."},
+    fr:{urgent:"Mathe (Montag, Woche B)", later:"Spanisch + Physik → Mo/Mi Woche B · Musik + Seminarfach → erst Fr Woche B", note:"Rest übers Wochenende verteilen — Samstag ist als Auffangtag eingeplant."},
+  },
+  B:{
+    mo:{urgent:"Mathe (morgen Di, 1. Stunde)", later:"Physik → Mi · Spanisch → erst nächste Woche Mo", note:"Kurzer Schultag bis 13:10 — hier lässt sich viel vorarbeiten."},
+    di:{urgent:"Physik (morgen Mi, 4. Stunde)", later:"Englisch → Do · Geschichte → erst nächste Woche Di · Mathe → nächste Woche Mo", note:"Geschichte hat volle 5 Schultage Zeit — nicht heute machen."},
+    mi:{urgent:"Deutsch + PoWi + Physik (alle morgen Do!)", later:"Chemie → erst nächste Woche Mi", note:"Härtester Hausaufgaben-Abend beider Wochen — drei Fächer auf einmal. Rest Day hilft."},
+    do:{urgent:"Englisch (morgen Fr, 3. Stunde)", later:"Physik → Mo · Deutsch + PoWi → nächste Woche Mi", note:"Nur ein Fach dringend — passt zur geschützten Freizeit heute."},
+    fr:{urgent:"Musik (Montag)", later:"Englisch → Di · Seminarfach → erst Fr nächste Woche", note:"Leichtester Hausaufgaben-Freitag — Wochenende bleibt frei."},
+  }
+};
+
+const ALTERNATIVES = `<b>Wenn nichts aufgegeben wurde (z. B. gleiches Fach zwei Tage hintereinander):</b><br>
+1. <b>Vorarbeiten</b> auf das Fach mit der nächsten Frist (siehe „später fällig" oben).<br>
+2. <b>HTML/CSS</b> — endlicher Kurs, je schneller durch, desto eher ist der Slot frei.<br>
+3. <b>Früher Schluss machen</b> — nicht künstlich füllen.`;
+
+function lessonsHTML(wk, dayKey){
+  const t = timetable[wk][dayKey];
+  if(!t) return "";
+  let s = t.map((f,i)=> `${i+1}. <b>${f}</b> <span style="opacity:.7">(${P[i]})</span>`).join(" &nbsp;·&nbsp; ");
+  return `<div class="lessons">Unterricht heute: ${s}</div>`;
+}
+
+function hwHTML(wk, dayKey){
+  const h = homework[wk] && homework[wk][dayKey];
+  if(!h) return `<div class="alt">${ALTERNATIVES}</div>`;
+  return `<div class="alt"><b>Fällig morgen:</b> ${h.urgent}<br>
+    <b>Später fällig:</b> ${h.later}<br>
+    <span style="font-style:italic">${h.note}</span><hr style="border:none;border-top:1px solid #D8D0E4;margin:9px 0">
+    ${ALTERNATIVES}</div>`;
+}
+
+// ---------- Tagesgerüste ----------
+const SPLIT = { mo:"Push", di:"Pull", fr:"Brust & Rücken", sa:"Schultern & Beine" };
+
+// Klausur-Rotation: Woche A = Mathe + Physik, Woche B = Englisch + Chemie
+const KLAUSUR = {
+  A:[{fach:"Mathematik (P1)", jahr:"Abitur Nds. 2022, eA — Analysis + Stochastik"},
+     {fach:"Physik (P2)",     jahr:"Abitur Nds. 2022, eA — Quantenobjekte/Elektrodynamik"}],
+  B:[{fach:"Englisch (P3)",   jahr:"Abitur Nds. 2022, eA — Textaufgabe + Comment"},
+     {fach:"Chemie (P4)",     jahr:"Abitur Nds. 2022, gA — Organische Chemie"}],
+};
+function klausur(wk, i, haelfte){
+  const k = KLAUSUR[wk][i];
+  return "<b>" + k.fach + "</b> · " + k.jahr + " — <b>" + haelfte + "</b> unter Prüfungsbedingungen";
+}
+
+function trainingSchoolDay(dayKey, wk){
+  const kurzerTag = (dayKey === "mo" && wk === "B");
+  const schulzeile = kurzerTag
+    ? {t:"08:00–13:10", b:"Schule", c:"Nur 3 Stunden — Schluss 13:10. Freier Nachmittag = Puffer für Facharbeit oder Überhang", cls:"school"}
+    : {t:"08:00–15:15", b:"Schule", c:"Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen", cls:"school"};
+  const spaetblock = (dayKey === "fr")
+    ? {t:"22:05–22:35", b:"Übungen / Olympiade", c:"Physik-Olympiade oder freie Übungsaufgaben statt Hausaufgaben — freitags ist der Puffer bis Sonntag am größten", cls:"hw"}
+    : {t:"22:05–22:35", b:"Hausaufgaben", c:"Kurz — Größeres gehört in die Freistunde oder aufs Wochenende", cls:"hw"};
+  return [
+    {t:"07:00–07:30", b:"Aufstehen", c:"Ruhig ankommen, Fastenzeit läuft"},
+    schulzeile,
+    {t:"15:15–15:25", b:"Heimweg", c:"10 Min. nach Hause" + (kurzerTag ? " (heute schon ab 13:10)" : "")},
+    {t:"15:25–15:55", b:"Trading", c:"Direkt nach der Schule — Mo–Fr", cls:"trading"},
+    {t:"15:55–16:25", b:"Mittagessen", c:"Richtige Mahlzeit, in Ruhe", cls:"meal"},
+    {t:"16:25–16:45", b:"Reispudding", c:"Pre-Workout — danach 1 Std. bis Trainingsbeginn", cls:"meal"},
+    {t:"16:45–17:45", b:"Selbstlernpfad", c:slp(dayKey) + " — die Wartestunde genutzt", cls:"ai-task finite"},
+    {t:"17:45–20:45", b:"Training · " + SPLIT[dayKey], c:"3 Std.", cls:"gym"},
+    {t:"20:45–21:15", b:"Abendessen", c:"Pause", cls:"meal"},
+    {t:"21:15–22:05", b:"Vorbereitung Folgetag", c:"Stoff von heute sichern + Fächer von morgen vorbereiten", cls:"prep"},
+    spaetblock,
+    {t:"22:35–23:00", b:"Lesen + Ausklang", c:"2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch", cls:"buffer"},
+  ];
+}
+
+// Mittwoch: Rest Day, Schule bis 16:50 (inkl. Sport)
+function wednesdayRest(){
+  return [
+    {t:"07:00–07:30", b:"Aufstehen", c:"Ruhig ankommen, Fastenzeit läuft"},
+    {t:"08:00–16:50", b:"Schule + Sport", c:"5 Stunden inkl. Sport — längster Schultag", cls:"school"},
+    {t:"16:50–17:00", b:"Heimweg", c:"10 Min. nach Hause"},
+    {t:"17:00–17:30", b:"Trading", c:"Direkt nach der Schule", cls:"trading"},
+    {t:"17:30–18:05", b:"Mittagessen", c:"Rest Day — kein Reispudding nötig", cls:"meal"},
+    {t:"18:05–19:05", b:"Selbstlernpfad", c:slp("mi"), cls:"ai-task finite"},
+    {t:"19:05–19:55", b:"Vorbereitung Folgetag", c:"Stoff von heute sichern + Fächer von morgen vorbereiten", cls:"prep"},
+    {t:"19:55–21:10", b:"Facharbeit", c:"Facharbeit — Abgabe 28.09.2026. Bis dahin höchste Priorität nach Schule/Training — Rest Day, größerer Block möglich", cls:"fa"},
+    {t:"21:10–21:40", b:"Abendessen", c:"Pause", cls:"meal"},
+    {t:"21:40–22:10", b:"Hausaufgaben", c:"Meiste Fristen liegen auf Donnerstag", cls:"hw"},
+    {t:"22:10–22:35", b:"Lesen", c:"2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"},
+    {t:"22:35–23:00", b:"Puffer", c:"Puffer: Überhang aufholen, Side Quest, oder früher Schluss machen", cls:"buffer"},
+  ];
+}
+
+// Donnerstag: Rest Day, Schule bis 15:15 — größter Facharbeit-Block der Woche
+function thursdayRest(){
+  return [
+    {t:"07:00–07:30", b:"Aufstehen", c:"Ruhig ankommen, Fastenzeit läuft"},
+    {t:"08:00–15:15", b:"Schule", c:"Siehe Stundenplan oben", cls:"school"},
+    {t:"15:15–15:25", b:"Heimweg", c:"10 Min. nach Hause"},
+    {t:"15:25–15:55", b:"Trading", c:"Direkt nach der Schule", cls:"trading"},
+    {t:"15:55–16:30", b:"Mittagessen", c:"Rest Day — kein Reispudding nötig", cls:"meal"},
+    {t:"16:30–17:30", b:"Selbstlernpfad", c:slp("do"), cls:"ai-task finite"},
+    {t:"17:30–19:15", b:"Facharbeit", c:"Facharbeit — Abgabe 28.09.2026. Bis dahin höchste Priorität nach Schule/Training — längster Werktagsblock, weil kein Training", cls:"fa"},
+    {t:"19:15–19:45", b:"Abendessen", c:"Pause", cls:"meal"},
+    {t:"19:45–20:35", b:"Vorbereitung Folgetag", c:"Stoff von heute sichern + Fächer von morgen vorbereiten", cls:"prep"},
+    {t:"20:35–21:05", b:"Hausaufgaben", c:"Nur das morgen Fällige", cls:"hw"},
+    {t:"21:05–21:30", b:"Lesen", c:"2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"},
+    {t:"21:30–23:00", b:"Freizeit", c:"Geschützt — Rest Day, bewusst nichts eingeplant", cls:"free"},
+  ];
+}
+
+// Samstag: Training (Schultern & Beine) + erste Hälften beider Klausuren
+function saturdayRest(wk){
+  return [
+    {t:"07:00–08:00", b:"Aufstehen", c:"Ruhig ankommen, Fastenzeit läuft"},
+    {t:"08:00–10:30", b:"Abiklausur I", c:klausur(wk,0,"1. Hälfte") + " — 8:00 wie im echten Abitur", cls:"exam"},
+    {t:"10:30–10:45", b:"Pause", c:"Kurz raus, nichts lesen"},
+    {t:"10:45–13:15", b:"Abiklausur II", c:klausur(wk,1,"1. Hälfte"), cls:"exam"},
+    {t:"13:15–14:15", b:"Mittagessen", c:"Erste Mahlzeit, Ende der Fastenzeit", cls:"meal"},
+    {t:"14:15–15:00", b:"Hausaufgaben", c:"Großer Auffangblock für die Woche", cls:"hw"},
+    {t:"15:00–15:20", b:"Reispudding", c:"Pre-Workout — danach 1 Std. bis Trainingsbeginn", cls:"meal"},
+    {t:"15:20–16:20", b:"Selbstlernpfad", c:slp("sa"), cls:"ai-task finite"},
+    {t:"16:20–19:20", b:"Training · " + SPLIT.sa, c:"3 Std.", cls:"gym"},
+    {t:"19:20–19:50", b:"Abendessen", c:"Pause", cls:"meal"},
+    {t:"19:50–20:20", b:"Lesen", c:"2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch — kein Trading am Wochenende"},
+    {t:"20:20–23:00", b:"Freizeit", c:"Bewusst frei", cls:"free"},
+  ];
+}
+
+// Sonntag: Rest Day — zweite Hälften, Korrektur, größter Hausaufgabenblock
+function sundayDay(wk){
+  return [
+    {t:"07:00–08:00", b:"Aufstehen", c:"Ruhig ankommen, Fastenzeit läuft"},
+    {t:"08:00–10:30", b:"Abiklausur I", c:klausur(wk,0,"2. Hälfte") + " — damit ist sie komplett", cls:"exam"},
+    {t:"10:30–10:45", b:"Pause", c:"Kurz raus"},
+    {t:"10:45–13:15", b:"Abiklausur II", c:klausur(wk,1,"2. Hälfte") + " — damit ist sie komplett", cls:"exam"},
+    {t:"13:15–14:15", b:"Mittagessen", c:"Erste Mahlzeit, Ende der Fastenzeit", cls:"meal"},
+    {t:"14:15–15:15", b:"Korrektur & Fehleranalyse", c:"Beide Klausuren mit Erwartungshorizont abgleichen — Fehlertypen notieren, nicht nur Punkte", cls:"exam"},
+    {t:"15:15–16:30", b:"Hausaufgaben", c:"Größter Block der Woche — alles fertigstellen, was Montag fällig ist", cls:"hw"},
+    {t:"16:30–17:45", b:"Facharbeit", c:"Facharbeit — Abgabe 28.09.2026. Bis dahin höchste Priorität nach Schule/Training", cls:"fa"},
+    {t:"17:45–18:15", b:"Abendessen", c:"Pause", cls:"meal"},
+    {t:"18:15–19:15", b:"Selbstlernpfad", c:slp("so"), cls:"ai-task finite"},
+    {t:"19:15–19:45", b:"Lesen", c:"2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch — kein Trading am Wochenende"},
+    {t:"19:45–23:00", b:"Freizeit / Puffer", c:"Puffer: Überhang aufholen, Side Quest, oder früher Schluss machen", cls:"free"},
+  ];
+}
+
+const days = [
+  {key:"mo", label:"Mo"}, {key:"di", label:"Di"}, {key:"mi", label:"Mi"},
+  {key:"do", label:"Do"}, {key:"fr", label:"Fr"}, {key:"sa", label:"Sa"}, {key:"so", label:"So"},
+];
+
+const tags = {
+  A:{mo:"Push", di:"Pull", mi:"bis 16:50 · Rest", do:"Rest · Facharbeit", fr:"Brust & Rücken",
+     sa:"Schultern+Beine · Abi Ma/Ph", so:"Rest · Abi Ma/Ph"},
+  B:{mo:"bis 13:10 · Push", di:"Pull", mi:"bis 16:50 · Rest", do:"Rest · Facharbeit", fr:"Brust & Rücken",
+     sa:"Schultern+Beine · Abi En/Ch", so:"Rest · Abi En/Ch"},
+};
+
+let currentWeek = "A";
+let activeDay = null;
+const weekEl = document.getElementById("week");
+const panelEl = document.getElementById("panel");
+
+function rowsFor(wk, dayKey){
+  if(dayKey === "mi") return wednesdayRest();
+  if(dayKey === "do") return thursdayRest();
+  if(dayKey === "sa") return saturdayRest(wk);
+  if(dayKey === "so") return sundayDay(wk);
+  return trainingSchoolDay(dayKey, wk);
+}
+
+function render(dayKey){
+  const rows = rowsFor(currentWeek, dayKey);
+  let html = lessonsHTML(currentWeek, dayKey);
+  html += `<table><thead><tr><td>Zeit</td><td>Block</td><td>Inhalt</td></tr></thead><tbody>`;
+  rows.forEach(r=>{
+    html += `<tr class="${r.cls||''}"><td class="time">${r.t}</td><td class="block">${r.b}</td><td>${r.c}</td></tr>`;
+  });
+  html += `</tbody></table>`;
+  html += hwHTML(currentWeek, dayKey);
+  panelEl.innerHTML = html;
+}
+
+function buildDayButtons(){
+  weekEl.innerHTML = "";
+  days.forEach(d=>{
+    const btn = document.createElement("button");
+    btn.className = "day-btn" + (activeDay === d.key ? " active" : "");
+    btn.innerHTML = `${d.label}<span class="tag">${tags[currentWeek][d.key]}</span>`;
+    btn.addEventListener("click", ()=>{
+      if(activeDay === d.key){
+        activeDay = null;
+        panelEl.setAttribute("hidden","");
+        buildDayButtons();
+        return;
+      }
+      activeDay = d.key;
+      panelEl.removeAttribute("hidden");
+      buildDayButtons();
+      render(d.key);
+    });
+    weekEl.appendChild(btn);
+  });
+}
+
+document.querySelectorAll(".wk-btn").forEach(b=>{
+  b.addEventListener("click", ()=>{
+    document.querySelectorAll(".wk-btn").forEach(x=>x.classList.remove("active"));
+    b.classList.add("active");
+    currentWeek = b.dataset.wk;
+    buildDayButtons();
+    if(activeDay) render(activeDay);
+  });
+});
+
+activeDay = "mo";
+buildDayButtons();
+render("mo");
+</script>
+</body>
+</html>const SELBSTLERNPFAD = {
+  mo:{name:"CS50P — Python", detail:"cs50.harvard.edu/python · ~40 Std., größter Brocken"},
+  di:{name:"Claude Academy", detail:"anthropic.skilljar.com · ~8 Std."},
+  mi:{name:"Google AI Essentials", detail:"coursera.org/specializations/ai-essentials-google · ~10 Std."},
+  do:{name:"Claude Academy", detail:"anthropic.skilljar.com · zweiter Block der Woche"},
+  fr:{name:"CS50P — Python", detail:"cs50.harvard.edu/python · zweiter Block der Woche"},
+  sa:{name:"CS50P — Python", detail:"cs50.harvard.edu/python · dritter Block der Woche"},
+  so:{name:"Mathematik + Informatik", detail:"Beweise, Lineare Algebra, Algorithmen — LUH-Vorlauf"},
+};
+
+
