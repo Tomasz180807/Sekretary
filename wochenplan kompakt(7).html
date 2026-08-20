@@ -198,6 +198,21 @@ const ALTERNATIVES = `<b>Wenn nichts aufgegeben wurde (z. B. gleiches Fach zwei 
 2. <b>HTML/CSS</b> — endlicher Kurs, je schneller durch, desto eher ist der Slot frei.<br>
 3. <b>Früher Schluss machen</b> — nicht künstlich füllen.`;
 
+const SELBSTLERNPFAD = {
+  mo:{name:"CS50P — Python", detail:"cs50.harvard.edu/python · ~40 Std., größter Brocken"},
+  di:{name:"Claude Academy", detail:"anthropic.skilljar.com · ~8 Std."},
+  mi:{name:"Google AI Essentials", detail:"coursera.org/specializations/ai-essentials-google · ~10 Std."},
+  do:{name:"Claude Academy", detail:"anthropic.skilljar.com · zweiter Block der Woche"},
+  fr:{name:"CS50P — Python", detail:"cs50.harvard.edu/python · zweiter Block der Woche"},
+  sa:{name:"CS50P — Python", detail:"cs50.harvard.edu/python · dritter Block der Woche"},
+  so:{name:"Mathematik + Informatik", detail:"Beweise, Lineare Algebra, Algorithmen — LUH-Vorlauf"},
+};
+
+function slp(dayKey){
+  const s = SELBSTLERNPFAD[dayKey];
+  return s.name + " — " + s.detail;
+}
+
 function lessonsHTML(wk, dayKey){
   const t = timetable[wk][dayKey];
   if(!t) return "";
@@ -399,14 +414,4 @@ buildDayButtons();
 render("mo");
 </script>
 </body>
-</html>const SELBSTLERNPFAD = {
-  mo:{name:"CS50P — Python", detail:"cs50.harvard.edu/python · ~40 Std., größter Brocken"},
-  di:{name:"Claude Academy", detail:"anthropic.skilljar.com · ~8 Std."},
-  mi:{name:"Google AI Essentials", detail:"coursera.org/specializations/ai-essentials-google · ~10 Std."},
-  do:{name:"Claude Academy", detail:"anthropic.skilljar.com · zweiter Block der Woche"},
-  fr:{name:"CS50P — Python", detail:"cs50.harvard.edu/python · zweiter Block der Woche"},
-  sa:{name:"CS50P — Python", detail:"cs50.harvard.edu/python · dritter Block der Woche"},
-  so:{name:"Mathematik + Informatik", detail:"Beweise, Lineare Algebra, Algorithmen — LUH-Vorlauf"},
-};
-
-
+</html>
