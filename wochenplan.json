@@ -15,31 +15,31 @@
           "von": "07:00",
           "bis": "07:30",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
+          "hinweis": "Freistunde (Di/Fr, 2. Std.) für Hausaufgaben oder Facharbeit nutzen"
         },
         {
           "von": "15:15",
           "bis": "15:25",
           "titel": "Heimweg",
-          "hinweis": "10 Min. nach Hause"
+          "hinweis": "10 Min."
         },
         {
           "von": "15:25",
           "bis": "15:55",
           "titel": "Trading",
-          "hinweis": "Direkt nach der Schule — Mo–Fr"
+          "hinweis": "Direkt nach der Schule — eine Session"
         },
         {
           "von": "15:55",
           "bis": "16:25",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "In Ruhe"
         },
         {
           "von": "16:25",
@@ -51,7 +51,7 @@
           "von": "16:45",
           "bis": "17:45",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — cs50.harvard.edu/python · ~40 Std., größter Brocken — die Wartestunde genutzt"
+          "hinweis": "KI-Kurs: CS50P / Claude Academy / Google AI Essentials — an Trainingstagen abwechselnd"
         },
         {
           "von": "17:45",
@@ -75,13 +75,13 @@
           "von": "22:05",
           "bis": "22:35",
           "titel": "Hausaufgaben",
-          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
+          "hinweis": "Kurz — Größeres in die Freistunde oder aufs Wochenende"
         },
         {
           "von": "22:35",
           "bis": "23:00",
           "titel": "Lesen + Ausklang",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch"
         }
       ],
       "di": [
@@ -89,31 +89,31 @@
           "von": "07:00",
           "bis": "07:30",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
+          "hinweis": "Freistunde (Di/Fr, 2. Std.) für Hausaufgaben oder Facharbeit nutzen"
         },
         {
           "von": "15:15",
           "bis": "15:25",
           "titel": "Heimweg",
-          "hinweis": "10 Min. nach Hause"
+          "hinweis": "10 Min."
         },
         {
           "von": "15:25",
           "bis": "15:55",
           "titel": "Trading",
-          "hinweis": "Direkt nach der Schule — Mo–Fr"
+          "hinweis": "Direkt nach der Schule — eine Session"
         },
         {
           "von": "15:55",
           "bis": "16:25",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "In Ruhe"
         },
         {
           "von": "16:25",
@@ -125,7 +125,7 @@
           "von": "16:45",
           "bis": "17:45",
           "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — anthropic.skilljar.com · ~8 Std. — die Wartestunde genutzt"
+          "hinweis": "HTML/CSS — 1 von 18 Lektionen — an Trainingstagen abwechselnd"
         },
         {
           "von": "17:45",
@@ -149,13 +149,13 @@
           "von": "22:05",
           "bis": "22:35",
           "titel": "Hausaufgaben",
-          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
+          "hinweis": "Kurz — Größeres in die Freistunde oder aufs Wochenende"
         },
         {
           "von": "22:35",
           "bis": "23:00",
           "titel": "Lesen + Ausklang",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch"
         }
       ],
       "mi": [
@@ -163,37 +163,37 @@
           "von": "07:00",
           "bis": "07:30",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "16:50",
           "titel": "Schule + Sport",
-          "hinweis": "5 Stunden inkl. Sport — längster Schultag"
+          "hinweis": "5 Stunden inkl. Sport"
         },
         {
           "von": "16:50",
           "bis": "17:00",
           "titel": "Heimweg",
-          "hinweis": "10 Min. nach Hause"
+          "hinweis": "10 Min."
         },
         {
           "von": "17:00",
           "bis": "17:30",
           "titel": "Trading",
-          "hinweis": "Direkt nach der Schule"
+          "hinweis": "Nach der Schule — deckt heute beide Sessions ab (Schulschluss erst 16:50)"
         },
         {
           "von": "17:30",
           "bis": "18:05",
           "titel": "Mittagessen",
-          "hinweis": "Rest Day — kein Reispudding nötig"
+          "hinweis": "Ruhetag — kein Reispudding nötig"
         },
         {
           "von": "18:05",
           "bis": "19:05",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Google AI Essentials — coursera.org/specializations/ai-essentials-google · ~10 Std."
+          "titel": "Selbstlernpfad I",
+          "hinweis": "KI-Kurs: CS50P / Claude Academy / Google AI Essentials"
         },
         {
           "von": "19:05",
@@ -203,33 +203,33 @@
         },
         {
           "von": "19:55",
-          "bis": "21:10",
-          "titel": "Facharbeit",
-          "hinweis": "Facharbeit — Abgabe 28.09.2026. Bis dahin höchste Priorität nach Schule/Training — Rest Day, größerer Block möglich"
-        },
-        {
-          "von": "21:10",
-          "bis": "21:40",
+          "bis": "20:25",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "21:40",
-          "bis": "22:10",
+          "von": "20:25",
+          "bis": "21:25",
+          "titel": "Selbstlernpfad II",
+          "hinweis": "HTML/CSS — 1 von 18 Lektionen"
+        },
+        {
+          "von": "21:25",
+          "bis": "21:55",
           "titel": "Hausaufgaben",
           "hinweis": "Meiste Fristen liegen auf Donnerstag"
         },
         {
-          "von": "22:10",
-          "bis": "22:35",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"
+          "von": "21:55",
+          "bis": "22:25",
+          "titel": "Facharbeit / Übungen",
+          "hinweis": "Facharbeit (Abgabe 28.09.) — im Wechsel mit Physik-Olympiade / Mathe-Matrizen-Übungen"
         },
         {
-          "von": "22:35",
+          "von": "22:25",
           "bis": "23:00",
-          "titel": "Puffer",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder früher Schluss machen"
+          "titel": "Lesen + Puffer",
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch"
         }
       ],
       "do": [
@@ -237,7 +237,7 @@
           "von": "07:00",
           "bis": "07:30",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
@@ -249,61 +249,55 @@
           "von": "15:15",
           "bis": "15:25",
           "titel": "Heimweg",
-          "hinweis": "10 Min. nach Hause"
+          "hinweis": "10 Min."
         },
         {
           "von": "15:25",
           "bis": "15:55",
-          "titel": "Trading",
+          "titel": "Trading I",
           "hinweis": "Direkt nach der Schule"
         },
         {
           "von": "15:55",
-          "bis": "16:30",
+          "bis": "16:25",
           "titel": "Mittagessen",
-          "hinweis": "Rest Day — kein Reispudding nötig"
+          "hinweis": "Ruhetag — kein Reispudding nötig"
         },
         {
-          "von": "16:30",
-          "bis": "17:30",
+          "von": "16:25",
+          "bis": "17:25",
           "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — anthropic.skilljar.com · zweiter Block der Woche"
+          "hinweis": "KI-Kurs: CS50P / Claude Academy / Google AI Essentials — nur ein Block, weil ab 19:30 Freizeit fest steht"
         },
         {
-          "von": "17:30",
-          "bis": "19:15",
-          "titel": "Facharbeit",
-          "hinweis": "Facharbeit — Abgabe 28.09.2026. Bis dahin höchste Priorität nach Schule/Training — längster Werktagsblock, weil kein Training"
-        },
-        {
-          "von": "19:15",
-          "bis": "19:45",
-          "titel": "Abendessen",
-          "hinweis": "Pause"
-        },
-        {
-          "von": "19:45",
-          "bis": "20:35",
-          "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
-        },
-        {
-          "von": "20:35",
-          "bis": "21:05",
+          "von": "17:25",
+          "bis": "18:00",
           "titel": "Hausaufgaben",
           "hinweis": "Nur das morgen Fällige"
         },
         {
-          "von": "21:05",
-          "bis": "21:30",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"
+          "von": "18:00",
+          "bis": "18:30",
+          "titel": "Trading II",
+          "hinweis": "Zweite Session gegen 18 Uhr — nur an trainingsfreien Tagen"
         },
         {
-          "von": "21:30",
+          "von": "18:30",
+          "bis": "19:20",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
+        },
+        {
+          "von": "19:20",
+          "bis": "19:30",
+          "titel": "Ausklang",
+          "hinweis": "Aufräumen, Übergang"
+        },
+        {
+          "von": "19:30",
           "bis": "23:00",
           "titel": "Freizeit",
-          "hinweis": "Geschützt — Rest Day, bewusst nichts eingeplant"
+          "hinweis": "Fest eingeplant — Abendessen läuft zwanglos mit, sonst nichts"
         }
       ],
       "fr": [
@@ -311,31 +305,31 @@
           "von": "07:00",
           "bis": "07:30",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
+          "hinweis": "Freistunde (Di/Fr, 2. Std.) für Hausaufgaben oder Facharbeit nutzen"
         },
         {
           "von": "15:15",
           "bis": "15:25",
           "titel": "Heimweg",
-          "hinweis": "10 Min. nach Hause"
+          "hinweis": "10 Min."
         },
         {
           "von": "15:25",
           "bis": "15:55",
           "titel": "Trading",
-          "hinweis": "Direkt nach der Schule — Mo–Fr"
+          "hinweis": "Direkt nach der Schule — eine Session"
         },
         {
           "von": "15:55",
           "bis": "16:25",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "In Ruhe"
         },
         {
           "von": "16:25",
@@ -347,7 +341,7 @@
           "von": "16:45",
           "bis": "17:45",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — cs50.harvard.edu/python · zweiter Block der Woche — die Wartestunde genutzt"
+          "hinweis": "KI-Kurs: CS50P / Claude Academy / Google AI Essentials — an Trainingstagen abwechselnd"
         },
         {
           "von": "17:45",
@@ -370,14 +364,14 @@
         {
           "von": "22:05",
           "bis": "22:35",
-          "titel": "Übungen / Olympiade",
-          "hinweis": "Physik-Olympiade oder freie Übungsaufgaben statt Hausaufgaben — freitags ist der Puffer bis Sonntag am größten"
+          "titel": "Übungen",
+          "hinweis": "Physik-Olympiade oder Mathe-Matrizen statt Hausaufgaben"
         },
         {
           "von": "22:35",
           "bis": "23:00",
           "titel": "Lesen + Ausklang",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch"
         }
       ],
       "sa": [
@@ -385,37 +379,37 @@
           "von": "07:00",
           "bis": "08:00",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "10:30",
           "titel": "Abiklausur I",
-          "hinweis": "<b>Mathematik (P1)</b> · Abitur Nds. 2022, eA — Analysis + Stochastik — <b>1. Hälfte</b> unter Prüfungsbedingungen — 8:00 wie im echten Abitur"
+          "hinweis": "<b>Mathematik (P1)</b> · Abitur Nds. 2022, eA — <b>1. Hälfte</b> unter Prüfungsbedingungen — 8:00 wie im echten Abitur"
         },
         {
           "von": "10:30",
           "bis": "10:45",
           "titel": "Pause",
-          "hinweis": "Kurz raus, nichts lesen"
+          "hinweis": "Kurz raus"
         },
         {
           "von": "10:45",
           "bis": "13:15",
           "titel": "Abiklausur II",
-          "hinweis": "<b>Physik (P2)</b> · Abitur Nds. 2022, eA — Quantenobjekte/Elektrodynamik — <b>1. Hälfte</b> unter Prüfungsbedingungen"
+          "hinweis": "<b>Physik (P2)</b> · Abitur Nds. 2022, eA — <b>1. Hälfte</b> unter Prüfungsbedingungen"
         },
         {
           "von": "13:15",
           "bis": "14:15",
           "titel": "Mittagessen",
-          "hinweis": "Erste Mahlzeit, Ende der Fastenzeit"
+          "hinweis": "Erste Mahlzeit"
         },
         {
           "von": "14:15",
           "bis": "15:00",
-          "titel": "Hausaufgaben",
-          "hinweis": "Großer Auffangblock für die Woche"
+          "titel": "Facharbeit / Übungen",
+          "hinweis": "Facharbeit (Abgabe 28.09.) — im Wechsel mit Physik-Olympiade / Mathe-Matrizen-Übungen"
         },
         {
           "von": "15:00",
@@ -427,7 +421,7 @@
           "von": "15:20",
           "bis": "16:20",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — cs50.harvard.edu/python · dritter Block der Woche"
+          "hinweis": "HTML/CSS — 1 von 18 Lektionen"
         },
         {
           "von": "16:20",
@@ -445,7 +439,7 @@
           "von": "19:50",
           "bis": "20:20",
           "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch — kein Trading am Wochenende"
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch — kein Trading am Wochenende"
         },
         {
           "von": "20:20",
@@ -459,13 +453,13 @@
           "von": "07:00",
           "bis": "08:00",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "10:30",
           "titel": "Abiklausur I",
-          "hinweis": "<b>Mathematik (P1)</b> · Abitur Nds. 2022, eA — Analysis + Stochastik — <b>2. Hälfte</b> unter Prüfungsbedingungen — damit ist sie komplett"
+          "hinweis": "<b>Mathematik (P1)</b> · Abitur Nds. 2022, eA — <b>2. Hälfte</b> unter Prüfungsbedingungen — damit komplett"
         },
         {
           "von": "10:30",
@@ -477,55 +471,61 @@
           "von": "10:45",
           "bis": "13:15",
           "titel": "Abiklausur II",
-          "hinweis": "<b>Physik (P2)</b> · Abitur Nds. 2022, eA — Quantenobjekte/Elektrodynamik — <b>2. Hälfte</b> unter Prüfungsbedingungen — damit ist sie komplett"
+          "hinweis": "<b>Physik (P2)</b> · Abitur Nds. 2022, eA — <b>2. Hälfte</b> unter Prüfungsbedingungen — damit komplett"
         },
         {
           "von": "13:15",
           "bis": "14:15",
           "titel": "Mittagessen",
-          "hinweis": "Erste Mahlzeit, Ende der Fastenzeit"
+          "hinweis": "Erste Mahlzeit"
         },
         {
           "von": "14:15",
           "bis": "15:15",
           "titel": "Korrektur & Fehleranalyse",
-          "hinweis": "Beide Klausuren mit Erwartungshorizont abgleichen — Fehlertypen notieren, nicht nur Punkte"
+          "hinweis": "Beide Klausuren mit Erwartungshorizont abgleichen — Fehlertypen notieren"
         },
         {
           "von": "15:15",
-          "bis": "16:30",
+          "bis": "16:15",
+          "titel": "Selbstlernpfad I",
+          "hinweis": "KI-Kurs: CS50P / Claude Academy / Google AI Essentials"
+        },
+        {
+          "von": "16:15",
+          "bis": "17:15",
           "titel": "Hausaufgaben",
-          "hinweis": "Größter Block der Woche — alles fertigstellen, was Montag fällig ist"
+          "hinweis": "Größter Block der Woche — alles für Montag fertigstellen"
         },
         {
-          "von": "16:30",
-          "bis": "17:45",
-          "titel": "Facharbeit",
-          "hinweis": "Facharbeit — Abgabe 28.09.2026. Bis dahin höchste Priorität nach Schule/Training"
-        },
-        {
-          "von": "17:45",
+          "von": "17:15",
           "bis": "18:15",
+          "titel": "Facharbeit / Übungen",
+          "hinweis": "Facharbeit (Abgabe 28.09.) — im Wechsel mit Physik-Olympiade / Mathe-Matrizen-Übungen"
+        },
+        {
+          "von": "18:15",
+          "bis": "18:45",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "18:15",
-          "bis": "19:15",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Mathematik + Informatik — Beweise, Lineare Algebra, Algorithmen — LUH-Vorlauf"
-        },
-        {
-          "von": "19:15",
+          "von": "18:45",
           "bis": "19:45",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch — kein Trading am Wochenende"
+          "titel": "Selbstlernpfad II",
+          "hinweis": "HTML/CSS — 1 von 18 Lektionen"
         },
         {
           "von": "19:45",
+          "bis": "20:15",
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch"
+        },
+        {
+          "von": "20:15",
           "bis": "23:00",
           "titel": "Freizeit / Puffer",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder früher Schluss machen"
+          "hinweis": "Puffer: Überhang, Side Quest oder früher Schluss"
         }
       ]
     },
@@ -535,31 +535,31 @@
           "von": "07:00",
           "bis": "07:30",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "13:10",
           "titel": "Schule",
-          "hinweis": "Nur 3 Stunden — Schluss 13:10. Freier Nachmittag = Puffer für Facharbeit oder Überhang"
+          "hinweis": "Nur 3 Stunden — freier Nachmittag als Puffer für Facharbeit"
         },
         {
           "von": "15:15",
           "bis": "15:25",
           "titel": "Heimweg",
-          "hinweis": "10 Min. nach Hause (heute schon ab 13:10)"
+          "hinweis": "10 Min."
         },
         {
           "von": "15:25",
           "bis": "15:55",
           "titel": "Trading",
-          "hinweis": "Direkt nach der Schule — Mo–Fr"
+          "hinweis": "Direkt nach der Schule — eine Session"
         },
         {
           "von": "15:55",
           "bis": "16:25",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "In Ruhe"
         },
         {
           "von": "16:25",
@@ -571,7 +571,7 @@
           "von": "16:45",
           "bis": "17:45",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — cs50.harvard.edu/python · ~40 Std., größter Brocken — die Wartestunde genutzt"
+          "hinweis": "KI-Kurs: CS50P / Claude Academy / Google AI Essentials — an Trainingstagen abwechselnd"
         },
         {
           "von": "17:45",
@@ -595,13 +595,13 @@
           "von": "22:05",
           "bis": "22:35",
           "titel": "Hausaufgaben",
-          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
+          "hinweis": "Kurz — Größeres in die Freistunde oder aufs Wochenende"
         },
         {
           "von": "22:35",
           "bis": "23:00",
           "titel": "Lesen + Ausklang",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch"
         }
       ],
       "di": [
@@ -609,31 +609,31 @@
           "von": "07:00",
           "bis": "07:30",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
+          "hinweis": "Freistunde (Di/Fr, 2. Std.) für Hausaufgaben oder Facharbeit nutzen"
         },
         {
           "von": "15:15",
           "bis": "15:25",
           "titel": "Heimweg",
-          "hinweis": "10 Min. nach Hause"
+          "hinweis": "10 Min."
         },
         {
           "von": "15:25",
           "bis": "15:55",
           "titel": "Trading",
-          "hinweis": "Direkt nach der Schule — Mo–Fr"
+          "hinweis": "Direkt nach der Schule — eine Session"
         },
         {
           "von": "15:55",
           "bis": "16:25",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "In Ruhe"
         },
         {
           "von": "16:25",
@@ -645,7 +645,7 @@
           "von": "16:45",
           "bis": "17:45",
           "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — anthropic.skilljar.com · ~8 Std. — die Wartestunde genutzt"
+          "hinweis": "HTML/CSS — 1 von 18 Lektionen — an Trainingstagen abwechselnd"
         },
         {
           "von": "17:45",
@@ -669,13 +669,13 @@
           "von": "22:05",
           "bis": "22:35",
           "titel": "Hausaufgaben",
-          "hinweis": "Kurz — Größeres gehört in die Freistunde oder aufs Wochenende"
+          "hinweis": "Kurz — Größeres in die Freistunde oder aufs Wochenende"
         },
         {
           "von": "22:35",
           "bis": "23:00",
           "titel": "Lesen + Ausklang",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch"
         }
       ],
       "mi": [
@@ -683,37 +683,37 @@
           "von": "07:00",
           "bis": "07:30",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "16:50",
           "titel": "Schule + Sport",
-          "hinweis": "5 Stunden inkl. Sport — längster Schultag"
+          "hinweis": "5 Stunden inkl. Sport"
         },
         {
           "von": "16:50",
           "bis": "17:00",
           "titel": "Heimweg",
-          "hinweis": "10 Min. nach Hause"
+          "hinweis": "10 Min."
         },
         {
           "von": "17:00",
           "bis": "17:30",
           "titel": "Trading",
-          "hinweis": "Direkt nach der Schule"
+          "hinweis": "Nach der Schule — deckt heute beide Sessions ab (Schulschluss erst 16:50)"
         },
         {
           "von": "17:30",
           "bis": "18:05",
           "titel": "Mittagessen",
-          "hinweis": "Rest Day — kein Reispudding nötig"
+          "hinweis": "Ruhetag — kein Reispudding nötig"
         },
         {
           "von": "18:05",
           "bis": "19:05",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Google AI Essentials — coursera.org/specializations/ai-essentials-google · ~10 Std."
+          "titel": "Selbstlernpfad I",
+          "hinweis": "KI-Kurs: CS50P / Claude Academy / Google AI Essentials"
         },
         {
           "von": "19:05",
@@ -723,33 +723,33 @@
         },
         {
           "von": "19:55",
-          "bis": "21:10",
-          "titel": "Facharbeit",
-          "hinweis": "Facharbeit — Abgabe 28.09.2026. Bis dahin höchste Priorität nach Schule/Training — Rest Day, größerer Block möglich"
-        },
-        {
-          "von": "21:10",
-          "bis": "21:40",
+          "bis": "20:25",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "21:40",
-          "bis": "22:10",
+          "von": "20:25",
+          "bis": "21:25",
+          "titel": "Selbstlernpfad II",
+          "hinweis": "HTML/CSS — 1 von 18 Lektionen"
+        },
+        {
+          "von": "21:25",
+          "bis": "21:55",
           "titel": "Hausaufgaben",
           "hinweis": "Meiste Fristen liegen auf Donnerstag"
         },
         {
-          "von": "22:10",
-          "bis": "22:35",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"
+          "von": "21:55",
+          "bis": "22:25",
+          "titel": "Facharbeit / Übungen",
+          "hinweis": "Facharbeit (Abgabe 28.09.) — im Wechsel mit Physik-Olympiade / Mathe-Matrizen-Übungen"
         },
         {
-          "von": "22:35",
+          "von": "22:25",
           "bis": "23:00",
-          "titel": "Puffer",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder früher Schluss machen"
+          "titel": "Lesen + Puffer",
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch"
         }
       ],
       "do": [
@@ -757,7 +757,7 @@
           "von": "07:00",
           "bis": "07:30",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
@@ -769,61 +769,55 @@
           "von": "15:15",
           "bis": "15:25",
           "titel": "Heimweg",
-          "hinweis": "10 Min. nach Hause"
+          "hinweis": "10 Min."
         },
         {
           "von": "15:25",
           "bis": "15:55",
-          "titel": "Trading",
+          "titel": "Trading I",
           "hinweis": "Direkt nach der Schule"
         },
         {
           "von": "15:55",
-          "bis": "16:30",
+          "bis": "16:25",
           "titel": "Mittagessen",
-          "hinweis": "Rest Day — kein Reispudding nötig"
+          "hinweis": "Ruhetag — kein Reispudding nötig"
         },
         {
-          "von": "16:30",
-          "bis": "17:30",
+          "von": "16:25",
+          "bis": "17:25",
           "titel": "Selbstlernpfad",
-          "hinweis": "Claude Academy — anthropic.skilljar.com · zweiter Block der Woche"
+          "hinweis": "KI-Kurs: CS50P / Claude Academy / Google AI Essentials — nur ein Block, weil ab 19:30 Freizeit fest steht"
         },
         {
-          "von": "17:30",
-          "bis": "19:15",
-          "titel": "Facharbeit",
-          "hinweis": "Facharbeit — Abgabe 28.09.2026. Bis dahin höchste Priorität nach Schule/Training — längster Werktagsblock, weil kein Training"
-        },
-        {
-          "von": "19:15",
-          "bis": "19:45",
-          "titel": "Abendessen",
-          "hinweis": "Pause"
-        },
-        {
-          "von": "19:45",
-          "bis": "20:35",
-          "titel": "Vorbereitung Folgetag",
-          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
-        },
-        {
-          "von": "20:35",
-          "bis": "21:05",
+          "von": "17:25",
+          "bis": "18:00",
           "titel": "Hausaufgaben",
           "hinweis": "Nur das morgen Fällige"
         },
         {
-          "von": "21:05",
-          "bis": "21:30",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"
+          "von": "18:00",
+          "bis": "18:30",
+          "titel": "Trading II",
+          "hinweis": "Zweite Session gegen 18 Uhr — nur an trainingsfreien Tagen"
         },
         {
-          "von": "21:30",
+          "von": "18:30",
+          "bis": "19:20",
+          "titel": "Vorbereitung Folgetag",
+          "hinweis": "Stoff von heute sichern + Fächer von morgen vorbereiten"
+        },
+        {
+          "von": "19:20",
+          "bis": "19:30",
+          "titel": "Ausklang",
+          "hinweis": "Aufräumen, Übergang"
+        },
+        {
+          "von": "19:30",
           "bis": "23:00",
           "titel": "Freizeit",
-          "hinweis": "Geschützt — Rest Day, bewusst nichts eingeplant"
+          "hinweis": "Fest eingeplant — Abendessen läuft zwanglos mit, sonst nichts"
         }
       ],
       "fr": [
@@ -831,31 +825,31 @@
           "von": "07:00",
           "bis": "07:30",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "15:15",
           "titel": "Schule",
-          "hinweis": "Siehe Stundenplan oben — Freistunde (Di/Fr, 2. Std.) für Hausaufgaben nutzen"
+          "hinweis": "Freistunde (Di/Fr, 2. Std.) für Hausaufgaben oder Facharbeit nutzen"
         },
         {
           "von": "15:15",
           "bis": "15:25",
           "titel": "Heimweg",
-          "hinweis": "10 Min. nach Hause"
+          "hinweis": "10 Min."
         },
         {
           "von": "15:25",
           "bis": "15:55",
           "titel": "Trading",
-          "hinweis": "Direkt nach der Schule — Mo–Fr"
+          "hinweis": "Direkt nach der Schule — eine Session"
         },
         {
           "von": "15:55",
           "bis": "16:25",
           "titel": "Mittagessen",
-          "hinweis": "Richtige Mahlzeit, in Ruhe"
+          "hinweis": "In Ruhe"
         },
         {
           "von": "16:25",
@@ -867,7 +861,7 @@
           "von": "16:45",
           "bis": "17:45",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — cs50.harvard.edu/python · zweiter Block der Woche — die Wartestunde genutzt"
+          "hinweis": "KI-Kurs: CS50P / Claude Academy / Google AI Essentials — an Trainingstagen abwechselnd"
         },
         {
           "von": "17:45",
@@ -890,14 +884,14 @@
         {
           "von": "22:05",
           "bis": "22:35",
-          "titel": "Übungen / Olympiade",
-          "hinweis": "Physik-Olympiade oder freie Übungsaufgaben statt Hausaufgaben — freitags ist der Puffer bis Sonntag am größten"
+          "titel": "Übungen",
+          "hinweis": "Physik-Olympiade oder Mathe-Matrizen statt Hausaufgaben"
         },
         {
           "von": "22:35",
           "bis": "23:00",
           "titel": "Lesen + Ausklang",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch"
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch"
         }
       ],
       "sa": [
@@ -905,37 +899,37 @@
           "von": "07:00",
           "bis": "08:00",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "10:30",
           "titel": "Abiklausur I",
-          "hinweis": "<b>Englisch (P3)</b> · Abitur Nds. 2022, eA — Textaufgabe + Comment — <b>1. Hälfte</b> unter Prüfungsbedingungen — 8:00 wie im echten Abitur"
+          "hinweis": "<b>Englisch (P3)</b> · Abitur Nds. 2022, eA — <b>1. Hälfte</b> unter Prüfungsbedingungen — 8:00 wie im echten Abitur"
         },
         {
           "von": "10:30",
           "bis": "10:45",
           "titel": "Pause",
-          "hinweis": "Kurz raus, nichts lesen"
+          "hinweis": "Kurz raus"
         },
         {
           "von": "10:45",
           "bis": "13:15",
           "titel": "Abiklausur II",
-          "hinweis": "<b>Chemie (P4)</b> · Abitur Nds. 2022, gA — Organische Chemie — <b>1. Hälfte</b> unter Prüfungsbedingungen"
+          "hinweis": "<b>Chemie (P4)</b> · Abitur Nds. 2022, gA — <b>1. Hälfte</b> unter Prüfungsbedingungen"
         },
         {
           "von": "13:15",
           "bis": "14:15",
           "titel": "Mittagessen",
-          "hinweis": "Erste Mahlzeit, Ende der Fastenzeit"
+          "hinweis": "Erste Mahlzeit"
         },
         {
           "von": "14:15",
           "bis": "15:00",
-          "titel": "Hausaufgaben",
-          "hinweis": "Großer Auffangblock für die Woche"
+          "titel": "Facharbeit / Übungen",
+          "hinweis": "Facharbeit (Abgabe 28.09.) — im Wechsel mit Physik-Olympiade / Mathe-Matrizen-Übungen"
         },
         {
           "von": "15:00",
@@ -947,7 +941,7 @@
           "von": "15:20",
           "bis": "16:20",
           "titel": "Selbstlernpfad",
-          "hinweis": "CS50P — Python — cs50.harvard.edu/python · dritter Block der Woche"
+          "hinweis": "HTML/CSS — 1 von 18 Lektionen"
         },
         {
           "von": "16:20",
@@ -965,7 +959,7 @@
           "von": "19:50",
           "bis": "20:20",
           "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch — kein Trading am Wochenende"
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch — kein Trading am Wochenende"
         },
         {
           "von": "20:20",
@@ -979,13 +973,13 @@
           "von": "07:00",
           "bis": "08:00",
           "titel": "Aufstehen",
-          "hinweis": "Ruhig ankommen, Fastenzeit läuft"
+          "hinweis": "Ruhig ankommen"
         },
         {
           "von": "08:00",
           "bis": "10:30",
           "titel": "Abiklausur I",
-          "hinweis": "<b>Englisch (P3)</b> · Abitur Nds. 2022, eA — Textaufgabe + Comment — <b>2. Hälfte</b> unter Prüfungsbedingungen — damit ist sie komplett"
+          "hinweis": "<b>Englisch (P3)</b> · Abitur Nds. 2022, eA — <b>2. Hälfte</b> unter Prüfungsbedingungen — damit komplett"
         },
         {
           "von": "10:30",
@@ -997,55 +991,61 @@
           "von": "10:45",
           "bis": "13:15",
           "titel": "Abiklausur II",
-          "hinweis": "<b>Chemie (P4)</b> · Abitur Nds. 2022, gA — Organische Chemie — <b>2. Hälfte</b> unter Prüfungsbedingungen — damit ist sie komplett"
+          "hinweis": "<b>Chemie (P4)</b> · Abitur Nds. 2022, gA — <b>2. Hälfte</b> unter Prüfungsbedingungen — damit komplett"
         },
         {
           "von": "13:15",
           "bis": "14:15",
           "titel": "Mittagessen",
-          "hinweis": "Erste Mahlzeit, Ende der Fastenzeit"
+          "hinweis": "Erste Mahlzeit"
         },
         {
           "von": "14:15",
           "bis": "15:15",
           "titel": "Korrektur & Fehleranalyse",
-          "hinweis": "Beide Klausuren mit Erwartungshorizont abgleichen — Fehlertypen notieren, nicht nur Punkte"
+          "hinweis": "Beide Klausuren mit Erwartungshorizont abgleichen — Fehlertypen notieren"
         },
         {
           "von": "15:15",
-          "bis": "16:30",
+          "bis": "16:15",
+          "titel": "Selbstlernpfad I",
+          "hinweis": "KI-Kurs: CS50P / Claude Academy / Google AI Essentials"
+        },
+        {
+          "von": "16:15",
+          "bis": "17:15",
           "titel": "Hausaufgaben",
-          "hinweis": "Größter Block der Woche — alles fertigstellen, was Montag fällig ist"
+          "hinweis": "Größter Block der Woche — alles für Montag fertigstellen"
         },
         {
-          "von": "16:30",
-          "bis": "17:45",
-          "titel": "Facharbeit",
-          "hinweis": "Facharbeit — Abgabe 28.09.2026. Bis dahin höchste Priorität nach Schule/Training"
-        },
-        {
-          "von": "17:45",
+          "von": "17:15",
           "bis": "18:15",
+          "titel": "Facharbeit / Übungen",
+          "hinweis": "Facharbeit (Abgabe 28.09.) — im Wechsel mit Physik-Olympiade / Mathe-Matrizen-Übungen"
+        },
+        {
+          "von": "18:15",
+          "bis": "18:45",
           "titel": "Abendessen",
           "hinweis": "Pause"
         },
         {
-          "von": "18:15",
-          "bis": "19:15",
-          "titel": "Selbstlernpfad",
-          "hinweis": "Mathematik + Informatik — Beweise, Lineare Algebra, Algorithmen — LUH-Vorlauf"
-        },
-        {
-          "von": "19:15",
+          "von": "18:45",
           "bis": "19:45",
-          "titel": "Lesen",
-          "hinweis": "2 Bücher: 20–30 Seiten insgesamt — mind. eines englisch — kein Trading am Wochenende"
+          "titel": "Selbstlernpfad II",
+          "hinweis": "HTML/CSS — 1 von 18 Lektionen"
         },
         {
           "von": "19:45",
+          "bis": "20:15",
+          "titel": "Lesen",
+          "hinweis": "2 Bücher: 20–30 Seiten — mind. eines englisch"
+        },
+        {
+          "von": "20:15",
           "bis": "23:00",
           "titel": "Freizeit / Puffer",
-          "hinweis": "Puffer: Überhang aufholen, Side Quest, oder früher Schluss machen"
+          "hinweis": "Puffer: Überhang, Side Quest oder früher Schluss"
         }
       ]
     }
