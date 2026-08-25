@@ -46,3 +46,32 @@ des Agenten.
 
 Unterrichtsthemen pflegen und die Briefing-Rollen Dozent / Aufgabensteller /
 Prüfer. Das ist Lernstoff, nicht Zeitplanung.
+
+## Betriebsmodell (entschieden 25.08.2026)
+
+Keine eigene Hardware, kein Telegram-Bot, kein API-Schlüssel, keine
+laufenden Kosten:
+
+- **Der Google Kalender ist die Wahrheit.** Was dort steht, gilt.
+  `wochenplan.json` ist damit überflüssig.
+- **Erinnern tut der Kalender selbst.** Das Handy meldet sich minutengenau,
+  auch offline — dafür braucht es keinen laufenden Prozess.
+- **Planen und Umplanen tun geplante Claude-Sitzungen**, die den Kalender
+  lesen und schreiben.
+- **Geredet wird in Claude**, nicht in einem eigenen Bot.
+
+## Vorschlagsmodus
+
+Der Agent **fragt vor jeder Änderung**, die er nicht ausdrücklich beauftragt
+bekommen hat. Aber: **eine Rückfrage pro Planungslauf, nicht eine pro Termin.**
+Er legt den ganzen Tag oder die ganze Woche als einen Vorschlag vor, Tomasz
+antwortet einmal, dann schreibt er.
+
+Umzustellen auf eigenständiges Handeln, sobald Tomasz sieht, dass er keinen
+Mist baut. Bis dahin gilt Fragen.
+
+## Abiklausur-Rotation — Start
+
+Noch keine einzige Klausur geschrieben. Start am **Wochenende 29./30.08.2026**
+mit **Englisch (P3) + Chemie (P4)**, Abitur Niedersachsen 2022, weil KW 35
+Woche B ist. Mathe (P1) + Physik (P2) am Wochenende darauf.
