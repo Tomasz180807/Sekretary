@@ -75,3 +75,29 @@ Mist baut. Bis dahin gilt Fragen.
 Noch keine einzige Klausur geschrieben. Start am **Wochenende 29./30.08.2026**
 mit **Englisch (P3) + Chemie (P4)**, Abitur Niedersachsen 2022, weil KW 35
 Woche B ist. Mathe (P1) + Physik (P2) am Wochenende darauf.
+
+## Facharbeit bis zum 28.09.2026
+
+Fahrplan und Inhalt stehen in `facharbeit.md`. Für die Planung gilt:
+
+- **Budget 6 Std./Woche**, nicht die alten 3–4.
+- **Fester Block jeden Tag.** Alles andere wird darum herum geplant — es wird
+  nichts pauschal pausiert, auch nicht im Endspurt. Selbstlernpfad, Trading
+  und Lesen laufen weiter.
+- Die „Übungen"-Blöcke (Physik-Olympiade, Mathe-Matrizen) gehen bis zur
+  Abgabe an die Facharbeit.
+- **Beratungstermin Fr 04.09. im Seminarfach**, 7./8. Stunde, 13:45–15:15 —
+  kein zusätzlicher Termin nötig, aber der Tag davor gehört der Vorbereitung.
+- **Das Experiment findet im Unterricht statt** (Verfügungsstunde der Klasse
+  des Lehrers), nicht am Wochenende. Vorbedingung: Tomasz muss den Lehrer
+  fragen. Bis das geklärt ist, ist es die wichtigste offene Aufgabe.
+- **Ziel: fertig bis 20.09.** Druck und Bindung am **Fr 25.09.**, Samstag
+  26.09. als Reserve — sonntags hat kein Copyshop auf.
+- **Abgabe Mo 28.09., spätestens 11:20.** Das ist Woche A, Schule ab 8:00.
+  Abgabe **vor der ersten Stunde**, nicht in der Pause um 11:20.
+
+### Offene Aufgaben mit Fremdabhängigkeit
+
+Diese haben Vorlaufzeit und werden täglich erinnert, bis sie erledigt sind:
+Lehrer wegen Verfügungsstunde fragen · Genehmigung der Untersuchung ·
+Einverständniserklärungen/Datenschutz · Bewertungsraster besorgen.
