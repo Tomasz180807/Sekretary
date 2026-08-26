@@ -12,6 +12,19 @@
  */
 const ANKER = Date.UTC(2026, 7, 17); // Mo, 17.08.2026 = Woche A
 const TAG = 86400000;
+const ZONE = 'Europe/Berlin';
+
+/**
+ * Der Kalendertag, der zu einem Zeitpunkt in der Planzeitzone gehört.
+ * Nötig, weil der Agent in UTC läuft: um 00:30 Berliner Zeit ist in UTC noch
+ * der Vortag, und der Wochenwechsel läge dann einen Tag daneben.
+ */
+export function tagInZone(zeitpunkt = new Date()) {
+  const iso = new Intl.DateTimeFormat('en-CA', {
+    timeZone: ZONE, year: 'numeric', month: '2-digit', day: '2-digit',
+  }).format(zeitpunkt);
+  return new Date(`${iso}T12:00:00Z`);
+}
 
 /** Montag der Woche, in der das Datum liegt (UTC-Mitternacht). */
 function montagVor(datum) {
@@ -49,10 +62,14 @@ if (process.argv.includes('--test')) {
   strictEqual(s('2026-08-24'), '15:15', 'Montag mit Musik in Woche B');
   strictEqual(s('2026-08-26'), '16:50', 'Mittwoch mit Sport');
   strictEqual(s('2026-08-29'), null, 'Samstag');
+  // 00:30 Berliner Zeit am 31.08. ist in UTC noch der 30.08.
+  const nachMitternacht = new Date('2026-08-30T22:30:00Z');
+  strictEqual(tagInZone(nachMitternacht).toISOString().slice(0, 10), '2026-08-31', 'Ortszeit statt UTC');
+  strictEqual(woche(tagInZone(nachMitternacht)), 'A', 'Woche nach Ortszeit');
   console.log('woche.mjs: alle Prüfungen bestanden');
 } else {
   const arg = process.argv[2];
-  const d = arg ? new Date(`${arg}T12:00:00Z`) : new Date();
+  const d = arg ? new Date(`${arg}T12:00:00Z`) : tagInZone();
   if (Number.isNaN(d.getTime())) {
     console.error(`Ungültiges Datum: "${arg}" — erwartet wird JJJJ-MM-TT.`);
     process.exit(1);
