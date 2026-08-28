@@ -70,11 +70,22 @@ antwortet einmal, dann schreibt er.
 Umzustellen auf eigenständiges Handeln, sobald Tomasz sieht, dass er keinen
 Mist baut. Bis dahin gilt Fragen.
 
-## Abiklausur-Rotation — Start
+## Abiklausur-Rotation — über zwei Wochenenden verschränkt
 
-Noch keine einzige Klausur geschrieben. Start am **Wochenende 29./30.08.2026**
-mit **Englisch (P3) + Chemie (P4)**, Abitur Niedersachsen 2022, weil KW 35
-Woche B ist. Mathe (P1) + Physik (P2) am Wochenende darauf.
+Nicht ein Fachpaar pro Wochenende (1. + 2. Hälfte am selben Wochenende) —
+stattdessen abwechselnd, damit an jedem Wochenende neue Klausurluft reinkommt:
+
+- **Wochenende 1, Sa:** Fach A + Fach B, je 1. Hälfte
+- **Wochenende 1, So:** Fach C + Fach D, je 1. Hälfte
+- **Wochenende 2, Sa:** Fach A + Fach B, je 2. Hälfte — danach Korrektur
+- **Wochenende 2, So:** Fach C + Fach D, je 2. Hälfte — danach Korrektur
+- danach beginnt der nächste Vierer-Block neu, Jahrgang einen Monat zurück
+
+Start: **Sa 29.08.** Englisch (P3) + Chemie (P4) 1. Hälfte (A+B). **So 30.08.**
+Mathe (P1) + Physik (P2) 1. Hälfte (C+D). **Sa 05.09.** Englisch + Chemie
+2. Hälfte + Korrektur. **So 06.09.** Mathe + Physik 2. Hälfte + Korrektur.
+Korrektur & Fehleranalyse gehört an den Tag der jeweiligen 2. Hälfte, nicht
+an den der 1.
 
 ## Facharbeit bis zum 28.09.2026
 

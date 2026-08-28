@@ -33,3 +33,15 @@ hat das explizit akzeptiert, keine Umverteilung nötig.
 Der Fr-7./8.-Slot (13:45–15:15) ist bis zur Abgabe kein Unterricht mehr,
 sondern Facharbeit-Zeit — auch an Tagen ohne Beratungstermin. Bereits
 geschriebener Kalendertermin für Fr 28.08. korrigiert (Seminarfach → Facharbeit).
+
+## 2026-08-28 — Klausur-Rotation ueber zwei Wochenenden verschraenkt statt gebuendelt
+Statt Fachpaar A+B komplett an einem Wochenende: Sa=A+B 1.Haelfte, So=C+D
+1.Haelfte, Wochenende darauf A+B 2.Haelfte+Korrektur, C+D 2.Haelfte+Korrektur.
+Kalender fuer 30.08. und 05.09. entsprechend getauscht (Faecher + Korrektur-
+Block verschoben).
+
+## 2026-08-28 — TIB-Fahrt Hannover verdraengt Klausur-Start auf 29.08.
+Fahrt 8:00-12:00 (unsicher), danach Englisch+Chemie 1.Haelfte 12:00-17:15
+statt 8:00-13:15. Facharbeit-Block und Selbstlernpfad heute gestrichen (TIB
+zaehlt als Facharbeit-Recherche, Puffer-Regel deckt den Rest), Abend-Lesen
+gestrichen (schon unterwegs gelesen).
