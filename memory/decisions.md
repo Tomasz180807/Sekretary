@@ -28,3 +28,8 @@ Kalender+Skill+wissen/ ersetzt. Bleibt in Git-Historie abrufbar.
 ## 2026-08-26 — Klausurwochenenden bleiben trotz Facharbeit-Druck unverändert
 Facharbeit bekommt an Klausur-Wochenenden nur 45–90 Min. statt mehr. Tomasz
 hat das explizit akzeptiert, keine Umverteilung nötig.
+
+## 2026-08-26 — Seminarfach entfällt bis zur Abgabe (28.09.)
+Der Fr-7./8.-Slot (13:45–15:15) ist bis zur Abgabe kein Unterricht mehr,
+sondern Facharbeit-Zeit — auch an Tagen ohne Beratungstermin. Bereits
+geschriebener Kalendertermin für Fr 28.08. korrigiert (Seminarfach → Facharbeit).

@@ -86,8 +86,12 @@ Fahrplan und Inhalt stehen in `facharbeit.md`. Für die Planung gilt:
   und Lesen laufen weiter.
 - Die „Übungen"-Blöcke (Physik-Olympiade, Mathe-Matrizen) gehen bis zur
   Abgabe an die Facharbeit.
-- **Beratungstermin Fr 04.09. im Seminarfach**, 7./8. Stunde, 13:45–15:15 —
-  kein zusätzlicher Termin nötig, aber der Tag davor gehört der Vorbereitung.
+- **Seminarfach entfällt bis zur Abgabe (28.09.).** Der Stundenplan-Slot
+  Fr 7./8. (13:45–15:15) ist bis dahin Facharbeit-Zeit, kein regulärer
+  Unterricht — bei jeder Planung so eintragen, nicht als „Seminarfach".
+- **Beratungstermin Fr 04.09. in genau diesem Slot**, 7./8. Stunde,
+  13:45–15:15 — kein zusätzlicher Termin nötig, aber der Tag davor gehört
+  der Vorbereitung.
 - **Das Experiment findet im Unterricht statt** (Verfügungsstunde der Klasse
   des Lehrers), nicht am Wochenende. Vorbedingung: Tomasz muss den Lehrer
   fragen. Bis das geklärt ist, ist es die wichtigste offene Aufgabe.
