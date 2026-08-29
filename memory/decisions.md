@@ -61,3 +61,8 @@ noch nicht angelegt - folgt fuer 12./13.09., sobald gebraucht.
 Heutiger Ausfall war die Ausnahme wegen der Buchausleihe (TIB) vormittags,
 keine dauerhafte Reduzierung. 05./06.09. (2 Faecher/Tag, 1. Haelfte) bleibt
 wie gebaut. 12./13.09. (2. Haelfte + Korrektur) weiterhin offen.
+
+## 2026-08-29 — Laengere Leseblocks fuer "Heimsuchung" bis 09.09.
+4 Bloecke gesetzt (30.08., 03.09., 05.09., 06.09.), je 60-90min, in
+Luecken/Freizeit statt feste Tagesstruktur zu verdraengen. 07.-09.09. noch
+nicht im Kalender gebaut - folgt mit der naechsten Wochenplanung (So 20:15).
