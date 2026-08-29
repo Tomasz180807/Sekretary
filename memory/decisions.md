@@ -56,3 +56,8 @@ Ganzes Wochenende 29./30.08. klausurfrei (Fahrt+Training zogen sich, kein
 Platz mehr). Neue Woche 1 = 05./06.09. (Chemie bzw. Mathe+Physik, je
 1. Haelfte, Korrektur-Bloecke entfernt). Woche 2 (2. Haelfte + Korrektur)
 noch nicht angelegt - folgt fuer 12./13.09., sobald gebraucht.
+
+## 2026-08-29 — Klausur-Muster (2 Faecher/Tag, je Haelfte) bleibt fuer kommende Wochen
+Heutiger Ausfall war die Ausnahme wegen der Buchausleihe (TIB) vormittags,
+keine dauerhafte Reduzierung. 05./06.09. (2 Faecher/Tag, 1. Haelfte) bleibt
+wie gebaut. 12./13.09. (2. Haelfte + Korrektur) weiterhin offen.
