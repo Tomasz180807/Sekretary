@@ -116,7 +116,7 @@ Die Quellen müssen vor Verwendung selbst überprüft werden. KI-Tools wie Perpl
 - [ ] Auswertungsmaß festlegen
 - [ ] Stichprobengröße und Jahrgang klären
 - [ ] Klasse/Teilnehmer organisieren
-- [ ] Lehrkraft/Genehmigung klären
+- [ ] Lehrkraft/Genehmigung klären — Mathelehrer (Hg), Klasse mit ca. 20 Schülern voraussichtlich verfügbar
 - [ ] Datenschutz/Einverständnis klären
 - [ ] Durchführung standardisieren
 - [ ] Pilotversuch
@@ -146,225 +146,160 @@ Die Quellen müssen vor Verwendung selbst überprüft werden. KI-Tools wie Perpl
 - [ ] PDF + DOCX/DOC/ODT
 - [ ] Druck + Bindung
 
-# Roadmap 25.08.–09.09.
 
-## 25.08. – ERLEDIGT
-Forschungsfrage und vorläufige Hypothese schriftlich festgehalten.
+# Aufholplan mit Deadlines (ersetzt die Roadmap ab 29.08.2026)
 
-## 26.08. – Forschungsstand
-**Ziel:** Verstehen, was die bisherige Forschung tatsächlich herausgefunden hat.
+**Ausgangspunkt 29.08.2026:** Forschungsstand-Tabelle noch nicht begonnen;
+Forschungsfrage und Hypothese vorläufig. Kahneman und Posner bestellt, aber
+noch nicht da. Baddeley (*Working Memory, Thought, and Action*) und
+Baddeley/Eysenck/Anderson (*Memory*, 2009) vorhanden. Eine Klasse mit ca. 20
+Schülern steht für das Experiment voraussichtlich zur Verfügung.
 
-- Forschungsstand-Dokument lesen.
-- Tabelle erstellen:
+**Grundprinzip:** Der Rückstand wird 29.08.–03.09. durch etwas höhere
+Arbeitslast aufgeholt. 04.09. ist für die Beratung reserviert.
+Experimentvorbereitung und -durchführung haben Vorrang. Ab 14.09. beginnt
+die konzentrierte Schreibphase, 18.09. vollständiger Text, 19.09.
+inhaltliche Endüberarbeitung, **20.09. persönliches Finish Date**, 21.–27.09.
+Sicherheitsreserve.
 
-| Studie | Was untersucht? | Smartphone-Bedingung | Ergebnis | Bedeutung für meine Arbeit |
-|---|---|---|---|---|
+**Prioritäten:** KRITISCH (nicht verschieben, Folgeaufgaben hängen dran) ·
+HOCH (wenige Tage verschiebbar) · MITTEL (bei Zeitdruck zuerst verschieben) ·
+PUFFER (erst nach dem 20.09.).
 
-Besonders Ward 2017, Lindberg 2023, Meta-Analyse 2023 und weitere relevante Jugend-/Aufmerksamkeitsstudien.
+## Tagesaufgaben
 
-Für jede Studie:
-1. Wer wurde untersucht?
-2. Welche Aufgabe?
-3. Welche Smartphone-Bedingung?
-4. Was wurde gemessen?
-5. Was kam heraus?
+**29.08. — Rückstand sofort aufholen**
+- Forschungsstand-Tabelle als Arbeitsdokument anlegen, Spalten definieren — 30 min, KRITISCH
+- Ward et al. (2017) bearbeiten, erste Tabellenzeile — 60 min, KRITISCH
+- Forschungsfrage/Hypothese anhand von Ward prüfen (noch nicht festlegen) — 20 min, HOCH
+- Experimenttermin mit Mathelehrer konkretisieren, organisatorische Vorgaben erfragen — 15–20 min, KRITISCH
 
-**45–75 Minuten.**
+**30.08. — Lindberg + Design**
+- Lindberg et al. (2023) bearbeiten, zweite Tabellenzeile — 60 min, KRITISCH
+- Ward und Lindberg systematisch vergleichen — 30 min, HOCH
+- Versuchsdesign konkretisieren: Bedingungen, Reihenfolge, Dauer, Sitzordnung, Smartphone-Position — 45–60 min, KRITISCH
 
-Nicht: fertigen Theorietext schreiben, Test endgültig auswählen oder Statistik festlegen.
+**31.08. — Meta-Analyse + Forschungsstand**
+- Meta-Analyse (*Does the Brain Drain Effect Really Exist?*) bearbeiten, dritte Tabellenzeile — 60–75 min, KRITISCH
+- Forschungsstand der drei Kernquellen vergleichen, Forschungslücke als Stichpunkte — 30–45 min, HOCH
+- Bibliographische Daten und Quellenbelege sichern — 20 min, HOCH
 
-## 27.08. – Konzentration und Aufmerksamkeit
-- Aufmerksamkeit/Konzentration klären.
-- ggf. Arbeitsgedächtnis/kognitive Ressourcen.
-- Frage beantworten: Was bedeutet „Konzentrationsleistung“ in meiner Arbeit?
-- Grundlagen: Baddeley, Kahneman, Posner.
-- Bei Zeit: Smartphone als Ablenkungsquelle beginnen.
+**01.09. — Überblick + Test**
+- Wilmer, Sherman & Chein (2017) bearbeiten — 45–60 min, HOCH
+- d2-R/Alternative prüfen: Gruppentestung, Wiederholung, Übungseffekt, Kennwerte — 45–60 min, KRITISCH
+- Quellenmatrix anlegen: Gliederungspunkt → Quelle → Fundstelle → Verwendungszweck — 30 min, HOCH
 
-## 28.08. – Experiment skizzieren
-Vorläufiges Design vollständig darstellen:
-- A = Smartphone außerhalb
-- B = Smartphone sichtbar/ausgeschaltet
-- zwei vergleichbare Testversionen
-- Reihenfolge wechseln
-- Bedingungen konstant halten
+**02.09. — Ergänzung + Experimentmaterial**
+- Stothart et al. (2015) bearbeiten, Benachrichtigungen von bloßer Anwesenheit abgrenzen — 30–45 min, MITTEL
+- Hartanto & Yang (2016) überblicksartig — 30 min, MITTEL
+- Experimentmaterial vorbereiten: Test, Instruktion, Codes, Datenerfassung, Reihenfolge, Zeitplan — 60–90 min, KRITISCH
 
-## 29.08. – Forschungsstand vertiefen
-~90 Minuten Deep Work:
-- aktive Nutzung
-- Benachrichtigungen
-- bloße Anwesenheit
-- Jugendliche
-- Unterschiede zwischen Studien
-- Frage: Warum ist die eigene Untersuchung trotz vorhandener Forschung sinnvoll?
+**03.09. — Beratung komplett vorbereiten**
+- Forschungsstand-Tabelle fertigstellen und kritisch zusammenfassen — 45–60 min, KRITISCH
+- Forschungsfrage und Hypothese vorläufig finalisieren — 30–45 min, KRITISCH
+- Gliederung + Literaturauswahl + Fachbücher für die Beratung zusammenstellen — 30–45 min, KRITISCH
+- Experimentplan und offene Fragen für den Lehrer fertigstellen — 30–45 min, KRITISCH
 
-## 30.08. – Wochencheck
-Sollte stehen:
-- Thema
-- Forschungsrichtung
-- Forschungsfrage
-- Hypothese
-- grobe Gliederung
-- Forschungsstand
-- begonnene Theorie
-- Experimentgrundidee
+**04.09. — Beratung**
+- Beratung durchführen — Termin, KRITISCH
+- Feedback unmittelbar dokumentieren, konkrete Änderungsaufgaben erstellen — 15–30 min, KRITISCH
 
-Zielstatus: **ca. 30 % Gesamtprojekt.**
+**05.09. — Feedback umsetzen**
+- Forschungsfrage, Hypothese, Gliederung nach Feedback korrigieren — 60–90 min, KRITISCH
+- Testverfahren und Versuchsdesign endgültig festlegen — 45–60 min, KRITISCH
+- Experimenttermin verbindlich bestätigen — 10–15 min, KRITISCH
 
-## 31.08. – Planungskonzept
-~60 Minuten:
-- Arbeitstitel
-- Forschungsfrage
-- Hypothese
-- Relevanz
-- Forschungsstand
-- Theorie
-- Experiment
-- Variablen
-- Stichprobe
-- Durchführung
-- Auswertung
-- erste Literatur
-- Gliederung
-- offene Fragen
+**06.09. — Generalprobe**
+- Experiment vollständig simulieren, Dauer messen — 45–60 min, KRITISCH
+- Datenerfassung, Codes, Reihenfolge prüfen — 30 min, KRITISCH
 
-## 01.09. – Experiment konkretisieren
-Freie Doppelstunde nutzen:
-- Testverfahren
-- Testdauer
-- Version A/B
-- Auswertungsmaß
-- Definition richtig/falsch
-- Leistungswert
+**07.–09.09. — Experiment**
+- Hauptuntersuchung mit der Klasse durchführen, sobald der Termin liegt — ca. 30–60 min, KRITISCH
+- Rohdaten direkt danach kontrollieren, anonymisiert sichern, Abweichungen dokumentieren — 15–30 min, KRITISCH
 
-## 02.09. – Planungskonzept fertig
-~45 Minuten.
-Lehrerfragen vorbereiten:
-1. Forschungsfrage präzise genug?
-2. Versuchsdesign geeignet?
-3. Konzentrationstest geeignet?
-4. Stichprobe ausreichend?
-5. Abgrenzung sinnvoll?
-6. Gliederung angemessen?
-7. Welche Statistik?
-8. Datenschutz/Einverständnis?
-9. Darf die Untersuchung mit der Klasse stattfinden?
+**10.–13.09. — Auswertung**
+- Daten übertragen, Auswertungsdatei anlegen — 45–60 min, KRITISCH (10.09.)
+- Mittelwerte, Unterschiede, relevante Kennwerte bestimmen — 60–90 min, KRITISCH (11.09.)
+- Tabellen/Diagramme vorbereiten, statistische Auswertung prüfen — 45–75 min, HOCH (13.09.)
 
-## 03.09. – Generalprobe
-~60 Minuten.
-In ca. 5 Minuten erklären können:
-- Thema
-- Problem
-- Forschungsfrage
-- Hypothese
-- Forschung
-- Experiment
-- geplante Auswertung
+**13.–16.09. — Theorie gezielt erarbeiten**
+- Kahneman für 2.2 lesen, sobald das Buch da ist — 45–60 min, HOCH (14.09.)
+- Posner für 2.2 lesen, sobald das Buch da ist, genaue Ausgabe prüfen — 45–60 min, HOCH (15.09.)
+- Baddeley für 2.3 gezielt lesen — 45–60 min, HOCH (15.09.)
+- Memory (2009) nur ergänzend, falls nötig — 30–45 min, MITTEL (16.09.)
 
-## 04.09. – BERATUNGSTERMIN
-Mitbringen:
-- Planungskonzept
-- Forschungsfrage
-- Hypothese
-- Gliederung
-- Quellen
-- Experimentplan
-- offene Fragen
+**14.–17.09. — Schreibphase**
+- Theoretischen Teil in eigenen Worten schreiben, Ziel 6–8 Seiten — ca. 3–5 h gesamt, KRITISCH (16.09.)
+- Forschungsteil schreiben: Design, Stichprobe, Durchführung, Auswertung — ca. 2–3 h gesamt, KRITISCH (17.09.)
 
-Ziel: konkretes Feedback statt völlig offener Ideensuche.
+**18.09. — vollständiger Text**
+- Alle fehlenden Teile ergänzen, vollständigen Text herstellen — 90–120 min, KRITISCH
+- Kontrollieren: ca. 15 Seiten, alle Hauptkapitel vorhanden — 30 min, KRITISCH
 
-## 05.09. – Feedback verarbeiten
-~90 Minuten.
-Tabelle „vorher → nach Beratung“ für Forschungsfrage, Hypothese, Test, Design, Stichprobe, Gliederung.
+**19.09. — inhaltliche Endfassung**
+- Gesamte Arbeit überarbeiten: roter Faden, Argumentation, Theorie↔Experiment, Interpretation — 90–120 min, KRITISCH
+- Schluss formulieren, Forschungsfrage explizit beantworten — 30–45 min, KRITISCH
 
-## 06.09. – Materialtag
-~60 Minuten:
-- Konzentrationstest
-- A/B-Versionen
-- Instruktionen
-- Auswertungsbogen
-- Datentabelle
-- Teilnehmercodes
-- Versuchsablauf
-- möglichst Pilotversuch
+**20.09. — persönliches Finish Date**
+- Facharbeit vollständig fertigstellen: Text, Fußnoten, Literaturverzeichnis, Inhaltsverzeichnis — 60–120 min, KRITISCH
+- Endkontrolle auf fehlende Quellen/Fußnoten und Formfehler — 45–60 min, KRITISCH
 
-## 07.09. – Pilot/Organisation
-~45–60 Minuten:
-- Verständlichkeit
-- Dauer
-- Schwierigkeit
-- Vergleichbarkeit A/B
-- Datenerfassung
-- Hauptuntersuchung organisatorisch vorbereiten
+**21.–27.09. — Sicherheitsreserve** (PUFFER, nur falls nötig)
+- Kleinere inhaltliche Korrekturen — nach Bedarf (23.09.)
+- Formalia und Quellenbelege endgültig prüfen — 60–90 min (25.09.)
+- Finale PDF, Ausdruck, Bindung, digitale Abgabe vorbereiten — 60–90 min + Wartezeit (27.09.)
 
-## 08.09. – Hauptuntersuchung vorbereiten
-Freie Doppelstunde:
-- Teilnehmerzahl
-- Klasse
-- Termin
-- Lehrkraft
-- Material
-- Ablauf
-Wenn Experiment bereits organisiert: theoretischen Rohtext beginnen.
+**28.09. — Abgabe:** gebunden, spätestens 11:20 Uhr im Sekretariat. FIX.
 
-## 09.09. – Meilenstein
-Ziel:
-- Forschungsstand verstanden
-- zentrale Studien identifiziert
-- Quellenbasis aufgebaut
-- Theoriegrundlage klar
-- Forschungsfrage/Hypothese fest
-- Experimentdesign/Test/Variablen/Durchführung/Auswertung geplant
-- Teilnehmer/Termin organisiert oder unmittelbar vor Durchführung
-- idealerweise 1–3 Seiten theoretischer Rohtext
+## Bei Freistunden/ausgefallenen Stunden
 
-# Hauptziel bis 20.09.
-- **10.–13.09.:** Experiment, Daten, Theorie.
-- **14.–17.09.:** Hauptschreibphase; Ziel 10–12 Seiten.
-- **18.–20.09.:** restliche Kapitel, Einleitung, Schluss, Teilfazits, Übergänge.
-- **20.09.:** vollständige Rohfassung mit ca. 14–15 Seiten.
+- 30–60 Min. frei → Aufgabe mit Deadline heute/morgen vorziehen.
+- 60–90 Min. frei → eine komplette Quellenbearbeitung, Quellenmatrix,
+  Datenauswertung oder einen Schreibblock vorziehen.
+- Nicht einfach zusätzliche Recherche anfangen, solange eine kritische
+  Aufgabe offen ist.
+- Deutlich mehr Zeit → nächste Tagesgruppe vorziehen, das erzeugt Puffer.
 
-# 21.–27.09.
-- 21.–23.: wissenschaftliche Überarbeitung.
-- 24.–25.: Formalia.
-- 26.: finale Fassung.
-- 27.: Druck, Bindung, PDF, DOCX/DOC/ODT, finale Kontrolle.
-- 28.09.: Abgabe bis 11:20 Uhr.
+## Zuerst verschiebbar bei Zeitdruck
+Hartanto & Yang · ausführliche Stothart-Auswertung (wenn nur die Abgrenzung
+zu Benachrichtigungen gebraucht wird) · Memory (2009), solange Baddeley
+reicht · zusätzliche Literaturrecherche nach den Kernquellen.
 
-# Vorzieh-System bei ausgefallenen Stunden
+## Nie verschieben
+Forschungsstand-Tabelle bis 03.09. · Beratungsvorbereitung bis 03.09. ·
+Beratung am 04.09. · Testentscheidung/Versuchsdesign/Experimentmaterial vor
+der Durchführung · Experiment + sofortige Sicherung der Rohdaten ·
+Auswertung bis 13.09. · vollständiger Text bis 18.09. · inhaltlich fertige
+Facharbeit bis 20.09.
 
-### 15–30 min
-Quellenangaben, Studientabelle, Literatur sortieren, Lehrerfragen, Gliederung, Stichpunkte.
+## Quellen-Zuordnung zur Gliederung
+- 2.1 Smartphone-Nutzung: JIM 2025; Wilmer et al.
+- 2.2 Aufmerksamkeit/Konzentration: Kahneman; Posner
+- 2.3 Arbeitsgedächtnis/kognitive Ressourcen: Baddeley; ggf. Memory
+- 2.4 Smartphone als Ablenkungsquelle: Wilmer; Hartanto; Ward
+- 2.5 Aktive Nutzung/Benachrichtigungen: Stothart; Wilmer
+- 2.6 Bloße Anwesenheit: Ward; Lindberg; Meta-Analyse
+- 2.7 Forschung zu Jugendlichen: JIM; ggf. Jugendstudien
+- 2.8 Kritische Bewertung: Meta-Analyse; Ward; Lindberg; Gegenbefunde
+- 3.1 Forschungsdesign: eigener Versuchsplan; ggf. Testmanual
+- 3.2 Durchführung: eigene Dokumentation; Testmanual
+- 3.3 Auswertung/Interpretation: eigene Daten
+- 4.3 Vergleich: Ward; Lindberg; Meta-Analyse
+- 4.4 Grenzen/Ausblick: eigene methodische Reflexion + relevante Studien
 
-### 30–60 min
-Studie auswerten, theoretischen Abschnitt als Rohtext, Planungskonzept, Testmaterial.
+## Checkpoint-System
+- **03.09.:** Beratungsvorbereitung vollständig — Forschungsstand-Tabelle,
+  Gliederung, Literaturauswahl, Forschungsfrage/Hypothese, Experimentplan
+  vorzeigbar.
+- **04.09.:** Lehrerfeedback dokumentiert.
+- **09.09.:** Experiment durchgeführt oder vollständig einsatzbereit.
+- **13.09.:** Rohdaten gesichert, erste Auswertung vorhanden.
+- **16.09.:** Theorie im Wesentlichen geschrieben.
+- **18.09.:** vollständiger Text vorhanden.
+- **19.09.:** inhaltlich überarbeitet.
+- **20.09.:** Facharbeit endgültig fertig.
+- **21.–27.09.:** nur noch Sicherheitsreserve.
 
-### 60–90 min
-Unterabschnitt schreiben, Versuchsdesign, Test vorbereiten, Datenauswertung vorbereiten.
-
-### 90+ min
-1–2 Seiten Rohtext, größere Recherche, Experiment, Datenauswertung.
-
-**Freistunden sind Bonuszeit und müssen nicht automatisch die Freizeit ersetzen.**
-
-# Fortschritts-Dashboard
-- **25.08.: ~15 %** – Forschungsfrage + Hypothese + Grundlage.
-- **30.08.: ~30 %** – Forschungsstand und Forschungsrichtung klar.
-- **04.09.: ~45–50 %** – Beratungskonzept + Lehrerfeedback.
-- **09.09.: ~65–70 %** – wissenschaftliches Fundament + Experiment bereit.
-- **14.09.: ~80–85 %** – Experiment ausgewertet + großer Textanteil.
-- **20.09.: 100 % Rohfassung** – alle 15 Seiten.
-- **27.09.: 100 % abgabefertig** – überarbeitet, formatiert, gedruckt, gebunden.
-
-# Arbeitsregel
-Nicht möglichst viele Stunden sammeln, sondern jeden Arbeitsblock mit einem konkreten Ergebnis beenden:
-- „Forschungsstand-Tabelle fertig“
-- „3 Studien ausgewertet“
-- „Testverfahren ausgewählt“
-- „Planungskonzept fertig“
-- „1,5 Seiten Rohtext geschrieben“
-
-## Aktueller nächster Schritt
-**26.08.: Forschungsstand-Tabelle erstellen.**
-
-Ziel für morgen:
-> Ich weiß, was die wichtigsten bisherigen Studien untersucht und herausgefunden haben und was daraus für meine eigene Untersuchung folgt.
+*Forschungsfrage und Hypothese bleiben bis zur Beratung bewusst
+veränderbar. Quellen sind selbst zu prüfen und mit den geforderten
+Fußnoten/Nachweisen zu belegen.*

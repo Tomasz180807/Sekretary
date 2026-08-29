@@ -66,3 +66,22 @@ wie gebaut. 12./13.09. (2. Haelfte + Korrektur) weiterhin offen.
 4 Bloecke gesetzt (30.08., 03.09., 05.09., 06.09.), je 60-90min, in
 Luecken/Freizeit statt feste Tagesstruktur zu verdraengen. 07.-09.09. noch
 nicht im Kalender gebaut - folgt mit der naechsten Wochenplanung (So 20:15).
+
+## 2026-08-29 — Heimsuchung- und Facharbeit-Bloecke an zwei hochgeladenen
+Plaenen ausgerichtet
+Zwei neue Quelldokumente ersetzen die bisherige grobe Planung:
+`Heimsuchung_Leseplan_und_Unterrichtsvorbereitung.md` (Leseziel-Fahrplan
+25-30% bis 31.08., 60-70% bis 04.09., 100% bis 07.09., 08.09. reiner
+Vorbereitungstag ohne neue Lektuere, 09.09. 20-30min Wiederholung vor
+Deutsch) und `Facharbeit_Tagesplan_aufgeholt_bis_20092026.docx`
+(Aufholplan mit taeglichen KRITISCH/HOCH/MITTEL/PUFFER-Aufgaben 29.08.-
+28.09., feste Checkpoints, Zuerst-verschiebbar/Nie-verschieben-Listen).
+Beide Inhalte vollstaendig in `wissen/heimsuchung.md` (neu) und
+`wissen/facharbeit.md` (Roadmap-Abschnitt ersetzt) uebernommen. Kalender
+29.08.-06.09. entsprechend nachgezogen (Zeiten/Beschreibungen der
+bestehenden Termine korrigiert), 07.-09.09. neu angelegt: "Heimsuchung
+lesen - fertig" (07.09., 100%-Ziel), "Facharbeit"-Block fuer die
+Hauptuntersuchung inkl. Datensicherung (07.09., Uhrzeit provisorisch bis
+Lehrer-Termin steht), "Heimsuchung Vorbereitungstag" (08.09., 5-Schritte-
+Analyse ohne neues Lesen), "Heimsuchung Wiederholung vor Deutsch" (09.09.,
+09:20-09:50, direkt vor der Deutschstunde 09:50-11:20).
