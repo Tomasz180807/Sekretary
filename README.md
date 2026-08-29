@@ -12,11 +12,10 @@ nicht in einer lokalen Datei — kein Bot, kein Server, keine laufenden Kosten.
 - **`woche.mjs`** beantwortet, ob eine Woche A oder B ist, und den
   Schulschluss an einem Tag — `node woche.mjs 2026-09-28`, `--test` prüft es
   gegen die abgelesenen Stundenplan-Screenshots.
-- **`notebook.mjs`** ist der Konnektor zum Gemini Notebook: `node notebook.mjs
-  --schreiben` bündelt `wissen/` nach `notebook/wissensstand.md`. Diese Datei
-  hängt im Notebook als Website-Quelle und wird dort mit einem Klick
-  nachgeladen — ein API für private Konten gibt es nicht. Ablauf und Rückweg
-  stehen in `.claude/skills/notebook/SKILL.md`.
+- Das **Gemini Notebook** hängt direkt an den vier Dateien aus `wissen/`, je
+  eine als Website-Quelle über ihre raw-Adresse — ein API für private Konten
+  gibt es nicht. Adressen und Rückweg stehen in
+  `.claude/skills/notebook/SKILL.md`.
 - Zwei **Routinen** lösen den Agenten aus: Wochenplanung sonntags 20:15,
   Tagescheck täglich 22:45. Beide lesen und schreiben über den
   Google-Calendar-Connector.

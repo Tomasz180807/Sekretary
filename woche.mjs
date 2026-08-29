@@ -10,8 +10,6 @@
  * Gezählt wird in ganzen Kalenderwochen ab diesem Montag, der Wechsel findet
  * also immer von Sonntag auf Montag statt.
  */
-import { pathToFileURL } from 'node:url';
-
 const ANKER = Date.UTC(2026, 7, 17); // Mo, 17.08.2026 = Woche A
 const TAG = 86400000;
 const ZONE = 'Europe/Berlin';
@@ -50,10 +48,7 @@ export function schulschluss(datum) {
   return '15:15';
 }
 
-// Nur wenn die Datei selbst aufgerufen wird — beim Import (notebook.mjs) nicht.
-const alsSkript = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
-
-if (alsSkript && process.argv.includes('--test')) {
+if (process.argv.includes('--test')) {
   const { strictEqual } = await import('node:assert');
   const w = (s) => woche(new Date(`${s}T12:00:00Z`));
   const s = (d) => schulschluss(new Date(`${d}T12:00:00Z`));
@@ -72,7 +67,7 @@ if (alsSkript && process.argv.includes('--test')) {
   strictEqual(tagInZone(nachMitternacht).toISOString().slice(0, 10), '2026-08-31', 'Ortszeit statt UTC');
   strictEqual(woche(tagInZone(nachMitternacht)), 'A', 'Woche nach Ortszeit');
   console.log('woche.mjs: alle Prüfungen bestanden');
-} else if (alsSkript) {
+} else {
   const arg = process.argv[2];
   const d = arg ? new Date(`${arg}T12:00:00Z`) : tagInZone();
   if (Number.isNaN(d.getTime())) {
