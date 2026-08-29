@@ -8,8 +8,9 @@ description: Verbindet Tomasz' Gemini Notebook (NotebookLM) mit dem Repo — sag
 Gemini Notebook hat für private Google-Konten **kein API** — nur die
 Enterprise-Variante in der Google Cloud hat eines. Was das Notebook aber von
 sich aus kann: eine öffentliche Adresse als Quelle lesen und nachladen. Das
-Repo ist öffentlich, also sind die Dateien aus `wissen/` selbst die Quellen.
-Kein Export, kein Zwischenstand, nichts, was veralten kann.
+Repo ist öffentlich, also sind die Dateien aus `wissen/` selbst die Quellen —
+kein Export, kein Zwischenstand dazwischen. Automatisch ist das trotzdem
+nicht: Das Notebook zeigt den Stand, den es beim letzten Nachladen geholt hat.
 
 ## Einrichtung (macht Tomasz einmal)
 
@@ -22,18 +23,26 @@ https://raw.githubusercontent.com/Tomasz180807/Sekretary/main/wissen/stundenplan
 https://raw.githubusercontent.com/Tomasz180807/Sekretary/main/wissen/facharbeit.md
 ```
 
-Nimmt das Notebook die Rohadresse nicht an, den Dateiinhalt als „kopierten
-Text" einfügen — dann fällt allerdings das Nachladen weg. Nicht die
-`github.com/…/blob/…`-Seite nehmen: die ist zu 99 % Bedienoberfläche, der Text
-geht darin unter.
+Nicht die `github.com/…/blob/…`-Seite nehmen: die ist zu 99 %
+Bedienoberfläche, der Text geht darin unter. Und nichts als „kopierten Text"
+einfügen — so eine Quelle lässt sich nie wieder nachladen, und du siehst von
+außen nicht, dass sie eingefroren ist.
 
 ## Danach
 
-Die Quellen zeigen auf `main`. Eine Änderung, die nur auf einem Branch liegt,
-sieht das Notebook nicht — **erst nach dem Merge**. Sag ihm also dann, nicht
-schon beim Push: welche Datei sich geändert hat und dass er die Quelle im
-Notebook einmal nachladen muss. Es gibt keinen Weg, das von hier aus
-auszulösen — der Klick bleibt bei ihm.
+**Sag es im selben Lauf, in dem du die Datei änderst.** Wenn du damit bis nach
+dem Merge wartest, sagst du es nie: dann läuft keine Sitzung mehr. Also im
+selben Zug: welche Datei du geändert hast, und dass die Quelle im Notebook
+nachzuladen ist, **sobald die Änderung in `main` steht** — bei einem Pull
+Request also nach dem Merge, nicht schon beim Push.
+
+Zwei Fallen dabei, beide gehören in denselben Satz:
+
+- `raw.githubusercontent.com` liefert bis zu **fünf Minuten** die alte Fassung
+  aus dem Cache (`max-age=300`). Direkt nach dem Merge nachladen holt also
+  womöglich noch den Stand von vorher.
+- Auslösen kannst du das nicht, und **du siehst auch nicht, ob er es getan
+  hat**. Nimm also nie an, das Notebook sei aktuell.
 
 ## Rückweg
 
@@ -47,8 +56,9 @@ zustimmt.
 
 ## Zwei Grenzen
 
-- **Das Repo ist öffentlich.** Was in `wissen/` steht, steht im Netz — keine
-  Zugangsdaten, keine Namen oder Daten Dritter aus dem Experiment.
+- **Das Repo ist öffentlich.** Alles, was du nach `wissen/` schreibst,
+  veröffentlichst du — was draußen bleibt, steht in `sekretary-regeln.md`
+  unter „Was nicht ins Repo gehört".
 - **Du siehst nicht ins Notebook.** Weder Quellen noch Chatverlauf, nur das,
   was Tomasz nach Drive exportiert. Die unoffiziellen Cookie-Bibliotheken sind
   keine Option.

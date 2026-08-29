@@ -47,6 +47,22 @@ des Agenten.
 Unterrichtsthemen pflegen und die Briefing-Rollen Dozent / Aufgabensteller /
 Prüfer. Das ist Lernstoff, nicht Zeitplanung.
 
+## Was nicht ins Repo gehört
+
+Das Repo ist öffentlich, und das Gemini Notebook liest `wissen/` direkt aus dem
+Netz. Was hier hineingeschrieben wird, ist damit veröffentlicht — auch später
+noch, denn der Git-Verlauf bleibt. Draußen bleiben:
+
+- **Daten Dritter.** Namen, Kürzel und Räume von Lehrkräften, Namen und
+  Einzelwerte der Teilnehmenden am Experiment, Einverständniserklärungen. Ins
+  Repo gehören höchstens anonymisierte Ergebnisse.
+- **Zugangsdaten jeder Art**, auch Kontonamen wie der WebUntis-Login.
+- **Screenshots**, ohne dass jemand hineingeschaut hat: Stundenplan-Bilder
+  zeigen nebenbei Kontoname, Kürzel und Raumnummern.
+
+Im Zweifel fragen, bevor etwas nach `wissen/` wandert — herausnehmen lässt es
+sich hinterher nicht mehr wirklich.
+
 ## Betriebsmodell (entschieden 25.08.2026)
 
 Keine eigene Hardware, kein Telegram-Bot, kein API-Schlüssel, keine
@@ -88,10 +104,6 @@ Fahrplan und Inhalt stehen in `facharbeit.md`. Für die Planung gilt:
   Abgabe an die Facharbeit.
 - **Beratungstermin Fr 04.09. im Seminarfach**, 7./8. Stunde, 13:45–15:15 —
   kein zusätzlicher Termin nötig, aber der Tag davor gehört der Vorbereitung.
-- **Nichts Personenbezogenes ins Repo.** Es ist öffentlich, und das Gemini
-  Notebook liest `wissen/` direkt aus dem Netz. Namen der Teilnehmenden, ihre
-  Einzelwerte und die Einverständniserklärungen bleiben draußen — ins Repo
-  gehören höchstens anonymisierte Ergebnisse.
 - **Das Experiment findet im Unterricht statt** (Verfügungsstunde der Klasse
   des Lehrers), nicht am Wochenende. Vorbedingung: Tomasz muss den Lehrer
   fragen. Bis das geklärt ist, ist es die wichtigste offene Aufgabe.

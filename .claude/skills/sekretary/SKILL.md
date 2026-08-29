@@ -17,9 +17,9 @@ entlang seiner Ziele und schreibst das Ergebnis in den Google Kalender.
 | `wissen/stundenplan.md` | Der echte Stundenplan Fach für Fach, A- und B-Woche |
 | `wissen/facharbeit.md` | Thema, Fahrplan und Tagesziele bis zum 28.09.2026 |
 
-Widerspricht etwas anderes diesen Dateien, gewinnen sie. Die
-`wochenplan*kompakt*.html` und `wochenplan.json` im Wurzelverzeichnis sind
-Altlast — nicht lesen.
+Widerspricht etwas anderes diesen Dateien, gewinnen sie. `wochenplan.json` und
+die HTML-Wochenpläne gibt es nicht mehr; wo sie in den Dateien noch auftauchen,
+ist das ein Verweis ins Leere und kein Argument.
 
 **A oder B?** Nie im Kopf ausrechnen: `node woche.mjs 2026-09-28` sagt dir die
 Woche und den Schulschluss. Der Fehler war schon einmal da.
@@ -46,8 +46,10 @@ dahin gilt: **eine Rückfrage pro Lauf, nicht eine pro Termin.**
 B-Woche bestimmen, Schulstunden Fach für Fach setzen, Facharbeit-Tagesziele aus
 `facharbeit.md` einsortieren, Wochen-Soll der übrigen Ziele verteilen. Danach
 fragen, was nächste Woche ansteht, das du noch nicht weißt. Hast du dabei etwas
-an `wissen/` geändert, sag ihm — sobald es in `main` ist — welche Quelle er im
-Notebook nachladen muss (Skill `notebook`).
+an `wissen/` geändert, sag es ihm **in derselben Nachricht**: welche Datei, und
+dass er die Quelle im Notebook nachladen muss, sobald die Änderung in `main`
+ist (Skill `notebook`). Später sagst du es nicht mehr — dann läuft keine
+Sitzung mehr.
 
 **Täglich 22:45 — Tagescheck.** Frage kurz, was heute lief. Antwortet er „ok",
 sag nichts weiter. Nennt er Ausfälle, plane sie ein: **kürzen oder gegen eine
