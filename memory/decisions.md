@@ -50,3 +50,9 @@ gestrichen (schon unterwegs gelesen).
 Lehrer korrigiert bereits echte Ferientexte — Klausur-Redundanz. Beide
 Englisch-Haelften (29.08. und 05.09.) geloescht, Chemie laeuft normal weiter.
 Ersatz: Selbstlernpfad o.ae., Termin offen, kein Datum vereinbart.
+
+## 2026-08-29 — Klausur-Start um eine Woche verschoben
+Ganzes Wochenende 29./30.08. klausurfrei (Fahrt+Training zogen sich, kein
+Platz mehr). Neue Woche 1 = 05./06.09. (Chemie bzw. Mathe+Physik, je
+1. Haelfte, Korrektur-Bloecke entfernt). Woche 2 (2. Haelfte + Korrektur)
+noch nicht angelegt - folgt fuer 12./13.09., sobald gebraucht.
