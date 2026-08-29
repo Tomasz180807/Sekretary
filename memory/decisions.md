@@ -45,3 +45,8 @@ Fahrt 8:00-12:00 (unsicher), danach Englisch+Chemie 1.Haelfte 12:00-17:15
 statt 8:00-13:15. Facharbeit-Block und Selbstlernpfad heute gestrichen (TIB
 zaehlt als Facharbeit-Recherche, Puffer-Regel deckt den Rest), Abend-Lesen
 gestrichen (schon unterwegs gelesen).
+
+## 2026-08-29 — Englisch diese Runde aus der Klausur-Rotation genommen
+Lehrer korrigiert bereits echte Ferientexte — Klausur-Redundanz. Beide
+Englisch-Haelften (29.08. und 05.09.) geloescht, Chemie laeuft normal weiter.
+Ersatz: Selbstlernpfad o.ae., Termin offen, kein Datum vereinbart.
