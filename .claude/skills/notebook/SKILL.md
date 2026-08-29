@@ -28,6 +28,15 @@ Bedienoberfläche, der Text geht darin unter. Und nichts als „kopierten Text"
 einfügen — so eine Quelle lässt sich nie wieder nachladen, und du siehst von
 außen nicht, dass sie eingefroren ist.
 
+Prüfen, ob die vier Adressen wirklich das ausliefern, was in `main` steht:
+
+```bash
+for f in wissen/*.md; do
+  diff <(git show origin/main:$f) <(curl -s "https://raw.githubusercontent.com/Tomasz180807/Sekretary/main/$f") \
+    >/dev/null && echo "ok  $f" || echo "WEICHT AB  $f"
+done
+```
+
 ## Danach
 
 **Sag es im selben Lauf, in dem du die Datei änderst.** Wenn du damit bis nach
