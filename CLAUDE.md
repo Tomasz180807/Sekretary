@@ -12,9 +12,9 @@ eine Datei im Repo. Geplant wird durch den Skill `sekretary`
 Woche A oder B ist — das nie im Kopf ausrechnen, das war schon einmal falsch.
 
 **Das Gemini Notebook liest die Dateien aus `wissen/` direkt**, je eine als
-Website-Quelle über ihre raw-Adresse; Näheres im Skill `notebook`
-(`.claude/skills/notebook/SKILL.md`). Nach einer Änderung muss Tomasz die
-Quelle im Notebook nachladen — sag es dazu. Weil das Repo öffentlich ist,
+Website-Quelle über ihre raw-Adresse auf `main`; Näheres im Skill `notebook`
+(`.claude/skills/notebook/SKILL.md`). Sobald eine Änderung in `main` ist, muss
+Tomasz die Quelle im Notebook nachladen — sag es dann dazu. Weil das Repo öffentlich ist,
 gehört nichts Geheimes in `wissen/`.
 
 Frühere HTML-Wochenpläne, `wochenplan.json` und der alte Telegram-Bot-Ansatz

@@ -22,14 +22,18 @@ https://raw.githubusercontent.com/Tomasz180807/Sekretary/main/wissen/stundenplan
 https://raw.githubusercontent.com/Tomasz180807/Sekretary/main/wissen/facharbeit.md
 ```
 
-Nimmt das Notebook die Rohdatei nicht an: dieselbe Datei unter
-`https://github.com/Tomasz180807/Sekretary/blob/main/wissen/…`.
+Nimmt das Notebook die Rohadresse nicht an, den Dateiinhalt als „kopierten
+Text" einfügen — dann fällt allerdings das Nachladen weg. Nicht die
+`github.com/…/blob/…`-Seite nehmen: die ist zu 99 % Bedienoberfläche, der Text
+geht darin unter.
 
 ## Danach
 
-Wenn du eine Datei unter `wissen/` änderst und pushst, sag es in einem Satz
-dazu: welche Datei, im Notebook einmal nachladen. Es gibt keinen Weg, das von
-hier aus auszulösen — der Klick bleibt bei ihm.
+Die Quellen zeigen auf `main`. Eine Änderung, die nur auf einem Branch liegt,
+sieht das Notebook nicht — **erst nach dem Merge**. Sag ihm also dann, nicht
+schon beim Push: welche Datei sich geändert hat und dass er die Quelle im
+Notebook einmal nachladen muss. Es gibt keinen Weg, das von hier aus
+auszulösen — der Klick bleibt bei ihm.
 
 ## Rückweg
 

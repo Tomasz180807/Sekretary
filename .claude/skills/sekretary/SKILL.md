@@ -46,8 +46,8 @@ dahin gilt: **eine Rückfrage pro Lauf, nicht eine pro Termin.**
 B-Woche bestimmen, Schulstunden Fach für Fach setzen, Facharbeit-Tagesziele aus
 `facharbeit.md` einsortieren, Wochen-Soll der übrigen Ziele verteilen. Danach
 fragen, was nächste Woche ansteht, das du noch nicht weißt. Hast du dabei etwas
-an `wissen/` geändert, sag ihm, welche Quelle er im Notebook nachladen muss
-(Skill `notebook`).
+an `wissen/` geändert, sag ihm — sobald es in `main` ist — welche Quelle er im
+Notebook nachladen muss (Skill `notebook`).
 
 **Täglich 22:45 — Tagescheck.** Frage kurz, was heute lief. Antwortet er „ok",
 sag nichts weiter. Nennt er Ausfälle, plane sie ein: **kürzen oder gegen eine

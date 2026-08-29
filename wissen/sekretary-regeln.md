@@ -88,6 +88,10 @@ Fahrplan und Inhalt stehen in `facharbeit.md`. Für die Planung gilt:
   Abgabe an die Facharbeit.
 - **Beratungstermin Fr 04.09. im Seminarfach**, 7./8. Stunde, 13:45–15:15 —
   kein zusätzlicher Termin nötig, aber der Tag davor gehört der Vorbereitung.
+- **Nichts Personenbezogenes ins Repo.** Es ist öffentlich, und das Gemini
+  Notebook liest `wissen/` direkt aus dem Netz. Namen der Teilnehmenden, ihre
+  Einzelwerte und die Einverständniserklärungen bleiben draußen — ins Repo
+  gehören höchstens anonymisierte Ergebnisse.
 - **Das Experiment findet im Unterricht statt** (Verfügungsstunde der Klasse
   des Lehrers), nicht am Wochenende. Vorbedingung: Tomasz muss den Lehrer
   fragen. Bis das geklärt ist, ist es die wichtigste offene Aufgabe.
