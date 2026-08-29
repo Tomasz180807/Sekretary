@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(git push:*)",
-      "Bash(node woche.mjs:*)"
+      "Bash(node woche.mjs:*)",
+      "Bash(node notebook.mjs:*)"
     ]
   }
 }
