@@ -55,8 +55,16 @@ Zwei Fallen dabei, beide gehören in denselben Satz:
 
 ## Rückweg
 
-Notizen, die Tomasz aus dem Notebook nach Google Docs exportiert, liegen in
-seinem Drive: mit `search_files` finden, `read_file_content` lesen. Was
+Ins Notebook hineinsehen kannst du nicht. Was das Notebook produziert, kommt
+über Drive zurück — und zwar nur, was Tomasz dorthin exportiert.
+
+**Die Ablage:** Er speichert Notizen aus dem Notebook über „In Google Docs
+exportieren" in den Drive-Ordner **`Sekretary-Notebook`**. Du findest sie mit
+`search_files` (Ordnername als Suchbegriff, sonst nach dem Doc-Titel) und liest
+sie mit `read_file_content`. Nichts gefunden heißt: er hat nichts exportiert —
+frag nach, statt zu raten.
+
+Das ist der ganze Rückkanal. Es gibt keinen zweiten. Was
 **dauerhaft** gilt (Entscheidung, neue Quelle, geänderter Termin), trägst du in
 die zuständige Datei unter `wissen/` ein. Rechercheausbeute und Ideensammlungen
 bleiben im Notebook — das Repo ist kein Ablagekorb. Und was aus dem Notebook
