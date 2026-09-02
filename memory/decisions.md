@@ -85,3 +85,18 @@ Hauptuntersuchung inkl. Datensicherung (07.09., Uhrzeit provisorisch bis
 Lehrer-Termin steht), "Heimsuchung Vorbereitungstag" (08.09., 5-Schritte-
 Analyse ohne neues Lesen), "Heimsuchung Wiederholung vor Deutsch" (09.09.,
 09:20-09:50, direkt vor der Deutschstunde 09:50-11:20).
+
+## 2026-09-02 — Freizeit-Bloecke 02.-07.09. zu Facharbeit umgewandelt
+Auf Wunsch: Selbstlernpfad/HTML-CSS, generisches Lesen, Heimsuchung lesen
+und Trading/Trading Theorie zwischen jetzt und 20.09. werden Facharbeit,
+solange sie ausserhalb von Training/Schule/Hausaufgaben/Vorbereitung
+Folgetag liegen. 14 Termine umbenannt (02.-07.09., Kalender reicht aktuell
+nur bis 09.09.): Trading/Trading-Theorie-Bloecke sowie alle "Heimsuchung
+lesen"-, "Lesen"- und Selbstlernpfad/HTML-CSS-Bloecke. Beschreibung je
+Termin auf die naechste offene Aufgabe aus dem Aufholplan gesetzt.
+"Heimsuchung Vorbereitungstag" (08.09.) und "Heimsuchung Wiederholung vor
+Deutsch" (09.09.) bewusst NICHT umgewandelt — direkte Pruefungsvorbereitung,
+keine Lesezeit. Risiko explizit benannt und von Tomasz akzeptiert: Heimsuchung
+hat dadurch zwischen jetzt und der Deutschstunde am 09.09. keine einzige
+Lesezeit mehr - das Buch ist zum 100%-Ziel (07.09.) nicht fertig gelesen,
+falls nicht anderweitig nachgeholt wird.
